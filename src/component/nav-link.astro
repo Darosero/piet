@@ -1,0 +1,31 @@
+---
+import clsx from "clsx";
+
+const { href, name } = Astro.props;
+
+const pathname = Astro.url.pathname;
+
+console.log({
+  pathname,
+  href,
+});
+
+const isActive = href === pathname;
+---
+
+<a
+  class="group relative hover:bg-primary-200 bg-primary-300 px-5 py-2"
+  href={href}
+>
+  <div
+    class={clsx(
+      "absolute h-1 bottom-0 left-0 right-0",
+      isActive ? "bg-secondary-500" : "bg-primary-300",
+      isActive ? "group-hover:bg-secondary-500" : "group-hover:bg-primary-200"
+    )}
+  >
+  </div>
+  <span class="text-white font-normal text-lg">
+    {name}
+  </span>
+</a>

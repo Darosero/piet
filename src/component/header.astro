@@ -1,14 +1,33 @@
-<header class="flex flex-col gap-2 bg-blue-900" >
-  <div class="container mx-auto flex flex-row justify-center gap-2" >
-    <img src="/logo_Unicauca.png" width="100px" height="100px"/>
-    <div class="flex flex-col justify-center ">
-        <h1 class="text-white">Facultad de ingenieria Electronica y Telecomunicaciones</h1>
-        <h2 class="text-white">Programa de ingenieria Electronica y Telecomunicaciones</h2>
+---
+import LogoUnicauca from "./logo-unicauca.astro";
+import NavLink from "./nav-link.astro";
+---
+
+<header class="flex flex-col gap-2 bg-primary-500">
+  <div
+    class="container mx-auto flex flex-wrap flex-row justify-center gap-8 p-4"
+  >
+    <LogoUnicauca />
+    <div class="flex flex-col justify-center text-2xl max-w-xl">
+      <h1 class="text-white">
+        FIET - Programa de ingenieria Electronica y Telecomunicaciones
+      </h1>
     </div>
   </div>
-  <nav class="container mx-auto bg-blue-500 gap-6 flex flex-row"  >
-    <a href="/">Acerca del Programa</a>
-    <a href="/about">Plan de Estudios</a>
-    <a href="/professional">Perfil Profesional</a>
+  <nav class="max-w-4xl container mx-auto hidden md:flex justify-center">
+    <div class="flex flex-wrap">
+      <NavLink href="/" name="Acerca del Programa" />
+      <NavLink href="/about" name="Plan de Estudios" />
+      <NavLink href="/professional" name="Perfil Profesional" />
+      <NavLink href="/questions" name="Preguntas Frecuentes" />
+    </div>
+  </nav>
+  <nav class="md:hidden">
+    <div class="flex flex-col">
+      <NavLink href="/" name="Acerca del Programa" />
+      <NavLink href="/about" name="Plan de Estudios" />
+      <NavLink href="/professional" name="Perfil Profesional" />
+      <NavLink href="/questions" name="Preguntas Frecuentes" />
+    </div>
   </nav>
 </header>
