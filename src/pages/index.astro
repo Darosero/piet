@@ -1,8 +1,103 @@
 ---
 import Layout from "../component/layout.astro";
+import StartInformation from "../component/start-information.astro";
+import Card from "../component/card.astro";
 ---
 
 <Layout title="PIET UNICAUCA">
-  <h1>Inicio</h1>
-  <img src="/FIET-Unicauca.jpg" />
+  <div class="flex flex-row justify-around">
+    <StartInformation
+      image="graduation.png"
+      text1="Nivel Académico"
+      text2="Universitario / Pregrado"
+    />
+    <StartInformation image="star.png" text1="Código SINES" text2="238" />
+    <StartInformation image="time.png" text1="Metodología" text2="Presencial" />
+    <StartInformation
+      image="calendar.png"
+      text1="Admiciones"
+      text2="Semestrales"
+    />
+  </div>
+  <div class="flex flex-row g-8">
+    <div
+      class="container flex flex-col w-1/2 border-4 border-primary-400 rounded-md"
+    >
+      <h2 class="text-xl text-white font-bold bg-primary-400 p-4">
+        Informacion del Programa
+      </h2>
+      <div class="flex">
+        <h2 class="flex-shrink-0 pr-4 font-bold text-lg mr-2">
+          Título que otorga:
+        </h2>
+        <h2 class="font-semibold text-base">
+          Ingeniero en Electrónica y Telecomunicaciones.
+        </h2>
+      </div>
+      <div class="flex items-center">
+        <h2 class="font-bold text-lg mr-2">Lugar:</h2>
+        <h2 class="font-semibold text-base">Popayán (Cauca).</h2>
+      </div>
+      <div class="flex items-center">
+        <h2 class="font-bold text-lg mr-2">Jornada:</h2>
+        <h2 class="font-semibold text-base">Diurna.</h2>
+      </div>
+      <div class="flex items-center">
+        <h2 class="font-bold text-lg mr-2">Duracion:</h2>
+        <h2 class="font-semibold text-base">Diez semestres.</h2>
+      </div>
+      <div class="flex items-center">
+        <h2 class="font-bold text-lg mr-2">Lugar:</h2>
+        <h2 class="font-semibold text-base">Popayán (Cauca).</h2>
+      </div>
+      <div class="flex">
+        <h2 class="flex-shrink-0 pr-4 font-bold text-lg mr-2">
+          Horarios de atención:
+        </h2>
+        <p class="font-semibold text-base">
+          Lunes a viernes de 8:00 a.m. a 12:00 pm y de 2:00 p.m. a 6:00 p.m.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col w-1/2 p-8">
+      <h2 class="font-bold text-3xl p-4">
+        Sobre el Programa de Ingeniería Electrónica y Telecomunicaciones
+      </h2>
+      <p>
+        El programa de Ingeniería Electrónica y Telecomunicaciones de Unicauca
+        lleva más de 60 años formando grandes profesionales en el área de las
+        TIC (Tecnologías de la Información y las Comunicaciones), enfocando
+        principalmente su uso en el ámbito de las telecomunicaciones. Ha
+        impactado en gran medida en los campos tecnológicos del país y ha
+        contribuido en el mejoramiento de la calidad de vida de las personas a
+        nivel regional, nacional e internacional, proporcionando soluciones
+        eficaces de tipo electrónico, de telecomunicaciones y de informática.
+        Este programa posee la capacidad de entregar profesionales altamente
+        calificados para la solución de problemáticas de TIC. Además, personal
+        humano con excelente manejo de habilidades blandas y grandes capacidades
+        de trabajo en equipo.
+      </p>
+    </div>
+  </div>
+  <div class="relative">
+    <div
+      class="flex flex-col items-center justify-center bg-teleco bg-cover bg-center h-[200px] m-6 z-10"
+    >
+      <h3
+        class="italic text-center items-center text-4xl text-white font-semibold z-10"
+      >
+        El aprendizaje es un tesoro que te seguira a donde vayas
+      </h3>
+    </div>
+    <div class="absolute inset-0 bg-primary-600 opacity-50"></div>
+  </div>
+
+  <div class="container flex flex-row g-4 w-1/3 m-6">
+    <Card title="PLAN DE ESTUDIOS" path="/curriculum">
+      El esquema estructurado del programa de ingeniería de electronica, tiene
+      áreas obligatorias, fundamentales y optativas con sus respectivas
+      asignaturas que forman parte del currículo de este programa ofrecido por
+      la Universidad del Cauca.
+    </Card>
+  </div>
 </Layout>

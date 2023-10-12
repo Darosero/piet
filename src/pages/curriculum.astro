@@ -1,0 +1,26 @@
+---
+import Layout from "../component/layout.astro";
+import Text from "../component/curriculum-content.astro";
+import CurriculumContent from "../component/curriculum-content.astro";
+---
+
+<Layout title="Plan de Estudios" >
+  <CurriculumContent title="ANTIGUO PENSUM" image="antiguopensum.jpg" path="/oldcurriculum">
+    En esta sección, encontraras el antiguo pensum del programa de Ingeniería
+    Electrónica y Telecomunicaciones donde podrás explorar en detalle las
+    materias, su contenido y cantidad de créditos asignados.
+  </CurriculumContent>
+  <CurriculumContent title="NUEVO PENSUM" reverse image="electronica.jpg">
+    En esta sección, encontraras el nuevo pensum del programa de Ingeniería
+    Electrónica y Telecomunicaciones donde podrás explorar en detalle las
+    materias, su contenido y cantidad de créditos asignados.
+  </CurriculumContent>
+  <CurriculumContent title="REQUISITOS DE GRADO" image="requisitos.jpg">
+    En esta sección, encontraras los requisitos de grado del programa Ingeniería
+    Electrónica y Telecomunicaciones de la Universidad del Cauca
+  </CurriculumContent>
+  <CurriculumContent title="MODALIDADES DE GRADO" reverse image="grado.jpeg">
+    En esta sección, encontraras las diferentes modalidades de grado para el programa de Ingeniería
+    Electrónica y Telecomunicaciones
+  </CurriculumContent>
+</Layout>

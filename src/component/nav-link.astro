@@ -5,11 +5,6 @@ const { href, name } = Astro.props;
 
 const pathname = Astro.url.pathname;
 
-console.log({
-  pathname,
-  href,
-});
-
 const isActive = href === pathname;
 ---
 

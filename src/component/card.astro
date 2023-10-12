@@ -1,0 +1,19 @@
+---
+const { title, paragraph, path } = Astro.props;
+---
+
+<div
+  class="container flex flex-col border-4 border-primary-400 rounded-md items-center p-4"
+>
+  <h2 class="text-3xl font-bold border-b-4 border-secondary-500">
+    {title}
+  </h2>
+  <p class="p-6">
+    <slot />
+  </p>
+  <a
+    href={path}
+    class="border-4 border-secondary-500 rounded-xl p-2 font-bold text-primary-500"
+    >Mas Informacion</a
+  >
+</div>
