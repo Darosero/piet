@@ -4,16 +4,16 @@ import clsx from "clsx";
 const { title, reverse, image, path } = Astro.props;
 ---
 
-<div class="container mx-auto p-6">
+<div class="container p-6 flex items-center ">
   <div
     class={clsx(
       "flex justify-between gap-2",
       reverse ? "flex-row-reverse" : "flex-row"
     )}
   >
-    <div class="flex-1 flex flex-col items-center justify-center">
-      <a class="border-b-2 border-primary-600 text-2xl" href={path}>{title}</a>
-      <h2 class="text-base p-4">
+    <div class="flex-1 flex flex-col items-center justify-center ">
+      <a class="border-b-4 border-secondary-500 text-3xl font-bold" href={path}>{title}</a>
+      <h2 class="text-base p-4 ">
         <slot />
       </h2>
     </div>
