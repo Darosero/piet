@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/footer.jpg')",
-        'footer-texture': "url('/footer.jpg')",
-        'old-pensum': "url(/antiguopensum.jpg)",
-        'teleco' :"url(/telecomunicaciones.jpg)"
+        "footer-texture": "url('/footer.jpg')",
+        "hero-pattern": "url('/footer.jpg')",
+        "old-pensum": "url(/antiguopensum.jpg)",
+        teleco: "url(/telecomunicaciones.jpg)",
       },
       colors: {
         primary: {
