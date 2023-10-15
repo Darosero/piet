@@ -1,8 +1,11 @@
 ---
-const{image, text1, text2}=Astro.props
+const { image, title, description } = Astro.props;
 ---
-<div class="p-6">
-    <img src={image} height="50px" width="50px" />
-    <h2 class="font-bold text-lg">{text1}</h2>
-    <h2 class="font-semibold text-base">{text2}</h2>
+
+<div class="flex items-center gap-4 md:w-[230px]">
+  <img class="w-[30px] md:w-[40px] h-[30px] md:h-[40px]" src={image} height="40px" width="40px" />
+  <div>
+    <h3 class="font-bold text-base md:text-xl">{title}</h3>
+    <h4>{description}</h4>
+  </div>
 </div>
