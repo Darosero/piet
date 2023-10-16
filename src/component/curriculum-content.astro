@@ -4,7 +4,7 @@ import clsx from "clsx";
 const { title, reverse, image, path } = Astro.props;
 ---
 
-<div class={clsx("container flex justify-center gap-4", reverse ? "lg:flex-row-reverse " : "lg:flex-row")}>
+<div class={clsx("container flex justify-center gap-4 ", reverse ? "lg:flex-row-reverse " : "lg:flex-row")}>
   <div class="grid-rows-card lg:w-[500px] gap-4 p-4">
     <div class="flex justify-center">
       <a class="border-b-4 border-secondary-500 text-3xl font-bold" href={path}>{title}</a>

@@ -1,0 +1,17 @@
+---
+const { title, image } = Astro.props;
+import clsx from "clsx";
+---
+
+<div class="container mx-auto items-center">
+  <div class="relative">
+    <div class={clsx("flex items-center justify-center bg-cover bg-center h-[120px]", image)}>
+      <h2
+        class="text-5xl border-secondary-500text-center items-center text-white font-semibold border-b-4 border-white z-10"
+      >
+        {title}
+      </h2>
+    </div>
+    <div class="absolute inset-0 bg-primary-600/40"></div>
+  </div>
+</div>

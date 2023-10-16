@@ -10,7 +10,7 @@ module.exports = {
       backgroundImage: {
         "footer-texture": "url('/footer.jpg')",
         "hero-pattern": "url('/footer.jpg')",
-        "old-pensum": "url(/antiguopensum.jpg)",
+        "old-pensum": "url(/oldpensum.png)",
         teleco: "url(/banners/banner-technology.webp)",
       },
       colors: {
