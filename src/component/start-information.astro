@@ -1,11 +1,13 @@
 ---
-const { image, title, description } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
-<div class="flex items-center gap-4 md:w-[230px]">
-  <img class="w-[30px] md:w-[40px] h-[30px] md:h-[40px]" src={image} height="40px" width="40px" />
+<div class="flex items-center gap-4 w-[200px] md:w-[230px]">
+  <div class="flex items-center justify-center w-[50px]">
+    <slot />
+  </div>
   <div>
-    <h3 class="font-bold text-base md:text-xl">{title}</h3>
-    <h4>{description}</h4>
+    <a href="#" class="font-bold text-base md:text-xl">{title}</a>
+    <p>{description}</p>
   </div>
 </div>

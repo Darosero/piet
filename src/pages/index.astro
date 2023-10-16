@@ -1,20 +1,32 @@
 ---
+import CalendarIcon from "../component/icons/calendar-icon.astro";
 import Card from "../component/card.astro";
+import GraduateIcon from "../component/icons/graduate-icon.astro";
 import Layout from "../component/layout.astro";
+import StarIcon from "../component/icons/star-icon.astro";
 import StartInformation from "../component/start-information.astro";
+import TimeIcon from "../component/icons/time-icon.astro";
 ---
 
 <Layout title="PIET UNICAUCA">
-  <section class="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-4">
-    <StartInformation image="/graduation.png" title="Nivel Académico" description="Pregrado" />
-    <StartInformation image="/star.png" title="Código SINES" description="238" />
-    <StartInformation image="/time.png" title="Metodología" description="Presencial" />
-    <StartInformation image="/calendar.png" title="Admiciones" description="Semestrales" />
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-4">
+    <StartInformation title="Nivel Académico" description="Pregrado">
+      <GraduateIcon />
+    </StartInformation>
+    <StartInformation title="Código SINES" description="238">
+      <StarIcon />
+    </StartInformation>
+    <StartInformation title="Metodología" description="Presencial">
+      <TimeIcon />
+    </StartInformation>
+    <StartInformation title="Admisiones" description="Semestrales">
+      <CalendarIcon />
+    </StartInformation>
   </section>
   <section class="grid grid-cols-1 lg:grid-cols-10 gap-8 items-center">
     <div class="border-4 border-primary-400 rounded-md col-span-1 lg:col-span-4">
       <div class="p-4 bg-primary-400">
-        <h2 class="text-xl text-white font-bold">Informacion del Programa</h2>
+        <h2 class="text-xl text-white font-semibold">Información del Programa</h2>
       </div>
       <div class="p-4">
         <p>
@@ -26,7 +38,7 @@ import StartInformation from "../component/start-information.astro";
            Diurna.
         </p>
         <p>
-          <strong class="font-bold text-lg">Duracion:</strong>
+          <strong class="font-bold text-lg">Duración:</strong>
            Diez semestres.
         </p>
         <p>
@@ -41,7 +53,7 @@ import StartInformation from "../component/start-information.astro";
     </div>
     <div class="w-full lg:w-1 mx-auto h-1 lg:h-full bg-secondary-400"></div>
     <div class="col-span-1 lg:col-span-5 max-w-2xl">
-      <h2 class="font-bold text-3xl mb-4">Sobre el programa de Ingeniería Electrónica y Telecomunicaciones</h2>
+      <h2 class="font-bold text-2xl mb-4">Sobre el programa de Ingeniería Electrónica y Telecomunicaciones</h2>
       <p class="mb-2">
         El programa de Ingeniería Electrónica y Telecomunicaciones de Unicauca lleva más de 60 años formando grandes
         profesionales en el área de las TIC (Tecnologías de la Información y las Comunicaciones), enfocando
@@ -59,27 +71,27 @@ import StartInformation from "../component/start-information.astro";
       </p>
     </div>
   </section>
-  <section class="relative">
+  <section class="relative rounded-md overflow-hidden">
     <div class="flex items-center justify-center bg-teleco bg-cover bg-bottom h-[200px] p-4">
       <h3 class="italic text-center text-xl md:text-2xl lg:text-3xl text-white font-semibold z-10">
-        El aprendizaje es un tesoro que te seguira a donde vayas
+        "El aprendizaje es un tesoro que te seguirá a donde vayas"
       </h3>
     </div>
     <div class="absolute inset-0 bg-primary-600/60"></div>
   </section>
   <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     <Card title="ELECTIVAS" path="/curriculum">
-      Las electrivas del programa de ingenieria electronica y telecominicaciones le permite al estudiante seleccionar
-      las areas de interes de las cuales desea profundizar sus conocimientos
+      Las electivas del programa de ingeniería electronica y telecomunicaciones le permite al estudiante seleccionar las
+      areas de interés de las cuales desea profundizar sus conocimientos.
     </Card>
     <Card title="PLAN DE ESTUDIOS" path="/curriculum">
       El esquema estructurado del programa de ingeniería de electronica, tiene áreas obligatorias, fundamentales y
       optativas con sus respectivas asignaturas que forman parte del currículo de este programa ofrecido por la
       Universidad del Cauca.
     </Card>
-    <Card title="LINEAS DE ENFASIS" path="/curriculum">
-      Las lineas de enfasis del programa de ingenieria electronica y telecomunicaciones, le permiten al estudiante
-      elegir sus areas de interes
+    <Card title="LINEAS DE ÉNFASIS" path="/curriculum">
+      Las lineas de énfasis del programa de ingeniería electronica y telecomunicaciones, le permiten al estudiante
+      elegir sus areas de interés.
     </Card>
   </section>
 </Layout>
