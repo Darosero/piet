@@ -1,17 +1,25 @@
 ---
-const { title, path } = Astro.props;
+const { title, path, isActive } = Astro.props;
 ---
 
 <div class="grid grid-rows-card border-4 border-primary-400 rounded-md gap-6 p-4">
   <div class="flex justify-center">
-    <a href={path} class="text-center text-2xl font-bold border-b-4 border-secondary-500">
+    <a
+      href={path}
+      target={isActive ? "_blank" : null}
+      class="text-center text-2xl font-bold border-b-4 border-secondary-500"
+    >
       {title}
     </a>
   </div>
   <p>
     <slot />
   </p>
-  <a href={path} class="border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-500 mx-auto">
+  <a
+    href={path}
+    target={isActive ? "_blank" : null}
+    class="border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-500 mx-auto"
+  >
     Mas Información
   </a>
 </div>
