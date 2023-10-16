@@ -4,21 +4,23 @@ import clsx from "clsx";
 const { title, reverse, image, path } = Astro.props;
 ---
 
-<div class="container p-6 flex items-center ">
-  <div
-    class={clsx(
-      "flex justify-between gap-2",
-      reverse ? "flex-row-reverse" : "flex-row"
-    )}
-  >
-    <div class="flex-1 flex flex-col items-center justify-center ">
+<div class={clsx("container flex justify-center gap-4", reverse ? "lg:flex-row-reverse " : "lg:flex-row")}>
+  <div class="grid-rows-card lg:w-[500px] gap-4 p-4">
+    <div class="flex justify-center">
       <a class="border-b-4 border-secondary-500 text-3xl font-bold" href={path}>{title}</a>
-      <h2 class="text-base p-4 ">
-        <slot />
-      </h2>
     </div>
-    <div class="flex-1 justify-end">
-      <img height="500px" width="500px" src={image} />
+
+    <h2 class="p-2">
+      <slot />
+    </h2>
+    <div class="flex justify-center">
+      <a href={path} class="border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-500 mx-auto">
+        Mas Información
+      </a>
     </div>
   </div>
+  <div >
+    <img class=" object-cover h-52  w-72 rounded-md hidden md:block" src={image} />
+  </div>
 </div>
+<div class="w-full h-1 mx-auto bg-primary-400"></div>
