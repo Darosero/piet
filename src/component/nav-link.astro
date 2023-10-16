@@ -1,9 +1,7 @@
 ---
 import clsx from "clsx";
 
-const { href, name } = Astro.props;
-
-const pathname = Astro.url.pathname;
+const { href, pathname, name } = Astro.props;
 
 const isActive = href === pathname;
 ---
