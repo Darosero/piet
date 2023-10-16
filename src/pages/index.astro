@@ -11,39 +11,46 @@ import StartInformation from "../component/start-information.astro";
     <StartInformation image="/time.png" title="Metodología" description="Presencial" />
     <StartInformation image="/calendar.png" title="Admiciones" description="Semestrales" />
   </section>
-  <!-- <div class="flex flex-row gap-4 items-center justify-center">
-    <div class="container flex flex-col w-1/3 border-4 border-primary-400 rounded-md">
-      <h2 class="text-xl text-white font-bold bg-primary-400 p-4">Informacion del Programa</h2>
-      <div class="flex h-10">
-        <h2 class="flex-shrink-0 font-bold text-lg mr-2">Título que otorga:</h2>
-        <h2 class="font-semibold text-base">Ingeniero en Electrónica y Telecomunicaciones.</h2>
+  <section class="grid grid-cols-1 lg:grid-cols-10 gap-8 items-center">
+    <div class="border-4 border-primary-400 rounded-md col-span-1 lg:col-span-4">
+      <div class="p-4 bg-primary-400">
+        <h2 class="text-xl text-white font-bold">Informacion del Programa</h2>
       </div>
-      <div class="flex items-center h-10">
-        <h2 class="font-bold text-lg mr-2">Jornada:</h2>
-        <h2 class="font-semibold text-base">Diurna.</h2>
-      </div>
-      <div class="flex items-center h-10">
-        <h2 class="font-bold text-lg mr-2">Duracion:</h2>
-        <h2 class="font-semibold text-base">Diez semestres.</h2>
-      </div>
-      <div class="flex items-center h-10">
-        <h2 class="font-bold text-lg mr-2">Lugar:</h2>
-        <h2 class="font-semibold text-base">Popayán (Cauca).</h2>
-      </div>
-      <div class="flex h-20">
-        <h2 class="flex-shrink-0 font-bold text-lg mr-2">Horarios de atención:</h2>
-        <p class="font-semibold text-base">Lunes a viernes de 8:00 a.m. a 12:00 pm y de 2:00 p.m. a 6:00 p.m.</p>
+      <div class="p-4">
+        <p>
+          <strong class="font-bold text-lg">Título que otorga:</strong>
+           Ingeniero en Electrónica y Telecomunicaciones.
+        </p>
+        <p>
+          <strong class="font-bold text-lg"> Jornada:</strong>
+           Diurna.
+        </p>
+        <p>
+          <strong class="font-bold text-lg">Duracion:</strong>
+           Diez semestres.
+        </p>
+        <p>
+          <strong class="font-bold text-lg">Lugar:</strong>
+           Popayán (Cauca).
+        </p>
+        <p>
+          <strong class="font-bold text-lg">Horarios de atención:</strong>
+           Lunes a viernes de 8:00 a.m. a 12:00 pm y de 2:00 p.m. a 6:00 p.m.
+        </p>
       </div>
     </div>
-    <div class="flex flex-col w-1/2 p-4">
-      <h2 class="font-bold text-3xl">Sobre el Programa de Ingeniería Electrónica y Telecomunicaciones</h2>
-      <p>
+    <div class="w-full lg:w-1 mx-auto h-1 lg:h-full bg-secondary-400"></div>
+    <div class="col-span-1 lg:col-span-5 max-w-2xl">
+      <h2 class="font-bold text-3xl mb-4">Sobre el programa de Ingeniería Electrónica y Telecomunicaciones</h2>
+      <p class="mb-2">
         El programa de Ingeniería Electrónica y Telecomunicaciones de Unicauca lleva más de 60 años formando grandes
         profesionales en el área de las TIC (Tecnologías de la Información y las Comunicaciones), enfocando
-        principalmente su uso en el ámbito de las telecomunicaciones. Ha impactado en gran medida en los campos
-        tecnológicos del país y ha contribuido en el mejoramiento de la calidad de vida de las personas a nivel
-        regional, nacional e internacional, proporcionando soluciones eficaces de tipo electrónico, de
-        telecomunicaciones y de informática.
+        principalmente su uso en el ámbito de las telecomunicaciones.
+      </p>
+      <p class="mb-2">
+        Ha impactado en gran medida en los campos tecnológicos del país y ha contribuido en el mejoramiento de la
+        calidad de vida de las personas a nivel regional, nacional e internacional, proporcionando soluciones eficaces
+        de tipo electrónico, de telecomunicaciones y de informática.
       </p>
       <p>
         Este programa posee la capacidad de entregar profesionales altamente calificados para la solución de
@@ -51,16 +58,16 @@ import StartInformation from "../component/start-information.astro";
         de trabajo en equipo.
       </p>
     </div>
-  </div>
-  <div class="relative">
-    <div class="flex flex-col items-center justify-center bg-teleco bg-cover bg-center h-[200px] m-6 z-10">
-      <h3 class="italic text-center items-center text-4xl text-white font-semibold z-10">
+  </section>
+  <section class="relative">
+    <div class="flex items-center justify-center bg-teleco bg-cover bg-bottom h-[200px] p-4">
+      <h3 class="italic text-center text-xl md:text-2xl lg:text-3xl text-white font-semibold z-10">
         El aprendizaje es un tesoro que te seguira a donde vayas
       </h3>
     </div>
-    <div class="absolute inset-0 bg-primary-600 opacity-50"></div>
-  </div>
-  <div class="container flex flex-row g-4 justify-between">
+    <div class="absolute inset-0 bg-primary-600/60"></div>
+  </section>
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     <Card title="ELECTIVAS" path="/curriculum">
       Las electrivas del programa de ingenieria electronica y telecominicaciones le permite al estudiante seleccionar
       las areas de interes de las cuales desea profundizar sus conocimientos
@@ -74,5 +81,5 @@ import StartInformation from "../component/start-information.astro";
       Las lineas de enfasis del programa de ingenieria electronica y telecomunicaciones, le permiten al estudiante
       elegir sus areas de interes
     </Card>
-  </div> -->
+  </section>
 </Layout>

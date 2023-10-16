@@ -4,11 +4,14 @@ module.exports = {
   plugins: [],
   theme: {
     extend: {
+      gridTemplateRows: {
+        card: "auto 1fr auto",
+      },
       backgroundImage: {
         "footer-texture": "url('/footer.jpg')",
         "hero-pattern": "url('/footer.jpg')",
         "old-pensum": "url(/antiguopensum.jpg)",
-        teleco: "url(/telecomunicaciones.jpg)",
+        teleco: "url(/banners/banner-technology.webp)",
       },
       colors: {
         primary: {
