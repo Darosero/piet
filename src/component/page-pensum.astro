@@ -1,8 +1,10 @@
 ---
 import Layout from "../component/layout.astro";
 import Banner from "../component/banner.astro";
+import TableSemester from "./table-semester.astro";
 ---
 
-<Layout pathname="/" title="Antiguo Pensum" >
+<Layout pathname="/" title="Antiguo Pensum">
   <Banner title="ANTIGUO PENSUM" image="bg-old-pensum" />
+  <slot/>
 </Layout>
