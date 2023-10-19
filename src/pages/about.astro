@@ -3,5 +3,67 @@ import Layout from "../component/layout.astro";
 ---
 
 <Layout pathname="/about" title="Acerca del Programa">
-  <h1>Acerca del Programa</h1>
+  <section class="grid grid-flow-col gap-8 items-center justify-center">
+    <img src="/fiet-piet.jpg" width="400px" class="rounded-md" />
+    <aside class="lg:w-[600px]">
+      <header>
+        <h2 class="text-2xl font-bold mb-4">Reseña histórica</h2>
+      </header>
+      <p>
+        El programa de Ingeniería Electrónica y Telecomunicaciones pertenece a la facultad de Ingeniería Electrónica y
+        Telecomunicaciones de la Universidad del Cauca, la cual fue creada mediante el acuerdo No. 40 del 17 de
+        diciembre de 1960, emanado del comité administrativo de la Asociación Colombiana de Universidades y el Fondo
+        Universitario Nacional y refrendado por el Ministerio de Educación Nacional el 19 de diciembre de 1960.
+      </p>
+    </aside>
+  </section>
+  <div class="w-full h-1 bg-secondary-400"></div>
+  <section class="items-center">
+    <header class="text-2xl font-bold">
+      <h2>Estructura curricular</h2>
+    </header>
+    <div class="grid grid-flow-col">
+      <ul>
+        <li>
+          <h3 class="text-xl font-bold">Área Común:</h3>
+          <p>
+            Se fundamenta en la ciencia y la tecnología. Tiene como objetivo introducir al estudiante en la
+            compatibilidad científica de las ciencias formales, las ciencias naturales y las ciencias humanas y
+            sociales. Además, provee al estudiante bases requeridas en áreas como la Física y las Matemáticas y, a su
+            vez, brindar la fundamentación necesaria en asignaturas como la Electrónica, Informática y
+            Telecomunicaciones.
+          </p>
+        </li>
+        <li>
+          <h3 class="text-xl font-bold">Área Transversal:</h3>
+          <p>
+            Estimula al estudiante en el respeto, el aprecio y el reconocimiento por las diversas concepciones del
+            mundo, sus interpretaciones y representaciones simbólicas para construir, fortalecer y rescatar procesos de
+            identidad colectiva, especialmente en los ámbitos local, regional y nacional. Asimismo, busca desarrollar en
+            los estudiantes la cultura del emprendimiento.
+          </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h3 class="text-xl font-bold">Área Específica:</h3>
+          <p>
+            Pretende introducir sistemáticamente al estudiante en la teoría y la práctica profesional de diversas
+            disciplinas e, igualmente, iniciarlo en el contacto con los problemas del entorno, a partir de una práctica
+            estructurante y en asocio con estudiantes de otras profesiones y disciplinas, y con entidades públicas y
+            privadas de la región.
+          </p>
+        </li>
+        <li>
+          <h3 class="text-xl font-bold">Área de Libre Elección:</h3>
+          <p>
+            Propende por introducir al estudiante en la práctica investigativa mediante la participación en grupos y
+            actividades institucionales de investigación. Igualmente, busca sensibilizarlo en el análisis y tratamiento
+            de los problemas críticos del desarrollo regional y nacional, preparándolo para entender su entorno social y
+            actuar adecuadamente en este.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
 </Layout>
