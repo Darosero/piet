@@ -3,13 +3,11 @@ const { title, image } = Astro.props;
 import clsx from "clsx";
 ---
 
-<div class="container rounded-md overflow-hidden items-center">
-  <div class="relative">
-    <div class={clsx("flex items-center justify-center bg-cover bg-center h-[100px]", image)}>
-      <h2 class="lg:text-5xl text-center items-center text-white font-semibold z-10">
-        {title}
-      </h2>
-    </div>
-    <div class="absolute inset-0 bg-primary-600/40"></div>
+<section class="container relative rounded-md overflow-hidden">
+  <div class={clsx("flex items-center justify-center bg-cover bg-bottom h-[150px]", image)}>
+    <h4 class="italic text-center text-xl md:text-2xl lg:text-3xl text-white font-semibold z-10">
+      {title}
+    </h4>
   </div>
-</div>
+  <div class="absolute inset-0 bg-primary-600/60"></div>
+</section>

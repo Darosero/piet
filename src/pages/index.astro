@@ -6,6 +6,7 @@ import Layout from "../component/layout.astro";
 import StarIcon from "../component/icons/star-icon.astro";
 import StartInformation from "../component/start-information.astro";
 import TimeIcon from "../component/icons/time-icon.astro";
+import Banner from "../component/banner.astro";
 ---
 
 <Layout pathname="/" title="PIET UNICAUCA">
@@ -73,14 +74,7 @@ import TimeIcon from "../component/icons/time-icon.astro";
       </p>
     </section>
   </section>
-  <section class="relative rounded-md overflow-hidden">
-    <div class="flex items-center justify-center bg-teleco bg-cover bg-bottom h-[200px] p-4">
-      <h4 class="italic text-center text-xl md:text-2xl lg:text-3xl text-white font-semibold z-10">
-        "El aprendizaje es un tesoro que te seguirá a donde vayas"
-      </h4>
-    </div>
-    <div class="absolute inset-0 bg-primary-600/60"></div>
-  </section>
+  <Banner title="El aprendizaje es un tesoro que te seguirá a donde vayas" image="bg-teleco"></Banner>
   <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     <Card title="ELECTIVAS" path="/curriculum">
       Las electivas del programa de ingeniería electronica y telecomunicaciones le permite al estudiante seleccionar las
