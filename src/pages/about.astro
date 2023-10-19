@@ -2,17 +2,17 @@
 import Layout from "../component/layout.astro";
 import CheckIcon from "../component/icons/check-icon.astro";
 import Information from "../component/information.astro";
-import Banner from "../component/banner.astro"
+import Banner from "../component/banner.astro";
 ---
 
 <Layout pathname="/about" title="Acerca del Programa">
   <section class="grid grid-flow-col gap-8 items-center justify-center">
-    <img src="/fiet-piet.jpg" width="400px" class="rounded-md" />
-    <aside class="lg:w-[600px]">
+    <img src="/fiet-piet.jpg" width="400px" class="hidden md:block rounded-md" />
+    <aside class="lg:w-[600px] md:items-center md:justify-center">
       <header>
         <h2 class="text-2xl font-bold mb-4">RESEÑA HISTÓRICA</h2>
       </header>
-      <p>
+      <p class="">
         El programa de Ingeniería Electrónica y Telecomunicaciones pertenece a la facultad de Ingeniería Electrónica y
         Telecomunicaciones de la Universidad del Cauca, la cual fue creada mediante el acuerdo No. 40 del 17 de
         diciembre de 1960, emanado del comité administrativo de la Asociación Colombiana de Universidades y el Fondo
@@ -21,20 +21,18 @@ import Banner from "../component/banner.astro"
     </aside>
   </section>
   <div class="w-full h-1 bg-secondary-400"></div>
-  <section class="containar items-center  px-20 ">
+  <section class="containar items-center lg:px-20 md:px-8">
     <header class="text-2xl font-bold">
       <h2>ESTRUCTURA CURRICULAR</h2>
     </header>
-    <div class="grid items-center ">
-      <article class="grid grid-flow-col gap-4 items-start py-8">
-        <CheckIcon />
+    <div class="grid items-center">
+      <article class="grid lg:grid-flow-col gap-4 items-start py-8">
         <Information title="Área Específica:">
           Pretende introducir sistemáticamente al estudiante en la teoría y la práctica profesional de diversas
           disciplinas e, igualmente, iniciarlo en el contacto con los problemas del entorno, a partir de una práctica
           estructurante y en asocio con estudiantes de otras profesiones y disciplinas, y con entidades públicas y
           privadas de la región.
         </Information>
-        <CheckIcon />
         <Information title="Área Transversal">
           Estimula al estudiante en el respeto, el aprecio y el reconocimiento por las diversas concepciones del mundo,
           sus interpretaciones y representaciones simbólicas para construir, fortalecer y rescatar procesos de identidad
@@ -42,15 +40,13 @@ import Banner from "../component/banner.astro"
           estudiantes la cultura del emprendimiento.
         </Information>
       </article>
-      <article class="grid grid-flow-col gap-4 items-start ">
-        <CheckIcon />
+      <article class="grid lg:grid-flow-col gap-4 items-start">
         <Information title="Área Específica: ">
           Pretende introducir sistemáticamente al estudiante en la teoría y la práctica profesional de diversas
           disciplinas e, igualmente, iniciarlo en el contacto con los problemas del entorno, a partir de una práctica
           estructurante y en asocio con estudiantes de otras profesiones y disciplinas, y con entidades públicas y
           privadas de la región.
         </Information>
-        <CheckIcon />
         <Information title="Área de Libre Elección:">
           Propende por introducir al estudiante en la práctica investigativa mediante la participación en grupos y
           actividades institucionales de investigación. Igualmente, busca sensibilizarlo en el análisis y tratamiento de
@@ -60,5 +56,5 @@ import Banner from "../component/banner.astro"
       </article>
     </div>
   </section>
-  <Banner title="“Dime y lo olvido, enséñame y lo recuerdo, involúcrame y lo aprendo”" image="bg-banner-about"></Banner>
+  <Banner title="Dime y lo olvido, enséñame y lo recuerdo, involúcrame y lo aprendo" image="bg-banner-about" />
 </Layout>
