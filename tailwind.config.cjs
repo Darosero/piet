@@ -11,6 +11,7 @@ module.exports = {
         "footer-texture": "url('/footer.jpg')",
         "hero-pattern": "url('/footer.jpg')",
         "old-pensum": "url(/oldpensum.png)",
+        "banner-about": "url(/banners/about-image.webp)",
         teleco: "url(/banners/banner-technology.webp)",
       },
       colors: {
