@@ -2,11 +2,12 @@
 import Banner from "../component/all-pages/banner.astro";
 import Layout from "../component/all-pages/layout.astro";
 import InformationQuestion from "../component/react/information-question";
+import Students from "../component/question-page/students.astro";
 ---
 
 <Layout pathname="/questions" title="Preguntas Frecuentes">
-  <section class=" flex flex-col items-center">
-    <Banner title="ASPIRANTES" image="bg-banner-applicants"></Banner>
+  <section class="flex flex-col items-center">
+    <Banner title="ASPIRANTES" image="bg-banner-applicants" />
     <InformationQuestion
       client:load
       title="¿Cómo puedo inscribirme en el programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca?"
@@ -39,5 +40,89 @@ import InformationQuestion from "../component/react/information-question";
       Respuesta
     </InformationQuestion>
   </section>
-  
+  <section class="flex flex-col items-center">
+    <Banner title="ESTUDIANTES" image="bg-banner-applicants" />
+    <nav class="flex flex-row p-8 gap-4">
+      <a href="#homologaciones" class="border-b-4 border-secondary-600 font-bold text-xl"> HOMOLOGACIONES</a>
+      <a href="#pasantias" class="border-b-4 border-secondary-600 font-bold text-xl"> PASANTIAS</a>
+      <a href="#cancelaciones" class="border-b-4 border-secondary-600 font-bold text-xl"> CANCELACIONES</a>
+      <a href="#matricula" class="border-b-4 border-secondary-600 font-bold text-xl"> MATRICULA</a>
+      <a href="#reingreso" class="border-b-4 border-secondary-600 font-bold text-xl"> REINGRESO</a>
+      <a href="#modalidades" class="border-b-4 border-secondary-600 font-bold text-xl"> MODALIDADES DE GRADO</a>
+    </nav>
+  </section>
+  <section>
+    <ul>
+      <li>
+        <header class="px-6">
+          <h2 id="homologaciones" class="text-2xl font-semibold">HOMOLOGACIONES</h2>
+        </header>
+
+        <section class="flex flex-col items-center">
+          <InformationQuestion client:load title="¿Cómo realizo una homologación?">Respuesta</InformationQuestion>
+        </section>
+      </li>
+      <li>
+        <header class="p-6">
+          <h2 id="pasantias" class="text-2xl font-semibold">PASANTIAS</h2>
+        </header>
+
+        <section class="flex flex-col items-center">
+          <InformationQuestion client:load title="¿Cuáles son los pasos para realizar una pasantía empresarial?">
+            Respuesta
+          </InformationQuestion>
+        </section>
+      </li>
+      <li>
+        <header class="p-6">
+          <h2 id="cancelaciones" class="text-2xl font-semibold">CANCELACIONES</h2>
+        </header>
+
+        <section class="flex flex-col items-center">
+          <InformationQuestion client:load title="¿Cómo puedo cancelar una materia?">Respuesta</InformationQuestion>
+          <InformationQuestion client:load title="¿Cómo puedo cancelar semestre">Respuesta</InformationQuestion>
+        </section>
+      </li>
+      <li>
+        <header class="p-6">
+          <h2 id="matricula" class="text-2xl font-semibold">MATRICULA</h2>
+        </header>
+
+        <section class="flex flex-col items-center">
+          <InformationQuestion client:load title="¿Cómo genero el recibo de matrícula?">Respuesta</InformationQuestion>
+        </section>
+      </li>
+      <li>
+        <header class="p-6">
+          <h2 id="reingreso" class="text-2xl font-semibold">REINGRESO</h2>
+        </header>
+
+        <section class="flex flex-col items-center">
+          <InformationQuestion client:load title="¿Cuando puedo slicitar reingreso al  programa?">
+            Respuesta
+          </InformationQuestion>
+        </section>
+      </li>
+      <li>
+        <header class="p-6">
+          <h2 id="modalidades" class="text-2xl font-semibold">MODALIDADES DE GRADO</h2>
+        </header>
+
+        <section class="flex flex-col items-center">
+          <InformationQuestion client:load title="¿Qué tipo de trabajos de grado puedo hacer?">
+            Respuesta
+          </InformationQuestion>
+          <InformationQuestion client:load title="¿Cómo se elabora un convenio específico para práctica profesional?">
+            Respuesta
+          </InformationQuestion>
+          <InformationQuestion
+            client:load
+            title="¿Cuándo paso documentación para el anteproyecto de trabajo de grado y cuanto demora?"
+          >
+            Respuesta
+          </InformationQuestion>
+        </section>
+      </li>
+    </ul>
+  </section>
 </Layout>
