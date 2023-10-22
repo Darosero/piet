@@ -1,16 +1,43 @@
 ---
+import Banner from "../component/banner.astro";
 import Layout from "../component/layout.astro";
+import InformationQuestion from "../component/react/information-question";
 ---
 
 <Layout pathname="/questions" title="Preguntas Frecuentes">
-  <section class="grid justify-center">
-    <header>
-      <h2 class="text-2xl font-bold mb-4">Aspirantes</h2>
-    </header>
+  <section class=" flex flex-col items-center">
+    <Banner title="ASPIRANTES" image="bg-banner-applicants"></Banner>
+    <InformationQuestion
+      client:load
+      title="¿Cómo puedo inscribirme en el programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca?"
+    >
+      Para inscribirte al programa de ingenieria electronica y telecomunicaciones, debes estar pendiente de las fechas
+      de admision de la universidad del cauca, y seguir el paso a paso que se encuentra en el siguiente enlace
+    </InformationQuestion>
+    <InformationQuestion
+      client:load
+      title="¿El programa de Ingeniería Electrónica y Telecomunicaciones tiene un límite de cupo?"
+    >
+      Respuesta
+    </InformationQuestion>
+    <InformationQuestion
+      client:load
+      title="¿Cuáles son las oportunidades de becas y ayuda financiera disponibles para estudiantes de esta carrera?"
+    >
+      Respuesta
+    </InformationQuestion>
+    <InformationQuestion
+      client:load
+      title="¿Es necesario tener una formación previa en matemáticas o física para ser aceptado en el programa?"
+    >
+      Respuesta
+    </InformationQuestion>
+    <InformationQuestion
+      client:load
+      title="¿ En caso de ser admitido qué documentos o certificados académicos se deben proporcionar como parte de la solicitud de admisión?"
+    >
+      Respuesta
+    </InformationQuestion>
   </section>
-  <section>
-    <header class="grid justify-center">
-      <h2 class="text-2xl font-bold mb-4">Estudiantes</h2>
-    </header>
-  </section>
+  
 </Layout>

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
   theme: {
     extend: {
       gridTemplateRows: {
@@ -12,7 +12,8 @@ module.exports = {
         "hero-pattern": "url('/footer.jpg')",
         "old-pensum": "url(/oldpensum.png)",
         "banner-about": "url(/banners/about-image.webp)",
-        "teleco": "url(/banners/banner-technology.webp)",
+        "banner-applicants": "url(/banners/aspirantes.jpg)",
+        teleco: "url(/banners/banner-technology.webp)",
       },
       colors: {
         primary: {
