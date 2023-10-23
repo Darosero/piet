@@ -40,21 +40,27 @@ import Students from "../component/question-page/students.astro";
       Respuesta
     </InformationQuestion>
   </section>
-  <section class="flex flex-col items-center">
-    <Banner title="ESTUDIANTES" image="bg-banner-applicants" />
-    <nav class="flex flex-row p-8 gap-4">
-      <a href="#homologaciones" class="border-b-4 border-secondary-600 font-bold text-xl"> HOMOLOGACIONES</a>
-      <a href="#pasantias" class="border-b-4 border-secondary-600 font-bold text-xl"> PASANTIAS</a>
-      <a href="#cancelaciones" class="border-b-4 border-secondary-600 font-bold text-xl"> CANCELACIONES</a>
-      <a href="#matricula" class="border-b-4 border-secondary-600 font-bold text-xl"> MATRICULA</a>
-      <a href="#reingreso" class="border-b-4 border-secondary-600 font-bold text-xl"> REINGRESO</a>
-      <a href="#modalidades" class="border-b-4 border-secondary-600 font-bold text-xl"> MODALIDADES DE GRADO</a>
-    </nav>
-  </section>
   <section>
+    <section class="flex flex-col items-center">
+      <Banner title="ESTUDIANTES" image="bg-banner-applicants" />
+      <nav class="flex flex-col flex-wrap lg:flex-row p-8 gap-4 justify-center text-center">
+        <a href="#homologaciones" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
+          HOMOLOGACIONES</a
+        >
+        <a href="#pasantias" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl"> PASANTIAS</a>
+        <a href="#cancelaciones" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
+          CANCELACIONES</a
+        >
+        <a href="#matricula" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl"> MATRICULA</a>
+        <a href="#reingreso" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl"> REINGRESO</a>
+        <a href="#modalidades" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
+          MODALIDADES DE GRADO</a
+        >
+      </nav>
+    </section>
     <ul>
       <li>
-        <header class="px-6">
+        <header class="p-2">
           <h2 id="homologaciones" class="text-2xl font-semibold">HOMOLOGACIONES</h2>
         </header>
 
@@ -63,7 +69,7 @@ import Students from "../component/question-page/students.astro";
         </section>
       </li>
       <li>
-        <header class="p-6">
+        <header class="p-2">
           <h2 id="pasantias" class="text-2xl font-semibold">PASANTIAS</h2>
         </header>
 
@@ -74,7 +80,7 @@ import Students from "../component/question-page/students.astro";
         </section>
       </li>
       <li>
-        <header class="p-6">
+        <header class="p-2">
           <h2 id="cancelaciones" class="text-2xl font-semibold">CANCELACIONES</h2>
         </header>
 
@@ -84,7 +90,7 @@ import Students from "../component/question-page/students.astro";
         </section>
       </li>
       <li>
-        <header class="p-6">
+        <header class="p-2">
           <h2 id="matricula" class="text-2xl font-semibold">MATRICULA</h2>
         </header>
 
@@ -93,7 +99,7 @@ import Students from "../component/question-page/students.astro";
         </section>
       </li>
       <li>
-        <header class="p-6">
+        <header class="p-2">
           <h2 id="reingreso" class="text-2xl font-semibold">REINGRESO</h2>
         </header>
 
@@ -104,7 +110,7 @@ import Students from "../component/question-page/students.astro";
         </section>
       </li>
       <li>
-        <header class="p-6">
+        <header class="p-2">
           <h2 id="modalidades" class="text-2xl font-semibold">MODALIDADES DE GRADO</h2>
         </header>
 
