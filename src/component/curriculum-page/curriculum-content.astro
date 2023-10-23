@@ -4,23 +4,23 @@ import clsx from "clsx";
 const { title, reverse, image, path } = Astro.props;
 ---
 
-<div class={clsx("container flex justify-center gap-4 ", reverse ? "lg:flex-row-reverse " : "lg:flex-row")}>
-  <div class="grid-rows-card lg:w-[500px] gap-4 p-4">
-    <div class="flex justify-center">
-      <a class="border-b-4 border-secondary-500 text-3xl font-bold" href={path}>{title}</a>
-    </div>
-
-    <h2 class="p-2">
+<div
+  class={clsx(
+    "flex justify-evenly gap-12 px-0 lg:px-12",
+    reverse ? "flex-col lg:flex-row-reverse" : "flex-col lg:flex-row",
+  )}
+>
+  <div class="flex flex-col gap-4 justify-center">
+    <a class="border-b-4 border-secondary-500 text-2xl font-bold mx-auto" href={path}>{title}</a>
+    <p class="max-w-lg mx-auto">
       <slot />
-    </h2>
-    <div class="flex justify-center">
-      <a href={path} class="border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-500 mx-auto">
-        Mas Información
-      </a>
-    </div>
+    </p>
+    <a
+      href={path}
+      class="border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-500 mx-auto hover:bg-secondary-500 hover:text-white"
+    >
+      Mas Información
+    </a>
   </div>
-  <div >
-    <img class=" object-cover h-52  w-72 rounded-md hidden md:block" src={image} />
-  </div>
+  <img class="object-cover h-[300px] aspect-video rounded-md object-bottom" src={image} />
 </div>
-<div class="w-full h-1 mx-auto bg-primary-400"></div>

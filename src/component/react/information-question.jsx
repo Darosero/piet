@@ -1,6 +1,4 @@
-import { Children, useState } from "react";
-import MoreIcon from "../icons/more-icon.jsx";
-import MinusIcon from "../icons/minus-icon.jsx";
+import { useState } from "react";
 import ArrowRigthIcon from "../icons/arrow-rigth-icon.jsx";
 import ArrowDownIcon from "../icons/arrow-down-icon.jsx";
 
@@ -8,19 +6,15 @@ export default function InformationQuestion({ title, children }) {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="py-4 lg:w-[1100px]">
-      <div className="hover:rounded-md hover:text-white hover:bg-primary-400 hover:stroke-white stroke-primary-500">
-        <button
-          className=" flex  border-4 border-primary-400 rounded-md w-full p-2 gap-4"
-          onClick={() => setIsVisible(!isVisible)}
-        >
-          {!isVisible ? <MoreIcon /> : <MinusIcon />}
-          <h2 className="flex-1 text-left font-semibold sm:text-base lg:text-lg ">{title}</h2>
-          {!isVisible ? <ArrowRigthIcon /> : <ArrowDownIcon />}
-        </button>
-      </div>
-
-      {isVisible ? <p className="py-4 px-10 ">{children}</p> : null}
+    <div className="flex flex-col gap-4 w-full">
+      <button
+        className="flex items-center border-4 border-primary-400 rounded-md p-2 gap-4 hover:rounded-md hover:text-white hover:bg-primary-400 hover:stroke-white stroke-primary-500"
+        onClick={() => setIsVisible(!isVisible)}
+      >
+        <h2 className="font-semibold lg:text-lg text-left">{title}</h2>
+        <div className="ml-auto">{!isVisible ? <ArrowRigthIcon /> : <ArrowDownIcon />}</div>
+      </button>
+      {isVisible ? <p className="p-2">{children}</p> : null}
     </div>
   );
 }
