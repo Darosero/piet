@@ -11,15 +11,18 @@ const { title, pathname } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/unicauca.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta property="og:title" content="PIET Unicauca">
-    <meta property="og:descripcion" content="Pagina informativa del programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca">
-    <meta property="og:image" content="Telecomunicaciones">
-    <link rel="canonical" href="https://piet-unicauca.vercel.app/">
+    <meta property="og:title" content="PIET Unicauca" />
+    <meta
+      property="og:descripcion"
+      content="Pagina informativa del programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca"
+    />
+    <meta property="og:image" content="Telecomunicaciones" />
+    <link rel="canonical" href="https://piet-unicauca.vercel.app/" />
     <title>{title}</title>
   </head>
   <body>
     <Header pathname={pathname} />
-    <main class="flex flex-col  md:gap-8 lg:gap-12 px-4 container mx-auto p-10">
+    <main class="flex flex-col gap-12 px-2 md:px-8 py-12 container mx-auto">
       <slot />
     </main>
     <Footer />
