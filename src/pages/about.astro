@@ -2,6 +2,8 @@
 import Layout from "../component/all-pages/layout.astro";
 import Information from "../component/about-page/information.astro";
 import Banner from "../component/all-pages/banner.astro";
+import InformationMVO from "../component/react/information-mvo-about";
+import AddIcon from "../component/icons/add-icon";
 ---
 
 <Layout pathname="/about" title="Acerca del Programa">
@@ -44,11 +46,31 @@ import Banner from "../component/all-pages/banner.astro";
       </Information>
       <Information title="Área de Libre Elección:">
         Propende por introducir al estudiante en la práctica investigativa mediante la participación en grupos y
-        actividades institucionales de investigación. Igualmente, busca sensibilizar en el análisis y tratamiento de
-        los problemas críticos del desarrollo regional y nacional, preparándolo para entender su entorno social y actuar
+        actividades institucionales de investigación. Igualmente, busca sensibilizar en el análisis y tratamiento de los
+        problemas críticos del desarrollo regional y nacional, preparándolo para entender su entorno social y actuar
         adecuadamente en este.
       </Information>
     </div>
   </section>
   <Banner title='"Dime y lo olvido, enséñame y lo recuerdo, involúcrame y lo aprendo"' image="bg-banner-about" />
+  <section class="grid lg:grid-cols-2 sm:grid-cols-1 px-0">
+    <InformationMVO client:load title="MISIÓN" bgColor="bg-primary-400">
+      Lograr una verdadera integración con la sociedad y una estrecha relación con la industria del sector electrónico,
+      de las telecomunicaciones e informático, con el fin de contribuir significativamente al mejoramiento de la calidad
+      de vida de todos los habitantes del país.
+    </InformationMVO>
+    <InformationMVO client:load title="VISIÓN" bgColor="bg-primary-300">
+      Ser reconocido internacionalmente como un Programa pionero y líder, en Latinoamérica, en la formación integral de
+      estudiantes de pregrado en los campos de la electrónica, los sistemas de telecomunicaciones y los sistemas
+      telemáticos.
+    </InformationMVO>
+   
+    
+    
+    
+    
+    
+    
+   
+  </section>
 </Layout>
