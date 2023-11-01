@@ -3,6 +3,7 @@ import Card from "../component/init-page/card.astro";
 import Layout from "../component/all-pages/layout.astro";
 import Banner from "../component/all-pages/banner.astro";
 import StartInformations from "../component/init-page/start-informations.astro";
+import Documents from "../component/init-page/documents.astro";
 ---
 
 <Layout pathname="/" title="PIET UNICAUCA">
@@ -74,13 +75,9 @@ import StartInformations from "../component/init-page/start-informations.astro";
       Las líneas de énfasis del programa de ingeniería electrónica y telecomunicaciones, le permiten al estudiante
       elegir sus áreas de interés.
     </Card>
-    <Card
-      title="REGLAMENTO ESTUDIANTIL"
-      path="https://portal.unicauca.edu.co/versionP/documentos/acuerdos/acuerdo-no-002-de-1988"
-      isActive
-    >
-      Encuentra aquí el reglamento estudiantil universitario, donde hallarás las normativas y pautas que guían la
-      conducta y participación de los estudiantes en la institución educativa.
+    <Card title="PREGUNTAS FRECUENTES" path="/questions" isActive>
+      Encuentre aquí las preguntas más frecuentes para aspirantes y estudiantes del programa de ingeniería electrónica y
+      telecomunicaciones de la Universidad el Cauca.
     </Card>
     <Card title="INSCRIPCIONES" path="https://www.unicauca.edu.co/inscripciones/" isActive>
       Descubre a continuación información detallada sobre el proceso de inscripciones en nuestra universidad. Obtén
@@ -88,8 +85,8 @@ import StartInformations from "../component/init-page/start-informations.astro";
       programas académicos.
     </Card>
     <Card
-      title="PROYECTO EDUCATIVO INSTITUCIONAL"
-      path="http://facultades.unicauca.edu.co/prlvmen/sites/default/files/procesos/PEI%20Unicauca.pdf"
+      title="RECURSOS ACADEMICOS"
+      path="https://www.unicauca.edu.co/versionP/oferta-academica/programas-de-pregrado/ingenieria-electronica-y-telecomunicaciones/recursos-academic"
       isActive
     >
       Descubre la visión educativa a través del Proyecto Educativo Institucional (PEI). Este documento define la
@@ -97,4 +94,26 @@ import StartInformations from "../component/init-page/start-informations.astro";
       de la sociedad a través de nuestra propuesta educativa.
     </Card>
   </section>
+  <Banner title='"El aprendizaje es un tesoro que te seguirá a donde vayas"' image="bg-teleco" />
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-0 lg:px-12">
+    <Documents
+      client:load
+      title="PROYECTO EDUCATIVO INSTITUCIONAL"
+      path="http://facultades.unicauca.edu.co/prlvmen/sites/default/files/procesos/PEI%20Unicauca.pdf"
+      description="Descargar PEI"
+    />
+    <Documents
+      client:load
+      title="REGLAMENTACIÓN DE ÉNFASIS Y ELECTIVAS "
+      path="https://unicauca.edu.co/docs/resoluciones/reglamento-lineas-enfasis-fiet.pdf"
+      description="Descargar la reglamentación"
+    />
+    <Documents
+      client:load
+      title="REGLAMENTO ESTUDIANTIL"
+      path="https://www.unicauca.edu.co/docs/acuerdos/reglamento_estudiantil.pdf"
+      description="Descargar el reglamento estudiantil"
+    />
+  </section>
 </Layout>
+ ../component/init-page/documents.astr
