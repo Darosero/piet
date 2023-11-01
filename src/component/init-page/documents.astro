@@ -3,11 +3,11 @@ import DocumentIcon from "../icons/document-icon.astro";
 const { path, title, description } = Astro.props;
 ---
 
-<div class=" gap-6 p-4 shadow-lg rounded-md hover:rounded-md bg-primary-100/20 hover:bg-primary-400">
+<div class=" gap-6 p-4 shadow-lg rounded-md hover:rounded-md bg-primary-100/20 hover:bg-primary-400 relative group ">
   <a
     href={path}
     target="_blank"
-    class="flex flex-col items-center p-2 gap-4 text-primary-500 hover:text-white hover:stroke-white stroke-primary-500"
+    class="flex flex-col items-center gap-4 text-primary-500 group-hover:text-white group-hover:stroke-white stroke-primary-500"
   >
     <DocumentIcon />
     <h3 class="text-center justify-center text-2xl font-bold">{title}</h3>
