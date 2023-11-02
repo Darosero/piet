@@ -10,6 +10,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         home: "auto auto auto",
+        card: "auto 1fr auto"
       },
       backgroundImage: {
         "footer-texture": "url('/footer.jpg')",

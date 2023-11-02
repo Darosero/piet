@@ -1,5 +1,62 @@
 ---
+import InformationGoalds from "../component/about-page/information-goalds.astro";
+import Banner from "../component/all-pages/banner.astro";
 import Layout from "../component/all-pages/layout.astro";
 ---
 
-<Layout pathname="/professional" title="Perfil Profesional" />
+<Layout pathname="/professional" title="Perfil Profesional">
+  <section class="flex flex-col rounded-lg px-0 lg:px-12 gap-8">
+    <section class="grid grid-rows-[auto,auto] lg:grid-rows-none lg:grid-cols-2 gap-8">
+      <div class="flex flex-col justify-center gap-4 items-center">
+        <h4 class="text-2xl font-bold text-primary-500">PERFIL PROFESIONAL</h4>
+        <p>
+          Los estudiantes que reciban título de Ingenieros en Electrónica y Telecomunicaciones de la Universidad del
+          Cauca se destacarán por tener las siguientes características básicas, que conforman el perfil del graduado de
+          este Programa Académico:
+        </p>
+      </div>
+      <img src="/fiet-piet.webp" class="rounded-md object-cover object-bottom w-full h-[250px]" />
+    </section>
+    <section class="grid lg:grid-cols-2 md:grid-rows">
+      <InformationGoalds>
+        Se caracterizarán por mantenerse vigentes como profesionales, mediante el cultivo de su espíritu científico y la
+        búsqueda permanente del saber, como también, a través de una visión de futuro de los campos de la Electrónica,
+        Sistemas de Telecomunicaciones y Sistemas Telemáticos.
+      </InformationGoalds>
+      <InformationGoalds>
+        Estarán preparados para sintetizar el conocimiento científico y tecnológico y para lograr la solución de
+        problemas de la sociedad relacionados con los campos de la Electrónica, los Sistemas de Telecomunicaciones y los
+        Sistemas Telemáticos.
+      </InformationGoalds>
+      <InformationGoalds>
+        Se caracterizarán por la vida activa y solidaria, por la difusión de su conocimiento, la multiplicación del
+        saber y la reafirmación en la práctica profesional de su espíritu transformador y demandante de igualdad social.
+      </InformationGoalds>
+      <InformationGoalds>
+        Tendrán una formación balanceada, es decir, con aproximaciones estimulantes a los asuntos fundamentales de las
+        ciencias humanas y sociales.
+      </InformationGoalds>
+      <InformationGoalds>
+        Serán profesionales creativos, recursivos, con actitudes proactivas, con facilidades de comunicación y capacidad
+        para trabajar en equipo.
+      </InformationGoalds>
+      <InformationGoalds>
+        Podrán desarrollar habilidades de aprendizaje continuado en el aprender y en el hacer.
+      </InformationGoalds>
+
+      <InformationGoalds>
+        Tendrán habilidades de aprendizaje continuado en la creación y aplicación de modelos físico-matemáticos de la
+        realidad.
+      </InformationGoalds>
+
+      <InformationGoalds>Tendrán habilidades empresariales, administrativas y gerenciales.</InformationGoalds>
+      <InformationGoalds>Se caracterizarán por tener dominio del discurso oral y escrito.</InformationGoalds>
+
+      <InformationGoalds>Estarán formados para el trabajo, la acción y los altos propósitos.</InformationGoalds>
+    </section>
+    <Banner
+      title="“Nunca consideres el estudio como una obligación, sino como una oportunidad para penetrar en el bello y maravilloso mundo del saber”. Albert Einstein."
+      image="bg-teleco"
+    />
+  </section>
+</Layout>
