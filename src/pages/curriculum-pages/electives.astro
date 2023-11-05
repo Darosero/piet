@@ -1,0 +1,51 @@
+---
+import Layout from "../../component/all-pages/layout.astro";
+import Banner from "../../component/all-pages/banner.astro";
+import InformationGoalds from "../../component/about-page/information-goalds.astro";
+---
+
+<Layout pathname="/" title="Electivas">
+  <Banner title="ELECTIVAS" image="bg-teleco" />
+  <section class="gap-12 px-0 lg:px-12">
+    <p>
+      Para completar con éxito el proceso de matrícula para una electiva en el programa de Ingeniería Electrónica y
+      Telecomunicaciones, es fundamental que tengas en cuenta los siguientes aspectos:
+    </p>
+    <div class="grid grid-rows-[auto,auto] lg:grid-rows-none lg:grid-cols-2">
+      <InformationGoalds>
+        Antes de matricularte en la electiva de tu elección, debes realizar una preinscripción. El enlace para esta
+        preinscripción se habilita al final de cada semestre académico. Para obtener este enlace, te recomendamos seguir
+        las redes sociales de la Facultad de Ingeniería Electrónica y Telecomunicaciones (FIET), donde también
+        encontrarás videos explicativos de los docentes que detallan las temáticas que abordarán en cada electiva.
+      </InformationGoalds>
+      <InformationGoalds>
+        Es importante destacar que no se asignarán cupos de electivas a estudiantes que tengan pendientes asignaturas
+        previas a aquellas definidas en la malla curricular hasta el sexto semestre. Asegúrate de haber cumplido con los
+        prerrequisitos académicos antes de intentar matricularte en una electiva.
+      </InformationGoalds>
+      <InformationGoalds>
+        No se asignarán cupos a estudiantes que no hayan completado el proceso de inscripción en la electiva. Por lo
+        tanto, es esencial que sigas todos los pasos indicados para inscribirte en la electiva que desees cursar.
+      </InformationGoalds>
+      <InformationGoalds>
+        Ten en cuenta que no se permiten cambios de electivas una vez realizada la matrícula. Los cupos solo se asignan
+        a los estudiantes que han sido admitidos y quedaron en lista de espera, por lo que debes estar seguro de la
+        elección de tu electiva antes de inscribirte.
+      </InformationGoalds>
+    </div>
+  </section>
+  <section >
+    <div class=" flex justify-center" >
+      <h5 class="font-bold text-2xl text-primary-500">ELECTIVAS POR DEPARTAMENTO</h5>
+    </div>
+    <nav class="flex justify-around py-8">
+      <a href="#telecomunicaciones" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
+        DEPARTAMENTO DE TELECOMUNICACIONES</a
+      >
+      <a href="#telematica" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
+        DEPARTAMENTO DE TELEMATICA</a
+      >
+    </nav>
+    
+  </section>
+</Layout>
