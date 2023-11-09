@@ -18,6 +18,7 @@ module.exports = {
         "banner-about": "url(/banners/about-image.webp)",
         "banner-applicants": "url(/banners/aspirantes.webp)",
         "banner-teleco": "url(/banners/technology.webp)",
+        "banner-elective": "url(/banners/elective.webp)",
         "banner-electronic": "url(/banners/electronic.webp)",
       },
       colors: {
