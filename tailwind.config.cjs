@@ -13,12 +13,12 @@ module.exports = {
         card: "auto 1fr auto"
       },
       backgroundImage: {
-        "footer-texture": "url('/footer.jpg')",
-        "hero-pattern": "url('/footer.jpg')",
-        "old-pensum": "url(/oldpensum.png)",
+        "footer": "url(/banners/footer.webp)",
+        "banner-old-pensum": "url(/banners/oldpensum.webp)",
         "banner-about": "url(/banners/about-image.webp)",
-        "banner-applicants": "url(/banners/aspirantes.jpg)",
-        teleco: "url(/banners/banner-technology.webp)",
+        "banner-applicants": "url(/banners/aspirantes.webp)",
+        "banner-teleco": "url(/banners/technology.webp)",
+        "banner-electronic": "url(/banners/electronic.webp)",
       },
       colors: {
         primary: {
