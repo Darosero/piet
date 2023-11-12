@@ -37,25 +37,15 @@ import EnphasisCard from "../../component/curriculum-page/enphasis-card.astro";
       a su Línea de Énfasis para garantizar un progreso académico adecuado.
     </p>
   </section>
-  <section>
-    <Banner title="ÉNFASIS POR DEPARTAMENTO" image="bg-banner-about"/>
-    <nav class="flex justify-around pt-8">
-      <a href="#telecomunicaciones" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-        DEPARTAMENTO DE TELECOMUNICACIONES</a
-      >
-      <a href="#telematica" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-        DEPARTAMENTO DE TELEMÁTICA</a
-      >
-    </nav>
-  </section>
   <section class="container px-0 lg:px-12">
-    <div class="flex justify-center px-4">
-      <h4 id="telecomunicaciones" class="text-3xl font-bold text-primary-500">
+    <Banner title="ÉNFASIS POR DEPARTAMENTO" image="bg-banner-about" />
+    <div class="flex justify-center p-2">
+      <h4 class="lg:text-3xl md:text-2xl font-bold text-primary-500 text-center p-4">
         REDES Y SERVICIOS DE TELECOMUNICACIONES
       </h4>
     </div>
-    <section class="lg:pb-8">
-      <articles class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 lg:p-8">
+    <section>
+      <articles class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 md:gap-4">
         <EnphasisCard
           title="Énfasis I: Análisis y Diseño de Redes de Comunicaciones LAN/WAN"
           path="https://www.youtube.com/embed/8pPxngIUOMo?si=VQQT3ega6C1-nlGJ"
@@ -75,5 +65,4 @@ import EnphasisCard from "../../component/curriculum-page/enphasis-card.astro";
       </articles>
     </section>
   </section>
- 
 </Layout>
