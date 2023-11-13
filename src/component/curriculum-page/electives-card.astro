@@ -1,7 +1,7 @@
 ---
+import Button from "../all-pages/button.astro";
 import VideoCard from "../all-pages/video-card.astro";
-import Documents from "../init-page/documents.astro";
-const { title, path } = Astro.props;
+const { title, path, pdf } = Astro.props;
 ---
 
 <section class="grid lg:grid-cols-2 sm:grid-cols-1 border-4 border-primary-500 rounded-lg p-8 lg:gap-8 mb-8">
@@ -10,10 +10,7 @@ const { title, path } = Astro.props;
     <p>
       <slot />
     </p>
-    <button
-      class=" hidden border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-500 mx-auto hover:bg-secondary-500 hover:text-white"
-      >Más Información</button
-    >
+    <!----<Button link={pdf} isActive></Button> -->
   </div>
   <VideoCard title={"Presentación Electiva: " + title} path={path} />
 </section>

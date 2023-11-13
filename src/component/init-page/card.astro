@@ -1,5 +1,6 @@
 ---
 const { title, path, isActive } = Astro.props;
+import Button from "../all-pages/button.astro";
 ---
 <article class="grid grid-rows-card border-4 border-primary-400 rounded-lg gap-4 p-4">
   <nav class="flex justify-center">
@@ -14,11 +15,5 @@ const { title, path, isActive } = Astro.props;
   <p>
     <slot />
   </p>
-  <a
-    href={path}
-    target={isActive ? "_blank" : null}
-    class="border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-500 mx-auto hover:bg-secondary-500 hover:text-white"
-  >
-    Más información
-  </a>
+  <Button link={path} isActive={isActive}></Button>
 </article>
