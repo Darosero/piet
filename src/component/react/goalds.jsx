@@ -5,12 +5,12 @@ export default function Goalds({ title, children }) {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col w-full gap-8">
       <button
-        className="grid grid-rows-card justify-center border-4 border-primary-500 rounded-lg bg-primary-500 p-4"
+        className="grid grid-rows-card justify-center  border-4 border-primary-500 rounded-lg bg-primary-500 p-4"
         onClick={() => setIsVisible(!isVisible)}
       >
-        <h2 className="font-bold lg:text-3xl text-white">{title}</h2>
+        <h2 className="font-bold lg:text-2xl text-white">{title}</h2>
         <div className="flex justify-center stroke-white">
           <AddIcon />
         </div>

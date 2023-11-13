@@ -16,13 +16,13 @@ const { title, pathname, subjets, credits} = Astro.props;
     <NavSemester pathname={pathname} href="/semestre/IX" name="IX" />
     <NavSemester pathname={pathname} href="/semestre/X" name="X" />
   </div>
-  <div class="p-6 border-4 rounded-md border-primary-500">
+  <div class="p-4 border-4 rounded-md border-primary-500">
     <div>
       <h3 class="text-2xl font-semibold">
         {title}
       </h3>
     </div>
-    <div class="grid grid-flow-col-dense font-medium py-2">
+    <div class="grid grid-flow-col-dense font-medium py-4">
       <h4>Materias: {subjets}</h4>
       <h4>Creditos: {credits}</h4>
     </div>

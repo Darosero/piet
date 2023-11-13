@@ -6,7 +6,7 @@ const { title, reverse, image, path } = Astro.props;
 
 <div
   class={clsx(
-    "flex justify-evenly gap-12 px-0 lg:px-12",
+    "flex justify-evenly gap-8 px-0 lg:px-12",
     reverse ? "flex-col lg:flex-row-reverse" : "flex-col lg:flex-row",
   )}
 >
@@ -17,10 +17,10 @@ const { title, reverse, image, path } = Astro.props;
     </p>
     <a
       href={path}
-      class="border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-500 mx-auto hover:bg-secondary-500 hover:text-white"
+      class="border-4 border-secondary-500 rounded-xl py-2 px-4 font-semibold text-primary-900 mx-auto hover:bg-secondary-500 hover:text-white"
     >
-      Mas Información
+      Más Información
     </a>
   </div>
-  <img class="object-cover h-[300px] aspect-video rounded-md object-bottom" src={image} />
+  <img class="object-cover h-[300px] aspect-video rounded-lg object-bottom" src={image} />
 </div>

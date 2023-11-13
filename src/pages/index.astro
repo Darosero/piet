@@ -5,6 +5,7 @@ import Banner from "../component/all-pages/banner.astro";
 import StartInformations from "../component/init-page/start-informations.astro";
 import Documents from "../component/init-page/documents.astro";
 import Teachers from "../component/init-page/teachers.astro";
+import Caption from "../component/text/caption.astro";
 ---
 
 <Layout pathname="/" title="PIET UNICAUCA">
@@ -13,7 +14,7 @@ import Teachers from "../component/init-page/teachers.astro";
     <div class="flex justify-center items-center">
       <aside class="border-4 border-primary-400 rounded-md">
         <div class="p-4 bg-primary-400">
-          <h2 class="text-xl text-white font-semibold">Información del Programa</h2>
+          <h2 class="text-xl text-white font-bold">Información del Programa</h2>
         </div>
         <section class="p-4">
           <p>
@@ -40,21 +41,19 @@ import Teachers from "../component/init-page/teachers.astro";
       </aside>
     </div>
     <div class="w-full lg:w-1 mx-auto h-1 lg:h-full bg-secondary-400"></div>
-    <div class="max-w-2xl">
-      <header class="font-semibold text-2xl mb-4">
-        <h2>Sobre el programa de Ingeniería Electrónica y Telecomunicaciones</h2>
-      </header>
-      <p class="mb-2">
+    <div class="flex flex-col max-w-2xl gap-y-4">
+      <h2 class="text-2xl font-bold">Sobre el programa de Ingeniería Electrónica y Telecomunicaciones</h2>
+      <p>
         El programa de Ingeniería Electrónica y Telecomunicaciones de Unicauca lleva más de 60 años formando grandes
         profesionales en el área de las TIC (Tecnologías de la Información y las Comunicaciones), enfocando
         principalmente su uso en el ámbito de las telecomunicaciones.
       </p>
-      <p class="mb-2">
+      <p>
         Ha impactado en gran medida en los campos tecnológicos del país y ha contribuido en el mejoramiento de la
         calidad de vida de las personas a nivel regional, nacional e internacional, proporcionando soluciones eficaces
         de tipo electrónico, de telecomunicaciones y de informática.
       </p>
-      <p class="mb-2">
+      <p>
         Este programa posee la capacidad de entregar profesionales altamente calificados para la solución de
         problemáticas de TIC. Además, personal humano con excelente manejo de habilidades blandas y grandes capacidades
         de trabajo en equipo.
@@ -62,7 +61,7 @@ import Teachers from "../component/init-page/teachers.astro";
     </div>
   </section>
   <Banner title='"La innovación distingue a los líderes de los seguidores."' image="bg-banner-electronic" />
-  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-0 lg:px-12">
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 px-0 lg:px-12">
     <Documents
       title="PROYECTO EDUCATIVO INSTITUCIONAL"
       path="http://facultades.unicauca.edu.co/prlvmen/sites/default/files/procesos/PEI%20Unicauca.pdf"
@@ -216,8 +215,14 @@ import Teachers from "../component/init-page/teachers.astro";
       >
         <ul class="list-disc pl-4">
           <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (1993).</li>
-          <li>Magister en Ingeniería Eléctrica Área Sistemas Electrónicos de la Escuela Politécnica de la Universidad de Sao Paulo (1999).</li>
-          <li>Doctor en Ingeniería Eléctrica Área Sistemas Electrónicos de la Escuela Politécnica de la Universidad de Sao Paulo (2003).</li>
+          <li>
+            Magister en Ingeniería Eléctrica Área Sistemas Electrónicos de la Escuela Politécnica de la Universidad de
+            Sao Paulo (1999).
+          </li>
+          <li>
+            Doctor en Ingeniería Eléctrica Área Sistemas Electrónicos de la Escuela Politécnica de la Universidad de Sao
+            Paulo (2003).
+          </li>
         </ul>
       </Teachers>
       <Teachers
