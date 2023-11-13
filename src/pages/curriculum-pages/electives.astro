@@ -2,6 +2,8 @@
 import Layout from "../../component/all-pages/layout.astro";
 import Banner from "../../component/all-pages/banner.astro";
 import InformationGoalds from "../../component/about-page/information-goalds.astro";
+import VideoCard from "../../component/all-pages/video-card.astro";
+import ElectivesCard from "../../component/curriculum-page/electives-card.astro";
 ---
 
 <Layout pathname="/curriculum" title="Electivas">
@@ -35,19 +37,108 @@ import InformationGoalds from "../../component/about-page/information-goalds.ast
     </div>
   </section>
   <section>
-    <div class="flex justify-center">
-      <h5 class="font-bold text-2xl text-primary-500">ELECTIVAS POR DEPARTAMENTO</h5>
-    </div>
-    <nav class="flex lg:justify-around sm:flex-col  lg:flex-row py-8">
+    <Banner title="ELECTIVAS POR DEPARTAMENTO" image="bg-banner-about" />
+    <nav class="grid lg:grid-cols-3 sm:grid-col-1 lg:gap-4 justify-items-center lg:py-8">
       <a href="#telecomunicaciones" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-        DEPARTAMENTO DE TELECOMUNICACIONES</a
+        DTO DE TELECOMUNICACIONES</a
       >
       <a href="#telematica" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-        DEPARTAMENTO DE TELEMÁTICA</a
+        DTO DE TELEMÁTICA</a
       >
       <a href="#telematica" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-        DEPARTAMENTO DE SISTEMAS</a
-      >
+        TODOS LOS DEPARTAMENTOS
+      </a>
     </nav>
+  </section>
+  <section class="container px-0 lg:px-12">
+    <div class="flex justify-center p-2">
+      <h4 id="telecomunicaciones" class="lg:text-3xl md:text-2xl font-bold text-primary-500 text-center p-4">
+        DEPARTAMENTO DE TELECOMUNICACIONES
+      </h4>
+    </div>
+    <section>
+      <ElectivesCard
+        title="Sistemas Inalámbricos en la Comunicación de Datos"
+        path="https://www.youtube.com/embed/UEHXi2nWerc?si=rocM0Hb7KXfC-ej0"
+      >
+        ¿Te fascina la idea de conectar al mundo a través de ondas invisibles? Destaca tu creatividad para crear
+        soluciones tecnológicas innovadoras. Convierte tu pasión en una carrera exitosa y brillante
+      </ElectivesCard>
+      <ElectivesCard
+        title="Redes de Nueva Generación - NGN"
+        path="https://www.youtube.com/embed/Q3vqGAlT5sw?si=Q_euew-AfbZnEftM"
+      >
+        ¿Sabes hacia dónde están evolucionando las redes de telecomunicaciones y cómo soportan los nuevos servicios y
+        plataformas? Si quieres conocer sobre virtualización, SDN, o Machine Learning enfocado a redes de
+        telecomunicaciones ¡esta electiva te encantará!
+      </ElectivesCard>
+      <ElectivesCard
+        title="Technologies for Smart Cities"
+        path="https://www.youtube.com/embed/nm87VPANFZY?si=Ck8dtdcWL2n14yDH"
+      >
+        ¿Quieres ser parte del futuro de las ciudades? La electiva "Technologies for Smart Cities" te enseñará cómo las
+        tecnologías pueden ayudar a crear ciudades más sostenibles, equitativas y eficientes.
+      </ElectivesCard>
+      <ElectivesCard
+        title="Seguridad en Redes de Información"
+        path="https://www.youtube.com/embed/h_hGB0QneEE?si=CmonBkLClo4syq8b"
+      >
+        ¿Quieres proteger la información de tu organización de las amenazas cibernéticas? La electiva "Seguridad de la
+        Información" te enseñará cómo hacerlo, en ella aprenderás sobre las últimas técnicas y medidas de seguridad para
+        proteger la información en redes, sistemas y aplicaciones.
+      </ElectivesCard>
+      <ElectivesCard
+        title="Evolución a Sistemas de Comunicaciones Móviles de 4G: LTE"
+        path="https://www.youtube.com/embed/STilGIMlqUE?si=3oKCu0t4PT02s4NL"
+      >
+        La electiva "Sistemas de Comunicaciones Móviles" te sumergirá en el fascinante mundo de las últimas tecnologías,
+        explorando la evolución de las tecnologías móviles, el rendimiento de las redes LTE, arquitecturas y técnicas de
+        procesamiento en LTE, y los avances de 4G a 5G en los sistemas de comunicaciones móviles.
+      </ElectivesCard>
+    </section>
+  </section>
+  <section class="container px-0 lg:px-12">
+    <div class="flex justify-center p-2">
+      <h4 id="telematica" class="lg:text-3xl md:text-2xl font-bold text-primary-500 text-center p-4">
+        DEPARTAMENTO DE TELEMÁTICA
+      </h4>
+    </div>
+    <section>
+      <ElectivesCard
+        title=" Desarrollo de Aplicaciones para Dispositivos Moviles:"
+        path="https://www.youtube.com/embed/NSATdICxO5M?si=nJHY90nKttCNaXMz"
+      >
+        Explora el fascinante ámbito del desarrollo móvil con la electiva "Desarrollo de Aplicaciones para Dispositivos
+        Móviles". Aprende desde los conceptos fundamentales hasta la implementación en plataformas como Android e iOS.
+        Descubre tu potencial y abre las puertas a un futuro lleno de posibilidades.
+      </ElectivesCard>
+      <ElectivesCard
+        title="TIC en Salud y Salud Movil"
+        path="https://www.youtube.com/embed/KijPm2s-Usk?si=hJ_ispNxfcqC_qd9"
+      >
+        La electiva "TIC en Salud y Salud Móvil” te enseñará cómo hacerlo, en este curso, aprenderás las raíces
+        históricas de las TIC en la salud, las innovaciones más recientes, como la inteligencia artificial para
+        diagnósticos, el impacto de las TIC en la atención médica y finalmente la salud móvil y sus aplicaciones
+      </ElectivesCard>
+      <ElectivesCard
+        title="Electiva Plataformas Ubicuas IoT"
+        path="https://www.youtube.com/embed/yUkR0F_28mE?si=H6m3UTO-bvIhgTTA"
+      >
+        Te interesa explorar las últimas plataformas de Internet de las cosas (IoT)? La electiva "Plataformas Ubicuas
+        IoT" te sumergirá en los conceptos fundamentales de IoT, ofreciendo un análisis exhaustivo de las diversas
+        plataformas disponibles y proporcionándote las habilidades necesarias para implementar y gestionar eficazmente
+        plataformas IoT.
+      </ElectivesCard>
+
+      <ElectivesCard
+        title="Desarrollo de Aplicaciones Web"
+        path="https://www.youtube.com/embed/Z_JUzKffjzE?si=Dm8DlaArwo6i9nvB"
+      >
+        ¿Quieres ser parte del futuro de la web? La electiva "Desarrollo de Aplicaciones Web" te enseñará todo lo
+        necesario para crear aplicaciones web de alta calidad, incluyendo conceptos fundamentales del desarrollo web,
+        gestión de bases de datos, desarrollo front-end y back-end, así como los lenguajes de programación más
+        populares. ¡Prepárate para sumergirte en el emocionante mundo del desarrollo web!
+      </ElectivesCard>
+    </section>
   </section>
 </Layout>
