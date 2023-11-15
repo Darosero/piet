@@ -18,21 +18,22 @@ import Card from "../../component/init-page/card.astro";
     </p>
   </section>
   <div class="w-full h-1 mx-auto bg-primary-400"></div>
-  <section class="grid lg:grid-cols-2 grid-rows-none gap-8 px-0 lg:px-12">
-    <h2 class="col-span-2 font-bold text-lg md:text-2xl text-primary-500 text-center">TRABAJO DE INVESTIGACIÓN</h2>
-    <img class="rounded-lg w-full h-[300px]" src="../../../public/images/investigation.webp" />
-    <div class="flex items-center">
-      <p>
-        Se denomina trabajo de investigación al diseño y ejecución de un plan de trabajo orientado al desarrollo de
-        habilidades investigativas del estudiante, el cual lo realiza en busca de aportar a la descripción, explicación,
-        comprensión o solución de problemas teóricos o prácticos, propios de su campo de formación. En el caso de las
-        ingenierías, involucra Investigación, Desarrollo e Innovación (I+D+i). <strong
-          >El Trabajo de Investigación podrá ejecutarse de forma individual o en grupo de hasta dos (2) estudiantes
-        </strong>, dependiendo del alcance del trabajo a realizar. Para esta modalidad de grado se debe realizar el
-        siguiente proceso:
-      </p>
-    </div>
-   
+  <section class="flex flex-col px-0 lg:px-12 lg:gap-8 gap-4">
+    <h2 class="font-bold text-lg md:text-2xl text-primary-500 text-center">TRABAJO DE INVESTIGACIÓN</h2>
+    <section class="flex lg:flex-row flex-col-reverse justify-evenly gap-8">
+      <img class="object-cover h-[300px] aspect-video rounded-lg object-bottom" src="../../../public/images/investigation.webp" />
+      <div class="flex items-center p-2">
+        <p>
+          Se denomina trabajo de investigación al diseño y ejecución de un plan de trabajo orientado al desarrollo de
+          habilidades investigativas del estudiante, el cual lo realiza en busca de aportar a la descripción,
+          explicación, comprensión o solución de problemas teóricos o prácticos, propios de su campo de formación. En el
+          caso de las ingenierías, involucra Investigación, Desarrollo e Innovación (I+D+i). <strong
+            >El Trabajo de Investigación podrá ejecutarse de forma individual o en grupo de hasta dos (2) estudiantes
+          </strong>, dependiendo del alcance del trabajo a realizar. Para esta modalidad de grado se debe realizar el
+          siguiente proceso:
+        </p>
+      </div>
+    </section>
   </section>
   <section class="grid px-0 lg:px-12 gap-8">
     <ModalitiesContent
