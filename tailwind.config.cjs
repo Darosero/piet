@@ -20,6 +20,7 @@ module.exports = {
         "banner-teleco": "url(/banners/technology.webp)",
         "banner-elective": "url(/banners/elective.webp)",
         "banner-electronic": "url(/banners/electronic.webp)",
+        "banner-modalities":"url(/banners/modalidades.webp)",
       },
       colors: {
         primary: {

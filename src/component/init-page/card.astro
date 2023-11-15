@@ -1,5 +1,5 @@
 ---
-const { title, path, isActive } = Astro.props;
+const { title, path, isActive, text} = Astro.props;
 import Button from "../all-pages/button.astro";
 ---
 <article class="grid grid-rows-card border-4 border-primary-400 rounded-lg gap-4 p-4">
@@ -15,5 +15,5 @@ import Button from "../all-pages/button.astro";
   <p>
     <slot />
   </p>
-  <Button link={path} isActive={isActive}></Button>
+  <Button link={path} isActive={isActive} text={text}></Button>
 </article>

@@ -1,0 +1,14 @@
+---
+const { title,textbutton, link, isActive}= Astro.props;
+import Button from "../all-pages/button.astro";
+---
+
+<details>
+  <summary class="border-4 border-primary-500 rounded-xl py-2 px-4 font-semibold text-primary-900 text-lg md:text-xl">{title}</summary>
+  <article class="flex justify-items-start flex-col p-0 md:p-8 lg:mx-40">
+    <slot/>
+    <div class=" my-2 md:my-4">
+      <Button text={textbutton} link={link} isActive={isActive}</Button>
+    </div>
+  </article>
+</details>

@@ -1,0 +1,165 @@
+---
+import Banner from "../../component/all-pages/banner.astro";
+import Button from "../../component/all-pages/button.astro";
+import Layout from "../../component/all-pages/layout.astro";
+import List from "../../component/all-pages/list.astro";
+import ModalitiesContent from "../../component/curriculum-page/modalities-content.astro";
+import Card from "../../component/init-page/card.astro";
+---
+
+<Layout pathname="/curriculum" title="Modalidades de Grado">
+  <Banner title="Modalidades de Grado" image="bg-banner-modalities" />
+  <section class="px-0 lg:px-12">
+    <p class="lg:mx-40">
+      El Consejo de la Facultad de Ingeniería Electrónica y Telecomunicaciones establece el Reglamento para las
+      modalidades de <strong>Trabajo de Investigación</strong> y <strong>Práctica Profesional</strong> aprobadas para
+      los programas de Pregrado de Ingeniería de Sistemas, Ingeniería en Automática Industrial e Ingeniería Electrónica
+      y Telecomunicaciones, mediante Resolución 8.4.2– 90.14/249 del 9 de junio de 2017.
+    </p>
+  </section>
+  <div class="w-full h-1 mx-auto bg-primary-400"></div>
+  <section class="grid lg:grid-cols-2 grid-rows-none gap-8 px-0 lg:px-12">
+    <h2 class="col-span-2 font-bold text-lg md:text-2xl text-primary-500 text-center">TRABAJO DE INVESTIGACIÓN</h2>
+    <img class="rounded-lg w-full h-[300px]" src="../../../public/images/investigation.webp" />
+    <div class="flex items-center">
+      <p>
+        Se denomina trabajo de investigación al diseño y ejecución de un plan de trabajo orientado al desarrollo de
+        habilidades investigativas del estudiante, el cual lo realiza en busca de aportar a la descripción, explicación,
+        comprensión o solución de problemas teóricos o prácticos, propios de su campo de formación. En el caso de las
+        ingenierías, involucra Investigación, Desarrollo e Innovación (I+D+i). <strong
+          >El Trabajo de Investigación podrá ejecutarse de forma individual o en grupo de hasta dos (2) estudiantes
+        </strong>, dependiendo del alcance del trabajo a realizar. Para esta modalidad de grado se debe realizar el
+        siguiente proceso:
+      </p>
+    </div>
+   
+  </section>
+  <section class="grid px-0 lg:px-12 gap-8">
+    <ModalitiesContent
+      title="PROPUESTA DE TRABAJO DE GRADO"
+      link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
+      textbutton="Formatos"
+      isActive
+    >
+      <p>
+        Corresponde al documento que describe el título y los objetivos que permitan establecer la viabilidad de abordar
+        una temática como posible Trabajo de Grado y que ésta es pertinente para las áreas de formación del estudiante.
+        La idea será presentada por el profesor al respectivo Comité del programa al que pertenezca el estudiante en el <strong
+          >Formato TI-A</strong
+        >
+      </p>
+      <List>
+        La propuesta podrá tener un Co-director y/o asesor del Trabajo de Grado, quien puede pertenecer o no a la
+        Universidad del Cauca.
+      </List>
+      <List>
+        El Comité de Programa dispondrá de un máximo de diez (10) días hábiles para emitir el respectivo concepto sobre
+        la propuesta de trabajo de grado y remitirlo en el <strong>Formato TI-A</strong> al profesor responsable de la
+        idea de trabajo de grado.
+      </List>
+    </ModalitiesContent>
+    <ModalitiesContent
+      title="ANTEPROYECTO"
+      link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
+      textbutton="Formatos"
+      isActive
+    >
+      Se entiende por Anteproyecto el documento que elabora(n) el(los) estudiante(s), con la orientación del profesor y
+      en el que se identifica y precisa entre otras, la idea que constituye las características esenciales del Trabajo
+      de Grado y los objetivos propuestos.El documento de Anteproyecto y el aval del Comité de Programa <strong
+        >(Formato TI-A)</strong
+      >
+       deben presentarse por parte del Director del Trabajo de Grado al Departamento al cual se encuentra adscrito:
+      <List>
+        El Departamento asignará a dos (2) profesores (o a estudiantes de Maestría o Doctorado dirigidos por profesores
+        del departamento), quienes dispondrán de un máximo de diez (10) días hábiles para su evaluación. El informe de
+        evaluación será remitido al Jefe de Departamento
+      </List>
+      <List>
+        El Jefe de Departamento remitirá el informe de evaluación <strong>(Formato TI-B)</strong> junto con las
+        observaciones del anteproyecto al Director para las correcciones y ajustes respectivos.
+      </List>
+      <List>
+        Una vez realizadas y verificadas las correcciones y ajustes indicados por los evaluadores del anteproyecto, el
+        Director remitirá en un plazo máximo de diez (10) días hábiles, una copia del mismo junto con los formatos de
+        evaluación <strong>(Formato TI-B)</strong>.
+      </List>
+      <List>
+        Una vez evaluado el anteproyecto por el Departamento, el Jefe de Departamento lo remitirá al Consejo de Facultad
+        para su aprobación (<strong>Formato TI-C</strong> y <strong>Formato TI-B</strong>).
+      </List>
+    </ModalitiesContent>
+    <ModalitiesContent
+      title="TRABAJO DE GRADO"
+      link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
+      textbutton="Formatos"
+      isActive
+    >
+      El desarrollo del trabajo de grado consiste en la ejecución de las actividades definidas en el anteproyecto y
+      culmina con la redacción de un documento final en el cual se describen el proceso de desarrollo del trabajo de
+      investigación, sus resultados y conclusiones, cumpliendo las condiciones de entrega establecidas en el
+      anteproyecto. Debe tener en cuenta:
+      <List>
+        El Consejo de Facultad generará la resolución de aprobación del Anteproyecto y a partir de su notificación
+        al(los) estudiante(s), se considerará(n) oficialmente asignado(s) a dicho trabajo de grado y será válido
+        académicamente como tal. Para dicha aprobación, el(los) estudiante(s) deberá(n) tener matriculado Trabajo de
+        Grado. La aprobación de un Anteproyecto compromete al respectivo Departamento a asignar los recursos
+        establecidos en dicho documento.
+      </List>
+      <List>
+        El tiempo máximo para la terminación del trabajo de grado e inicio de los trámites de sustentación es de nueve
+        (9) meses, contados a partir de su aprobación por parte del Consejo de Facultad.
+      </List>
+    </ModalitiesContent>
+    <ModalitiesContent
+      title="SUSTENTACIÓN DE TRABAJO DE GRADO"
+      link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
+      textbutton="Formatos"
+      isActive
+    >
+      <p>
+        Para el inicio del proceso de sustentación, el documento de trabajo de grado y sus anexos serán remitidos por el
+        Director al Consejo de Facultad cuando haya cumplido las condiciones de entrega establecidas en el Anteproyecto
+        <strong>(Formato TI-E)</strong>.
+      </p>
+      <List>
+        El tiempo mínimo establecido para el inicio del proceso de sustentación del trabajo de grado es de tres (3)
+        meses contados a partir de su aprobación por parte del Consejo de Facultad. No se autorizarán trámites de
+        sustentación antes del cumplimiento de dicho plazo.
+      </List>
+      <List>
+        El (los) estudiante(s) deberán iniciar los trámites de sustentación del trabajo de grado dentro del tiempo
+        máximo establecido para su terminación, de lo contrario el trabajo de grado se considerará NO APROBADO y el
+        (los) estudiante(s) deberá(n) iniciar el trámite para la aprobación de un nuevo Trabajo de Grado por segunda y
+        única oportunidad.
+      </List>
+      <List>
+        El Consejo de Facultad asignará dos (2) jurados y establecerá las fechas para realizar la sustentación del
+        trabajo de grado, siempre y cuando el estudiante se encuentre a Paz y Salvo financiera y académicamente <strong
+          >(Formato TI-F)</strong
+        >. Los Jurados dispondrán de un tiempo máximo de quince (15) días hábiles para su evaluación.
+      </List>
+      <List>Todo Trabajo de Grado deberá efectuar una sesión de sustentación</List>
+      <p>Después de la sustentación el trabajo de grado puede ser:</p>
+      <List>
+        <strong>APROBADO:</strong> El o los estudiantes deberán tener en cuenta las fechas y documentos necesarios para
+        su graduación
+      </List>
+      <List>
+        <strong>APROBADO CON OBSERVACIONES:</strong> Por lo cual se concertarán los ajustes entre el estudiante y el
+        jurado en un plazo de hasta 10 días hábiles. En caso de no cumplir con el plazo establecido, el trabajo se
+        calificará como APLAZADO con todas las consecuencias a que haya lugar.
+      </List>
+      <List>
+        <strong>APLAZADO:</strong> Si existen observaciones de fondo, el trabajo se calificará como APLAZADO y se
+        concertarán los ajustes con el director, el asesor y el estudiante, para efectuar una nueva sesión de
+        sustentación en un plazo de hasta 60 días calendario.No se podrán realizar cambios en sus objetivos si el
+        trabajo de grado fue Aplazado. Solo se permite realizar ajustes en el alcance de los mismos si los Jurados lo
+        consideran pertinente. En este caso, el Comité de Programa solo tendrá en cuenta el ajuste de objetivos con el
+        visto bueno de los jurados.En caso que no resulte aceptado en la segunda sesión de sustentación, se considerará
+        como NO APROBADO y el estudiante deberá iniciar el trámite para un nuevo trabajo de grado.
+      </List>
+      <List><strong>NO APROBADO:</strong> El estudiante deberá iniciar el trámite para un nuevo trabajo de grado.</List>
+    </ModalitiesContent>
+  </section>
+</Layout>

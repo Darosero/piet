@@ -1,7 +1,7 @@
 ---
 import clsx from "clsx";
 import Button from "../all-pages/button.astro";
-const { title, reverse, image, path } = Astro.props;
+const { title, reverse, image, path, text } = Astro.props;
 ---
 
 <div
@@ -15,7 +15,7 @@ const { title, reverse, image, path } = Astro.props;
     <p class="max-w-lg mx-auto">
       <slot />
     </p>
-    <Button link={path} ></Button>
+    <Button link={path} text={text}></Button>
   </div>
   <img class="object-cover h-[300px] aspect-video rounded-lg object-bottom" src={image} />
 </div>
