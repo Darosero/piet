@@ -2,6 +2,7 @@
 import List from "../component/all-pages/list.astro";
 import Banner from "../component/all-pages/banner.astro";
 import Layout from "../component/all-pages/layout.astro";
+import Img from "../component/all-pages/img.astro";
 ---
 
 <Layout pathname="/professional" title="Perfil Profesional">
@@ -15,7 +16,8 @@ import Layout from "../component/all-pages/layout.astro";
           este Programa Académico:
         </p>
       </div>
-      <img src="/images/history.webp" class="rounded-md object-cover object-bottom w-full h-[250px]" />
+      <Img src="/images/history.webp"></Img>
+     
     </section>
     <section class="grid lg:grid-cols-2 md:grid-rows">
       <List>

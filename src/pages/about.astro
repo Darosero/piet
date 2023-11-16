@@ -5,13 +5,12 @@ import Banner from "../component/all-pages/banner.astro";
 import InformationMVO from "../component/react/information-mvo-about";
 import List from "../component/all-pages/list.astro";
 import Goalds from "../component/react/goalds.jsx";
+import Img from "../component/all-pages/img.astro";
 ---
 
 <Layout pathname="/about" title="Acerca del Programa">
   <section class="grid grid-rows-[auto,auto] lg:grid-cols-2 gap-12 px-0 lg:px-12">
-    <div>
-      <img src="/images/history.webp" class="rounded-lg object-cover object-bottom w-full h-[300px]" />
-    </div>
+    <Img src="/images/history.webp"></Img>  
     <div class="flex flex-col justify-center gap-y-4">
       <h2 class="text-2xl font-bold">RESEÑA HISTÓRICA</h2>
       <p>

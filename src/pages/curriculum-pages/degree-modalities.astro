@@ -1,10 +1,9 @@
 ---
 import Banner from "../../component/all-pages/banner.astro";
-import Button from "../../component/all-pages/button.astro";
 import Layout from "../../component/all-pages/layout.astro";
 import List from "../../component/all-pages/list.astro";
 import ModalitiesContent from "../../component/curriculum-page/modalities-content.astro";
-import Card from "../../component/init-page/card.astro";
+import Img from "../../component/all-pages/img.astro";
 ---
 
 <Layout pathname="/curriculum" title="Modalidades de Grado">
@@ -21,7 +20,7 @@ import Card from "../../component/init-page/card.astro";
   <section class="flex flex-col px-0 lg:px-12 lg:gap-8 gap-4">
     <h2 class="font-bold text-lg md:text-2xl text-primary-500 text-center">TRABAJO DE INVESTIGACIÓN</h2>
     <section class="flex lg:flex-row flex-col-reverse justify-evenly gap-8">
-      <img class="object-cover h-[300px] aspect-video rounded-lg object-bottom" src="/images/investigation.webp" />
+      <Img src="/images/investigation.webp"/>
       <div class="flex items-center p-2">
         <p>
           Se denomina trabajo de investigación al diseño y ejecución de un plan de trabajo orientado al desarrollo de
