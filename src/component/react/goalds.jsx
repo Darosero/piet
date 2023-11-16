@@ -15,7 +15,7 @@ export default function Goalds({ title, children }) {
           <AddIcon />
         </div>
       </button>
-      {isVisible ? <p className="p-4 lg:mx-52 border-4 rounded-lg border-primary-500/20">{children}</p> : null}
+      {isVisible ? <p className="p-4 lg:mx-40 border-4 rounded-lg border-primary-500/20">{children}</p> : null}
     </div>
   );
 }
