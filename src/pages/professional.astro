@@ -3,11 +3,13 @@ import List from "../component/all-pages/list.astro";
 import Banner from "../component/all-pages/banner.astro";
 import Layout from "../component/all-pages/layout.astro";
 import Img from "../component/all-pages/img.astro";
+import LayoutTextImg from "../component/all-pages/layout-text-img.astro";
+import LayoutCol2 from "../component/all-pages/layout-col-2.astro";
 ---
 
 <Layout pathname="/professional" title="Perfil Profesional">
-  <section class="flex flex-col rounded-lg px-0 lg:px-12 gap-8">
-    <section class="grid grid-rows-[auto,auto] lg:grid-cols-2 gap-8">
+  <section>
+    <LayoutTextImg>
       <div class="flex flex-col justify-center gap-4 items-center">
         <h4 class="text-2xl font-bold text-primary-500">PERFIL PROFESIONAL</h4>
         <p>
@@ -16,10 +18,9 @@ import Img from "../component/all-pages/img.astro";
           este Programa Académico:
         </p>
       </div>
-      <Img src="/images/history.webp"></Img>
-     
-    </section>
-    <section class="grid lg:grid-cols-2 md:grid-rows">
+      <Img src="/images/history.webp" />
+    </LayoutTextImg>
+    <LayoutCol2>
       <List>
         Se caracterizarán por mantenerse vigentes como profesionales, mediante el cultivo de su espíritu científico y la
         búsqueda permanente del saber, como también, a través de una visión de futuro de los campos de la Electrónica,
@@ -53,7 +54,7 @@ import Img from "../component/all-pages/img.astro";
       <List>Se caracterizarán por tener dominio del discurso oral y escrito.</List>
 
       <List>Estarán formados para el trabajo, la acción y los altos propósitos.</List>
-    </section>
-    <Banner title="“El mejor modo de predecir el futuro es creándolo”. Peter Drucker" image="bg-banner-electronic" />
+    </LayoutCol2>
   </section>
+  <Banner title="“El mejor modo de predecir el futuro es creándolo”. Peter Drucker" image="bg-banner-electronic" />
 </Layout>

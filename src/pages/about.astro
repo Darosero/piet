@@ -6,10 +6,13 @@ import InformationMVO from "../component/react/information-mvo-about";
 import List from "../component/all-pages/list.astro";
 import Goalds from "../component/react/goalds.jsx";
 import Img from "../component/all-pages/img.astro";
+import LayoutTextImg from "../component/all-pages/layout-text-img.astro";
+import LayoutCol2 from "../component/all-pages/layout-col-2.astro";
+import Layout2 from "../component/all-pages/layout2.astro";
 ---
 
 <Layout pathname="/about" title="Acerca del Programa">
-  <section class="grid grid-rows-[auto,auto] lg:grid-cols-2 gap-12 px-0 lg:px-12">
+  <LayoutTextImg>
     <Img src="/images/history.webp"></Img>  
     <div class="flex flex-col justify-center gap-y-4">
       <h2 class="text-2xl font-bold">RESEÑA HISTÓRICA</h2>
@@ -20,11 +23,11 @@ import Img from "../component/all-pages/img.astro";
         Universitario Nacional y refrendado por el Ministerio de Educación Nacional el 19 de diciembre de 1960.
       </p>
     </div>
-  </section>
+  </LayoutTextImg>
   <div class="w-full h-1 bg-secondary-400"></div>
-  <section class="flex flex-col gap-4 px-0 lg:px-12">
-    <h2 class="text-2xl font-bold">ESTRUCTURA CURRICULAR</h2>
-    <div class="grid grid-flow-row lg:grid-cols-2 gap-4">
+  <section class="flex flex-col gap-4" >
+    <h2 class="text-2xl font-bold px-0 lg:px-12">ESTRUCTURA CURRICULAR</h2>
+    <LayoutTextImg>
       <Information title="Área Común: ">
         Se fundamenta en la ciencia y la tecnología. Tiene como objetivo introducir al estudiante en la compatibilidad
         científica de las ciencias formales, las ciencias naturales y las ciencias humanas y sociales. Además, provee al
@@ -49,10 +52,10 @@ import Img from "../component/all-pages/img.astro";
         problemas críticos del desarrollo regional y nacional, preparándolo para entender su entorno social y actuar
         adecuadamente en este.
       </Information>
-    </div>
+    </LayoutTextImg>
   </section>
   <Banner title='"Dime y lo olvido, enséñame y lo recuerdo, involúcrame y lo aprendo"' image="bg-banner-about" />
-  <section class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 px-0 lg:px-12">
+  <LayoutCol2>
     <InformationMVO client:load title="MISIÓN" bgColor="bg-primary-400">
       Lograr una verdadera integración con la sociedad y una estrecha relación con la industria del sector electrónico,
       de las telecomunicaciones e informático, con el fin de contribuir significativamente al mejoramiento de la calidad
@@ -63,8 +66,8 @@ import Img from "../component/all-pages/img.astro";
       estudiantes de pregrado en los campos de la electrónica, los sistemas de telecomunicaciones y los sistemas
       telemáticos.
     </InformationMVO>
-  </section>
-  <section class="px-0 lg:px-12">
+  </LayoutCol2>
+  <Layout2>
     <Goalds client:load title="OBJETIVOS">
       <List>
         Estimular la participación de los estudiantes en eventos académicos, culturales y deportivos que contribuyan a
@@ -107,7 +110,7 @@ import Img from "../component/all-pages/img.astro";
         compromiso con la calidad y la cultura de autoevaluación del Programa de Ingeniería Electrónica y
         Telecomunicaciones.
       </List>
-      <p class="p-2">
+      <p>
         Además, teniendo en cuenta que este Programa Académico ha sido concebido como un espacio orientado al impulso de
         la Investigación y el Desarrollo (I+D) en el sector de la Electrónica, las Telecomunicaciones y la Informática,
         con el propósito de brindar a la región y al país respuestas a sus necesidades en el marco de la sociedad del
@@ -141,6 +144,6 @@ import Img from "../component/all-pages/img.astro";
         Telecomunicaciones y la Informática.
       </List>
     </Goalds>
-  </section>
+  </Layout2>
  
 </Layout>

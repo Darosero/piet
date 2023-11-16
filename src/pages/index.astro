@@ -5,65 +5,69 @@ import Banner from "../component/all-pages/banner.astro";
 import StartInformations from "../component/init-page/start-informations.astro";
 import Documents from "../component/init-page/documents.astro";
 import Teachers from "../component/init-page/teachers.astro";
+import Layout2 from "../component/all-pages/layout2.astro";
+import LayoutCol3 from "../component/all-pages/layout-col-3.astro";
 ---
 
 <Layout pathname="/" title="PIET UNICAUCA">
   <StartInformations />
-  <section class="grid grid-rows-[auto,auto,auto] lg:grid-rows-none lg:grid-cols-[1fr,auto,1fr] gap-12 px-0 lg:px-12">
-    <div class="flex justify-center items-center">
-      <aside class="border-4 border-primary-400 rounded-md">
-        <div class="p-4 bg-primary-400">
-          <h2 class="text-xl text-white font-bold">Información del Programa</h2>
-        </div>
-        <section class="p-4">
-          <p>
-            <strong class="font-bold text-lg">Título que otorga:</strong>
-             Ingeniero en Electrónica y Telecomunicaciones.
-          </p>
-          <p>
-            <strong class="font-bold text-lg"> Jornada:</strong>
-             Diurna.
-          </p>
-          <p>
-            <strong class="font-bold text-lg">Duración:</strong>
-             Diez semestres.
-          </p>
-          <p>
-            <strong class="font-bold text-lg">Lugar:</strong>
-             Popayán (Cauca).
-          </p>
-          <p>
-            <strong class="font-bold text-lg">Horarios de atención:</strong>
-             Lunes a viernes de 8:00 a.m. a 12:00 pm y de 2:00 p.m. a 6:00 p.m.
-          </p>
-        </section>
-      </aside>
-    </div>
-    <div class="w-full lg:w-1 mx-auto h-1 lg:h-full bg-secondary-400"></div>
-    <div class="flex flex-col max-w-2xl gap-y-4">
-      <h2 class="text-2xl font-bold">Sobre el programa de Ingeniería Electrónica y Telecomunicaciones</h2>
-      <p>
-        El programa de Ingeniería Electrónica y Telecomunicaciones de Unicauca lleva más de 60 años formando grandes
-        profesionales en el área de las TIC (Tecnologías de la Información y las Comunicaciones), enfocando
-        principalmente su uso en el ámbito de las telecomunicaciones.
-      </p>
-      <p>
-        Ha impactado en gran medida en los campos tecnológicos del país y ha contribuido en el mejoramiento de la
-        calidad de vida de las personas a nivel regional, nacional e internacional, proporcionando soluciones eficaces
-        de tipo electrónico, de telecomunicaciones y de informática.
-      </p>
-      <p>
-        Este programa posee la capacidad de entregar profesionales altamente calificados para la solución de
-        problemáticas de TIC. Además, personal humano con excelente manejo de habilidades blandas y grandes capacidades
-        de trabajo en equipo.
-      </p>
-    </div>
-  </section>
+  <Layout2>
+    <section class="grid grid-rows-[auto,auto,auto] lg:grid-rows-none lg:grid-cols-[1fr,auto,1fr] gap-12">
+      <div class="flex justify-center items-center">
+        <aside class="border-4 border-primary-400 rounded-md">
+          <div class="p-4 bg-primary-400">
+            <h2 class="text-xl text-white font-bold">Información del Programa</h2>
+          </div>
+          <section class="p-4">
+            <p>
+              <strong class="font-bold text-lg">Título que otorga:</strong>
+               Ingeniero en Electrónica y Telecomunicaciones.
+            </p>
+            <p>
+              <strong class="font-bold text-lg"> Jornada:</strong>
+               Diurna.
+            </p>
+            <p>
+              <strong class="font-bold text-lg">Duración:</strong>
+               Diez semestres.
+            </p>
+            <p>
+              <strong class="font-bold text-lg">Lugar:</strong>
+               Popayán (Cauca).
+            </p>
+            <p>
+              <strong class="font-bold text-lg">Horarios de atención:</strong>
+               Lunes a viernes de 8:00 a.m. a 12:00 pm y de 2:00 p.m. a 6:00 p.m.
+            </p>
+          </section>
+        </aside>
+      </div>
+      <div class="w-full lg:w-1 mx-auto h-1 lg:h-full bg-secondary-400"></div>
+      <div class="flex flex-col max-w-2xl gap-y-4">
+        <h2 class="text-2xl font-bold">Sobre el programa de Ingeniería Electrónica y Telecomunicaciones</h2>
+        <p>
+          El programa de Ingeniería Electrónica y Telecomunicaciones de Unicauca lleva más de 60 años formando grandes
+          profesionales en el área de las TIC (Tecnologías de la Información y las Comunicaciones), enfocando
+          principalmente su uso en el ámbito de las telecomunicaciones.
+        </p>
+        <p>
+          Ha impactado en gran medida en los campos tecnológicos del país y ha contribuido en el mejoramiento de la
+          calidad de vida de las personas a nivel regional, nacional e internacional, proporcionando soluciones eficaces
+          de tipo electrónico, de telecomunicaciones y de informática.
+        </p>
+        <p>
+          Este programa posee la capacidad de entregar profesionales altamente calificados para la solución de
+          problemáticas de TIC. Además, personal humano con excelente manejo de habilidades blandas y grandes
+          capacidades de trabajo en equipo.
+        </p>
+      </div>
+    </section>
+  </Layout2>
   <Banner title='"La innovación distingue a los líderes de los seguidores."' image="bg-banner-electronic" />
-  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-0 lg:px-12">
+  <LayoutCol3>
     <Documents
       title="PROYECTO EDUCATIVO INSTITUCIONAL"
-      path="http://facultades.unicauca.edu.co/prlvmen/sites/default/files/procesos/PEI%20Unicauca.pdf"
+      path="https://www.unicauca.edu.co/versionP/sites/default/files/files/pei-unicauca-ok.pdf"
       description="Descargar PEI"
     />
     <Documents
@@ -76,9 +80,9 @@ import Teachers from "../component/init-page/teachers.astro";
       path="https://www.unicauca.edu.co/docs/acuerdos/reglamento_estudiantil.pdf"
       description="Descargar el reglamento estudiantil"
     />
-  </section>
+  </LayoutCol3>
   <Banner title='"El aprendizaje es un tesoro que te seguirá a donde vayas"' image="bg-banner-teleco" />
-  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-0 lg:px-12">
+  <LayoutCol3>
     <Card title="ELECTIVAS" path="/curriculum-pages/electives" text="Más Información">
       Las electivas del programa de ingeniería electrónica y telecomunicaciones le permite al estudiante seleccionar las
       áreas de interés de las cuales desea profundizar sus conocimientos.
@@ -111,7 +115,7 @@ import Teachers from "../component/init-page/teachers.astro";
       filosofía, metas y enfoque pedagógico. Conoce cómo buscamos formar individuos íntegros y contribuir al desarrollo
       de la sociedad a través de nuestra propuesta educativa.
     </Card>
-  </section>
+  </LayoutCol3>
   <Banner title="DOCENTES DEL PROGRAMA" image="bg-primary-500" />
   <section class="w-full overflow-x-auto lg:pb-8">
     <section class="flex flex-row gap-8">
@@ -178,7 +182,6 @@ import Teachers from "../component/init-page/teachers.astro";
           <li>Doctor(c) en Ciencias de la Electrónica de la Universidad del Cauca (2022).</li>
         </ul>
       </Teachers>
-
       <Teachers
         name="José Giovanny López Perafán"
         type="catedra"

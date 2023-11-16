@@ -4,22 +4,24 @@ import Layout from "../../component/all-pages/layout.astro";
 import List from "../../component/all-pages/list.astro";
 import ModalitiesContent from "../../component/curriculum-page/modalities-content.astro";
 import Img from "../../component/all-pages/img.astro";
+import LayoutTextImg from "../../component/all-pages/layout-text-img.astro";
+import Layout2 from "../../component/all-pages/layout2.astro";
 ---
 
 <Layout pathname="/curriculum" title="Modalidades de Grado">
   <Banner title="Modalidades de Grado" image="bg-banner-modalities" />
-  <section class="px-0 lg:px-12">
+  <Layout2>
     <p class="lg:mx-40">
       El Consejo de la Facultad de Ingeniería Electrónica y Telecomunicaciones establece el Reglamento para las
       modalidades de <strong>Trabajo de Investigación</strong> y <strong>Práctica Profesional</strong> aprobadas para
       los programas de Pregrado de Ingeniería de Sistemas, Ingeniería en Automática Industrial e Ingeniería Electrónica
       y Telecomunicaciones, mediante Resolución 8.4.2– 90.14/249 del 9 de junio de 2017.
     </p>
-  </section>
+  </Layout2>
   <div class="w-full h-1 mx-auto bg-primary-400"></div>
-  <section class="flex flex-col px-0 lg:px-12 lg:gap-8 gap-4">
+  <section class="flex flex-col gap-8">
     <h2 class="font-bold text-lg md:text-2xl text-primary-500 text-center">TRABAJO DE INVESTIGACIÓN</h2>
-    <section class="flex lg:flex-row flex-col-reverse justify-evenly gap-8">
+    <LayoutTextImg>
       <Img src="/images/investigation.webp"/>
       <div class="flex items-center p-2">
         <p>
@@ -32,9 +34,9 @@ import Img from "../../component/all-pages/img.astro";
           siguiente proceso:
         </p>
       </div>
-    </section>
+    </LayoutTextImg>
   </section>
-  <section class="grid px-2 lg:px-12 gap-8">
+  <Layout2>
     <ModalitiesContent
       title="PROPUESTA DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
@@ -161,5 +163,5 @@ import Img from "../../component/all-pages/img.astro";
       </List>
       <List><strong>NO APROBADO:</strong> El estudiante deberá iniciar el trámite para un nuevo trabajo de grado.</List>
     </ModalitiesContent>
-  </section>
+  </Layout2>
 </Layout>
