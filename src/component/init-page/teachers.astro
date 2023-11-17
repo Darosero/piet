@@ -9,7 +9,7 @@ const { name, image, type, departament, email } = Astro.props;
     <div class="pb-4">
       <img class="h-48 w-48 rounded-full shadow-lg" src={image} />
     </div>
-    <h3 class="text-primary-500">{name}</h3>
+    <h4 class="text-primary-500">{name}</h4>
     <p>Departemento de {departament}</p>
     <p>Docente de {type}</p>
     <div class="text-start font-normal"><slot /></div>

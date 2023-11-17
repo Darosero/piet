@@ -10,7 +10,7 @@ export default function Goalds({ title, children }) {
         className="grid grid-rows-card justify-center  border-4 border-primary-500 rounded-lg bg-primary-500 p-4"
         onClick={() => setIsVisible(!isVisible)}
       >
-        <h3 className=" text-white">{title}</h3>
+        <h4 className=" text-white">{title}</h4>
         <div className="flex justify-center stroke-white">
           <AddIcon />
         </div>
