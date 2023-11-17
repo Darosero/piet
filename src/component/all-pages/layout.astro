@@ -28,3 +28,74 @@ const { title, pathname } = Astro.props;
     <Footer />
   </body>
 </html>
+
+<style is:global> 
+
+  h1{
+    font-weight: bold;
+    font-size: 1.25rem; 
+    color: white;
+  } 
+
+  h2{
+    color: white;
+  }
+
+ h3{
+  font-size: 1rem;  /* text-xl */
+  font-weight: bold; 
+ }
+  
+ @media (min-width: 768px) {
+    h3 {
+      font-size: 1.5rem;  /* md:text-xl  */
+    }
+  }
+
+ h4 {
+    font-weight: bold;  
+    font-size: 1 rem;    /*  text-base  */
+  }
+
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.2rem;  /* md:text-xl  */
+    }
+  }
+
+  h5 {
+    font-weight: 600;  /* Equivalente a font-bold en Tailwind CSS */
+    font-size: 1 rem;    /* Equivalente a text-base en Tailwind CSS */
+  }
+
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 1.2rem;  /* Equivalente a md:text-xl en Tailwind CSS */
+    }
+  }
+  h6 {
+    text-align: center;         /* Equivalente a text-center en Tailwind CSS */
+    font-size: 1rem;            /* Tamaño base de texto (puedes ajustar según tus necesidades) */
+    font-weight: bold;          /* Equivalente a font-bold en Tailwind CSS */
+    color: #183b6b;             /* Equivalente a text-primary-500 en Tailwind CSS */
+  }
+
+  @media (min-width: 640px) {
+    h6 {
+      font-size: 1.125rem;       /* Equivalente a sm:text-lg en Tailwind CSS */
+    }
+  }
+
+  @media (min-width: 768px) {
+    h6 {
+      font-size: 1.25rem;        /* Equivalente a md:text-xl en Tailwind CSS */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h6 {
+      font-size: 1.5rem;         /* Equivalente a lg:text-2xl en Tailwind CSS */
+    }
+  }
+
+</style>

@@ -11,7 +11,7 @@ export default function InformationQuestion({ title, children }) {
         className="flex items-center border-4 border-primary-400 rounded-md p-2 gap-4 hover:rounded-md hover:text-white hover:bg-primary-400 hover:stroke-white stroke-primary-500"
         onClick={() => setIsVisible(!isVisible)}
       >
-        <h2 className="font-semibold lg:text-lg text-left">{title}</h2>
+        <h5 className=" text-left">{title}</h5>
         <div className="ml-auto">{!isVisible ? <ArrowRigthIcon /> : <ArrowDownIcon />}</div>
       </button>
       {isVisible ? <p className="p-2">{children}</p> : null}

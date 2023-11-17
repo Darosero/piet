@@ -15,7 +15,7 @@ export default function InformationMVO({ title, children, bgColor }) {
           
         </div>
         <div className="opacity-0 group-hover:opacity-100 p-4">
-          <h3 className="font-bold lg:text-xl text-white">{title}</h3>
+          <h4 className=" text-white">{title}</h4>
           <p className=" text-white font-normal text-base hover:opacity-100">{children}</p>
         </div>
       </div>
