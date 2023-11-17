@@ -1,13 +1,8 @@
 ---
-const { title, description, link } = Astro.props;
+const { title, description } = Astro.props;
 ---
-
-<div class="flex items-center gap-4 w-[200px] md:w-[230px]">
-  <div class="flex items-center justify-center w-[50px]">
-    <slot />
-  </div>
   <div>
-    <a href={link} target="_blank" class="font-bold text-base md:text-xl">{title}</a>
+    <h3 class="font-bold text-base md:text-xl">{title}</h3>
     <p>{description}</p>
   </div>
-</div>
+

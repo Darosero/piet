@@ -2,15 +2,38 @@
 import Card from "../component/init-page/card.astro";
 import Layout from "../component/all-pages/layout.astro";
 import Banner from "../component/all-pages/banner.astro";
-import StartInformations from "../component/init-page/start-informations.astro";
 import Documents from "../component/init-page/documents.astro";
 import Teachers from "../component/init-page/teachers.astro";
 import Layout2 from "../component/all-pages/layout2.astro";
 import LayoutCol3 from "../component/all-pages/layout-col-3.astro";
+import InitInformation from "../component/init-page/init-information.astro";
+import GraduateIcon from "../component/icons/graduate-icon.astro";
+import StartInformation from "../component/init-page/start-information.astro";
+import StarIcon from "../component/icons/star-icon.astro";
+import CalendarIcon from "../component/icons/calendar-icon.astro";
+import TimeIcon from "../component/icons/time-icon.astro";
+import LayoutCarrousel from "../component/all-pages/layout-carrousel.astro";
 ---
 
 <Layout pathname="/" title="PIET UNICAUCA">
-  <StartInformations />
+  <section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 place-items-center gap-4">
+    <InitInformation>
+      <GraduateIcon />
+      <StartInformation title="Nivel Académico" description="Pregrado" />
+    </InitInformation>
+    <InitInformation>
+      <StarIcon />
+      <StartInformation title="Código SINES" description="238" />
+    </InitInformation>
+    <InitInformation>
+      <TimeIcon />
+      <StartInformation title="Metodología" description="Presencial" />
+    </InitInformation>
+    <InitInformation>
+      <CalendarIcon />
+      <StartInformation title="Admisiones" description="Semestrales" />
+    </InitInformation>
+  </section>
   <Layout2>
     <section class="grid grid-rows-[auto,auto,auto] lg:grid-rows-none lg:grid-cols-[1fr,auto,1fr] gap-12">
       <div class="flex justify-center items-center">
@@ -117,143 +140,141 @@ import LayoutCol3 from "../component/all-pages/layout-col-3.astro";
     </Card>
   </LayoutCol3>
   <Banner title="DOCENTES DEL PROGRAMA" image="bg-primary-500" />
-  <section class="w-full overflow-x-auto lg:pb-8">
-    <section class="flex flex-row gap-8">
-      <Teachers
-        name="Mary Cristina Carrascal Reyes"
-        type="planta"
-        image="/teachers/marycarrascal.webp"
-        departament="Telematica"
-        email="mcarrascal@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2000).</li>
-          <li>Magister en Telematica de la Universidad del Cauca</li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="Oscar Josué Calderón Cortez"
-        type="planta"
-        image="/teachers/oscarcalderon.webp"
-        departament="Telecomunicaciones"
-        email="oscarc@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (1996).</li>
-          <li>Especialista en Redes y Servicios Telemáticos de la Universidad del Cauca (1999).</li>
-          <li>Magister en Educación mediada por TIC de la Universidad del Norte (2021).</li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="Jesús Mauricio Ramírez Viáfara"
-        type="planta"
-        image="/teachers/mauricioramirez.webp"
-        departament="Telecomunicaciones"
-        email="jesusramirez@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2009).</li>
-          <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2014).</li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="Víctor Fabián Miramá Pérez"
-        type="planta"
-        image="/teachers/victormirama.webp"
-        departament="Telecomunicaciones"
-        email="vmirama@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2008).</li>
-          <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2013).</li>
-          <li>Doctor(c) en Ciencias de la Electrónica de la Universidad del Cauca (2022).</li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="Claudia Milena Hernández Bonilla"
-        type="planta"
-        image="/teachers/claudiahernandez.webp"
-        departament="Telecomunicaciones"
-        email="claudiah@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2004).</li>
-          <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2011).</li>
-          <li>Doctor(c) en Ciencias de la Electrónica de la Universidad del Cauca (2022).</li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="José Giovanny López Perafán"
-        type="catedra"
-        image="/teachers/joselopez.webp"
-        departament="Telecomunicaciones"
-        email="glopez@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (1991).</li>
-          <li>Especialista en Docencia Universitaria de la Universidad Cooperativa de Colombia (1998).</li>
-          <li>Magister en Telemática de la Universidad del Cauca (2003).</li>
-          <li>Doctor en Ciencias de la Electrónica de la Universidad del Cauca (2015).</li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="Gustavo Adolfo Gomez Agredo"
-        type="planta"
-        image="/teachers/gustavogomez.webp"
-        departament="Telecomunicaciones"
-        email="gtgomez@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2010).</li>
-          <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2019).</li>
-          <li>Especialista (c) en TIC para la Innovación Educativa de la Universidad del Cauca (2020).</li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="Pablo Emilio Jojoa Gómez"
-        type="catedra"
-        image="/teachers/pablojojoa.webp"
-        departament="Telecomunicaciones"
-        email="pjojoa@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (1993).</li>
-          <li>
-            Magister en Ingeniería Eléctrica Área Sistemas Electrónicos de la Escuela Politécnica de la Universidad de
-            Sao Paulo (1999).
-          </li>
-          <li>
-            Doctor en Ingeniería Eléctrica Área Sistemas Electrónicos de la Escuela Politécnica de la Universidad de Sao
-            Paulo (2003).
-          </li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="Mario Fernando Solarte Sarasty"
-        type="planta"
-        image="/teachers/mariosolarte.webp"
-        departament="Telematica"
-        email="msolarte@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2009).</li>
-          <li>Maestría en Ingeniería Telemática de la Universidad del Cauca.</li>
-          <li>Doctorado en Ingeniería Telemática de la Universidad del Cauca.</li>
-        </ul>
-      </Teachers>
-      <Teachers
-        name="María Manuela Silva Zambrano"
-        type="catedra"
-        image="/teachers/perfil.webp"
-        departament="Telecomunicaciones"
-        email="mariasilva@unicauca.edu.co"
-      >
-        <ul class="list-disc pl-4">
-          <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2015).</li>
-          <li>Especialista en TIC para la innovación Educativa de la Universidad del Cauca(2021).</li>
-          <li>Magister en Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2022).</li>
-        </ul>
-      </Teachers>
-    </section>
-  </section>
+  <LayoutCarrousel>
+    <Teachers
+      name="Mary Cristina Carrascal Reyes"
+      type="planta"
+      image="/teachers/marycarrascal.webp"
+      departament="Telematica"
+      email="mcarrascal@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2000).</li>
+        <li>Magister en Telematica de la Universidad del Cauca</li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="Oscar Josué Calderón Cortez"
+      type="planta"
+      image="/teachers/oscarcalderon.webp"
+      departament="Telecomunicaciones"
+      email="oscarc@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (1996).</li>
+        <li>Especialista en Redes y Servicios Telemáticos de la Universidad del Cauca (1999).</li>
+        <li>Magister en Educación mediada por TIC de la Universidad del Norte (2021).</li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="Jesús Mauricio Ramírez Viáfara"
+      type="planta"
+      image="/teachers/mauricioramirez.webp"
+      departament="Telecomunicaciones"
+      email="jesusramirez@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2009).</li>
+        <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2014).</li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="Víctor Fabián Miramá Pérez"
+      type="planta"
+      image="/teachers/victormirama.webp"
+      departament="Telecomunicaciones"
+      email="vmirama@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2008).</li>
+        <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2013).</li>
+        <li>Doctor(c) en Ciencias de la Electrónica de la Universidad del Cauca (2022).</li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="Claudia Milena Hernández Bonilla"
+      type="planta"
+      image="/teachers/claudiahernandez.webp"
+      departament="Telecomunicaciones"
+      email="claudiah@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2004).</li>
+        <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2011).</li>
+        <li>Doctor(c) en Ciencias de la Electrónica de la Universidad del Cauca (2022).</li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="José Giovanny López Perafán"
+      type="catedra"
+      image="/teachers/joselopez.webp"
+      departament="Telecomunicaciones"
+      email="glopez@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (1991).</li>
+        <li>Especialista en Docencia Universitaria de la Universidad Cooperativa de Colombia (1998).</li>
+        <li>Magister en Telemática de la Universidad del Cauca (2003).</li>
+        <li>Doctor en Ciencias de la Electrónica de la Universidad del Cauca (2015).</li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="Gustavo Adolfo Gomez Agredo"
+      type="planta"
+      image="/teachers/gustavogomez.webp"
+      departament="Telecomunicaciones"
+      email="gtgomez@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2010).</li>
+        <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2019).</li>
+        <li>Especialista (c) en TIC para la Innovación Educativa de la Universidad del Cauca (2020).</li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="Pablo Emilio Jojoa Gómez"
+      type="catedra"
+      image="/teachers/pablojojoa.webp"
+      departament="Telecomunicaciones"
+      email="pjojoa@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (1993).</li>
+        <li>
+          Magister en Ingeniería Eléctrica Área Sistemas Electrónicos de la Escuela Politécnica de la Universidad de Sao
+          Paulo (1999).
+        </li>
+        <li>
+          Doctor en Ingeniería Eléctrica Área Sistemas Electrónicos de la Escuela Politécnica de la Universidad de Sao
+          Paulo (2003).
+        </li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="Mario Fernando Solarte Sarasty"
+      type="planta"
+      image="/teachers/mariosolarte.webp"
+      departament="Telematica"
+      email="msolarte@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2009).</li>
+        <li>Maestría en Ingeniería Telemática de la Universidad del Cauca.</li>
+        <li>Doctorado en Ingeniería Telemática de la Universidad del Cauca.</li>
+      </ul>
+    </Teachers>
+    <Teachers
+      name="María Manuela Silva Zambrano"
+      type="catedra"
+      image="/teachers/perfil.webp"
+      departament="Telecomunicaciones"
+      email="mariasilva@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2015).</li>
+        <li>Especialista en TIC para la innovación Educativa de la Universidad del Cauca(2021).</li>
+        <li>Magister en Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (2022).</li>
+      </ul>
+    </Teachers>
+  </LayoutCarrousel>
 </Layout>
