@@ -1,16 +1,11 @@
 ---
 const { title, path, isActive, text} = Astro.props;
 import Button from "../all-pages/button.astro";
+import TextAncle from "../all-pages/text-anchor.astro";
 ---
 <article class="grid grid-rows-card border-4 border-primary-400 rounded-lg gap-4 p-4">
   <nav class="flex justify-center">
-    <a
-      href={path}
-      target={isActive ? "_blank" : null}
-      class="text-center text-2xl  font-bold border-b-4 border-secondary-500"
-    >
-      {title}
-    </a>
+    <TextAncle path={path} isActive={isActive} title={title}></TextAncle>
   </nav>
   <p>
     <slot />

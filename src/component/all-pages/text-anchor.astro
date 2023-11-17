@@ -1,0 +1,11 @@
+---
+const{path, title, isActive}=Astro.props
+---
+
+<a
+href={path}
+target={isActive ? "_blank" : null}
+class="text-center text-2xl font-bold border-b-4 border-secondary-500"
+>
+{title}
+</a>

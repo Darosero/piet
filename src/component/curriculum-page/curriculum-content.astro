@@ -2,7 +2,8 @@
 import clsx from "clsx";
 import Button from "../all-pages/button.astro";
 import Img from "../all-pages/img.astro";
-const { title, reverse, image, path, text } = Astro.props;
+import TextAncle from "../all-pages/text-anchor.astro";
+const { title, reverse, image, path, text, isActive } = Astro.props;
 ---
 
 <div
@@ -12,7 +13,9 @@ const { title, reverse, image, path, text } = Astro.props;
   )}
 >
   <div class="flex flex-col gap-4 justify-center">
-    <a class="border-b-4 border-secondary-500 text-2xl  font-bold mx-auto" href={path}>{title}</a>
+    <nav class="flex justify-center">
+      <TextAncle path={path} isActive={isActive} title={title}></TextAncle>
+    </nav>
     <p class="max-w-lg mx-auto">
       <slot />
     </p>

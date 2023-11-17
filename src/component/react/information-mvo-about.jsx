@@ -8,7 +8,7 @@ export default function InformationMVO({ title, children, bgColor }) {
     <button className={clsx("relative", bgColor)} onClick={() => setIsVisible(!isVisible)}>
       <div className="container group flex flex-col items-center justify-center p-4" >
         <div className="opacity-100 group-hover:opacity-0 font-bold lg:text-2xl absolute stroke-white flex flex-col items-center">
-          <h3 className="text-white"> {title} </h3>
+          <h4 className=" text-white"> {title} </h4>
           <div className="md:hidden visible">
           <AddIcon></AddIcon>
           </div>
