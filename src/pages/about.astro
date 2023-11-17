@@ -9,6 +9,7 @@ import Img from "../component/all-pages/img.astro";
 import LayoutTextImg from "../component/all-pages/layout-text-img.astro";
 import LayoutCol2 from "../component/all-pages/layout-col-2.astro";
 import Layout2 from "../component/all-pages/layout2.astro";
+import Line from "../component/all-pages/line.astro";
 ---
 
 <Layout pathname="/about" title="Acerca del Programa">
@@ -24,7 +25,7 @@ import Layout2 from "../component/all-pages/layout2.astro";
       </p>
     </div>
   </LayoutTextImg>
-  <div class="w-full h-1 bg-secondary-400"></div>
+  <Line color="bg-secondary-400"></Line>
   <section class="flex flex-col gap-4" >
     <h2 class="text-2xl font-bold px-0 lg:px-12">ESTRUCTURA CURRICULAR</h2>
     <LayoutTextImg>
@@ -145,5 +146,4 @@ import Layout2 from "../component/all-pages/layout2.astro";
       </List>
     </Goalds>
   </Layout2>
- 
 </Layout>
