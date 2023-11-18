@@ -1,7 +1,16 @@
 ---
+import AnchorNav from "../component/all-pages/anchor-nav.astro";
 import Banner from "../component/all-pages/banner.astro";
 import Layout from "../component/layouts/layout.astro";
 import InformationQuestion from "../component/react/information-question";
+const anchors = [
+  { href: "#homologaciones", title: "HOMOLOGACIONES" },
+  { href: "#pasantias", title: "PASANTIAS" },
+  { href: "#cancelaciones", title: "CANCELACIONES" },
+  { href: "#matricula", title: "MATRÍCULA" },
+  { href: "#reingreso", title: "REINGRESO" },
+  { href: "#modalidades", title: "MODALIDADES DE GRADO" },
+];
 ---
 
 <Layout pathname="/questions" title="Preguntas Frecuentes">
@@ -40,20 +49,7 @@ import InformationQuestion from "../component/react/information-question";
     </InformationQuestion>
   </section>
   <Banner title="ESTUDIANTES" image="bg-banner-applicants" />
-  <nav class="flex gap-4 justify-center flex-wrap">
-    <a href="#homologaciones" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-      HOMOLOGACIONES</a
-    >
-    <a href="#pasantias" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl"> PASANTIAS</a>
-    <a href="#cancelaciones" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-      CANCELACIONES</a
-    >
-    <a href="#matricula" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl"> MATRICULA</a>
-    <a href="#reingreso" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl"> REINGRESO</a>
-    <a href="#modalidades" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-      MODALIDADES DE GRADO</a
-    >
-  </nav>
+  <AnchorNav list={anchors}></AnchorNav>
   <section class="grid grid-flow-row px-0 gap-10 lg:px-12">
     <h3 id="homologaciones" >HOMOLOGACIONES</h3>
     <div class="grid grid-flow-row gap-8">

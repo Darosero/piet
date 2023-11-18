@@ -5,6 +5,12 @@ import List from "../../component/all-pages/list.astro";
 import ElectivesCard from "../../component/curriculum-page/electives-card.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
 import LayoutCol2 from "../../component/layouts/layout-col-2.astro";
+import AnchorNav from "../../component/all-pages/anchor-nav.astro";
+const anchors = [
+  { href: "#telecomunicaciones", title: " DTO DE TELECOMUNICACIONES" },
+  { href: "#telematica", title: "DTO DE TELEMÁTICA" },
+  { href: "#otros", title: "OTROS DEPARTAMENTOS" },
+];
 ---
 
 <Layout pathname="/curriculum" title="Electivas">
@@ -37,17 +43,9 @@ import LayoutCol2 from "../../component/layouts/layout-col-2.astro";
       </List>
     </LayoutCol2>
   </section>
+  <Banner title="ELECTIVAS POR DEPARTAMENTO" image="bg-banner-about" />
+  <AnchorNav list={anchors} />
   <Layout2>
-    <Banner title="ELECTIVAS POR DEPARTAMENTO" image="bg-banner-about" />
-    <nav class="grid lg:grid-cols-3 sm:grid-col-1 lg:gap-4 justify-items-center p-4">
-      <a href="#telecomunicaciones" class="border-b-4 border-secondary-600 font-bold text-base lg:text-xl">
-        DTO DE TELECOMUNICACIONES</a
-      >
-      <a href="#telematica" class="border-b-4 border-secondary-600 font-bold text-base lg:text-xl">
-        DTO DE TELEMÁTICA</a
-      >
-      <a href="#otros" class="border-b-4 border-secondary-600 font-bold text-base lg:text-xl"> OTROS DEPARTAMENTOS</a>
-    </nav>
     <article>
       <div class="flex justify-center">
         <h3 id="telecomunicaciones" class="lg:text-2xl md:text-xl text-lg font-bold text-primary-500 text-center p-4">

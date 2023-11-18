@@ -1,0 +1,16 @@
+---
+import Layout2 from "../layouts/layout2.astro";
+const { list } = Astro.props;
+---
+
+<Layout2>
+  <nav class="flex gap-4 justify-center flex-wrap">
+    {
+      list.map((item) => (
+        <a href={item.href} class="border-b-2 border-secondary-500 font-bold text-primary-500 sm:text-base lg:text-xl">
+          {item.title}
+        </a>
+      ))
+    }
+  </nav>
+</Layout2>

@@ -2,10 +2,16 @@
 import Banner from "../../component/all-pages/banner.astro";
 import Layout from "../../component/layouts/layout.astro";
 import List from "../../component/all-pages/list.astro";
-import ModalitiesContent from "../../component/curriculum-page/modalities-content.astro";
+import Dropdown from "../../component/curriculum-page/dropdown.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
 import Line from "../../component/all-pages/line.astro";
 import Modalities from "../../component/curriculum-page/modalities.astro";
+import AnchorNav from "../../component/all-pages/anchor-nav.astro";
+
+const anchors = [
+  { href: "#investigation", title: "TRABAJO DE INVESTIGACIÓN" },
+  { href: "#practice", title: " PRÁCTICA PROFESIONAL" },
+];
 ---
 
 <Layout pathname="/curriculum" title="Modalidades de Grado">
@@ -18,18 +24,10 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
       y Telecomunicaciones, mediante Resolución 8.4.2– 90.14/249 del 9 de junio de 2017.
     </p>
   </Layout2>
-  <Layout2>
-    <nav class="flex gap-4 justify-center flex-wrap">
-      <a href="#investigation" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-        TRABAJO DE INVESTIGACIÓN</a
-      >
-      <a href="#practice" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
-        PRÁCTICA PROFESIONAL</a
-      >
-    </nav>
-  </Layout2>
 
-  <Line color="bg-primary-400" />
+  <AnchorNav list={anchors} />
+
+  <Line color="bg-secondary-400" />
   <Layout2>
     <section id="investigation">
       <Modalities title="TRABAJO DE INVESTIGACIÓN" src="/images/investigation.webp">
@@ -44,7 +42,7 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
     </section>
   </Layout2>
   <Layout2>
-    <ModalitiesContent
+    <Dropdown
       title="PROPUESTA DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textbutton="Formatos"
@@ -66,8 +64,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
         la propuesta de trabajo de grado y remitirlo en el <strong>Formato TI-A</strong> al profesor responsable de la
         idea de trabajo de grado.
       </List>
-    </ModalitiesContent>
-    <ModalitiesContent
+    </Dropdown>
+    <Dropdown
       title="ANTEPROYECTO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textbutton="Formatos"
@@ -97,8 +95,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
         Una vez evaluado el anteproyecto por el Departamento, el Jefe de Departamento lo remitirá al Consejo de Facultad
         para su aprobación (<strong>Formato TI-C</strong> y <strong>Formato TI-B</strong>).
       </List>
-    </ModalitiesContent>
-    <ModalitiesContent
+    </Dropdown>
+    <Dropdown
       title="TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textbutton="Formatos"
@@ -119,8 +117,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
         El tiempo máximo para la terminación del trabajo de grado e inicio de los trámites de sustentación es de nueve
         (9) meses, contados a partir de su aprobación por parte del Consejo de Facultad.
       </List>
-    </ModalitiesContent>
-    <ModalitiesContent
+    </Dropdown>
+    <Dropdown
       title="SUSTENTACIÓN DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textbutton="Formatos"
@@ -171,9 +169,9 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
       <List>
         <strong>NO APROBADO:</strong> El estudiante deberá iniciar el trámite para un nuevo trabajo de grado.
       </List>
-    </ModalitiesContent>
+    </Dropdown>
   </Layout2>
-  <Line color="bg-primary-400" />
+  <Line color="bg-secondary-400" />
   <Layout2>
     <section id="practice">
       <Modalities title="PRÁCTICA PROFESIONAL" src="/images/professional-practice.webp">
@@ -185,9 +183,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
       </Modalities>
     </section>
   </Layout2>
-
   <Layout2>
-    <ModalitiesContent
+    <Dropdown
       title="PROPUESTA DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textbutton="Formatos"
@@ -219,8 +216,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
         indispensable para el desarrollo de la Práctica Profesional la afiliación del estudiante al sistema de seguridad
         social de riesgos laborales, que será realizada por parte de las organizaciones o por la Universidad.
       </List>
-    </ModalitiesContent>
-    <ModalitiesContent
+    </Dropdown>
+    <Dropdown
       title="ANTEPROYECTO "
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textbutton="Formatos"
@@ -271,8 +268,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
         El tiempo máximo para la terminación del trabajo de grado e inicio de los trámites de sustentación es de nueve
         (9) meses, contado a partir de su aprobación por parte del Consejo de Facultad.
       </List>
-    </ModalitiesContent>
-    <ModalitiesContent
+    </Dropdown>
+    <Dropdown
       title="DESARROLLO DE LA PRÁCTICA"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textbutton="Formatos"
@@ -289,8 +286,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
         de acuerdo al plan de trabajo establecido. El Director y el Asesor evaluarán el desempeño del estudiante y harán
         las recomendaciones respectivas <strong> (Formato PP-D).</strong>
       </List>
-    </ModalitiesContent>
-    <ModalitiesContent
+    </Dropdown>
+    <Dropdown
       title="SUSTENTACIÓN DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textbutton="Formatos"
@@ -318,6 +315,6 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
           >(Formato PP-F)</strong
         >. Los Jurados dispondrán de un tiempo máximo de quince (15) días hábiles para su evaluación.
       </List>
-    </ModalitiesContent>
+    </Dropdown>
   </Layout2>
 </Layout>
