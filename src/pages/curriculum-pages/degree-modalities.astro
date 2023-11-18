@@ -3,8 +3,6 @@ import Banner from "../../component/all-pages/banner.astro";
 import Layout from "../../component/layouts/layout.astro";
 import List from "../../component/all-pages/list.astro";
 import ModalitiesContent from "../../component/curriculum-page/modalities-content.astro";
-import Img from "../../component/all-pages/img.astro";
-import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
 import Line from "../../component/all-pages/line.astro";
 import Modalities from "../../component/curriculum-page/modalities.astro";
@@ -20,16 +18,31 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
       y Telecomunicaciones, mediante Resolución 8.4.2– 90.14/249 del 9 de junio de 2017.
     </p>
   </Layout2>
+  <Layout2>
+    <nav class="flex gap-4 justify-center flex-wrap">
+      <a href="#investigation" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
+        TRABAJO DE INVESTIGACIÓN</a
+      >
+      <a href="#practice" class="border-b-4 border-secondary-600 font-bold sm:text-base lg:text-xl">
+        PRÁCTICA PROFESIONAL</a
+      >
+    </nav>
+  </Layout2>
+
   <Line color="bg-primary-400" />
-  <Modalities title="TRABAJO DE INVESTIGACIÓN" src="/images/investigation.webp">
-    Se denomina trabajo de investigación al diseño y ejecución de un plan de trabajo orientado al desarrollo de
-    habilidades investigativas del estudiante, el cual lo realiza en busca de aportar a la descripción, explicación,
-    comprensión o solución de problemas teóricos o prácticos, propios de su campo de formación. En el caso de las
-    ingenierías, involucra Investigación, Desarrollo e Innovación (I+D+i). <strong
-      >El Trabajo de Investigación podrá ejecutarse de forma individual o en grupo de hasta dos (2) estudiantes
-    </strong>, dependiendo del alcance del trabajo a realizar. Para esta modalidad de grado se debe realizar el
-    siguiente proceso:
-  </Modalities>
+  <Layout2>
+    <section id="investigation">
+      <Modalities title="TRABAJO DE INVESTIGACIÓN" src="/images/investigation.webp">
+        Se denomina trabajo de investigación al diseño y ejecución de un plan de trabajo orientado al desarrollo de
+        habilidades investigativas del estudiante, el cual lo realiza en busca de aportar a la descripción, explicación,
+        comprensión o solución de problemas teóricos o prácticos, propios de su campo de formación. En el caso de las
+        ingenierías, involucra Investigación, Desarrollo e Innovación (I+D+i). <strong
+          >El Trabajo de Investigación podrá ejecutarse de forma individual o en grupo de hasta dos (2) estudiantes
+        </strong>, dependiendo del alcance del trabajo a realizar. Para esta modalidad de grado se debe realizar el
+        siguiente proceso:
+      </Modalities>
+    </section>
+  </Layout2>
   <Layout2>
     <ModalitiesContent
       title="PROPUESTA DE TRABAJO DE GRADO"
@@ -155,17 +168,24 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
         visto bueno de los jurados.En caso que no resulte aceptado en la segunda sesión de sustentación, se considerará
         como NO APROBADO y el estudiante deberá iniciar el trámite para un nuevo trabajo de grado.
       </List>
-      <List><strong>NO APROBADO:</strong> El estudiante deberá iniciar el trámite para un nuevo trabajo de grado.</List>
+      <List>
+        <strong>NO APROBADO:</strong> El estudiante deberá iniciar el trámite para un nuevo trabajo de grado.
+      </List>
     </ModalitiesContent>
   </Layout2>
   <Line color="bg-primary-400" />
-  <Modalities title="PRÁCTICA PROFESIONAL" src="/images/professional-practice.webp">
-    Consiste en un trabajo de grado enmarcado en el sector productivo de bienes y servicios, el sector gubernamental y
-    la sociedad en general, donde el estudiante enfoca su proyecto a un rol propositivo. La práctica profesional se
-    gestionará y desarrollará como un proyecto de innovación tecnológica en el contexto de una organización, la cual
-    deberá hacer uso de habilidades de ingeniería propia del perfil de la carrera. 29. El Trabajo de Grado en la
-    modalidad de Práctica Profesional es individual.
-  </Modalities>
+  <Layout2>
+    <section id="practice">
+      <Modalities title="PRÁCTICA PROFESIONAL" src="/images/professional-practice.webp">
+        Consiste en un trabajo de grado enmarcado en el sector productivo de bienes y servicios, el sector gubernamental
+        y la sociedad en general, donde el estudiante enfoca su proyecto a un rol propositivo. La práctica profesional
+        se gestionará y desarrollará como un proyecto de innovación tecnológica en el contexto de una organización, la
+        cual deberá hacer uso de habilidades de ingeniería propia del perfil de la carrera. 29. El Trabajo de Grado en
+        la modalidad de Práctica Profesional es individual.
+      </Modalities>
+    </section>
+  </Layout2>
+
   <Layout2>
     <ModalitiesContent
       title="PROPUESTA DE TRABAJO DE GRADO"
@@ -191,8 +211,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
       </List>
       <List>
         El Comité de Programa dispondrá de un máximo de diez (10) días hábiles para emitir el respectivo concepto sobre
-        la propuesta de trabajo de grado y remitirlo en el <strong>Formato PP-A </strong> al profesor responsable de la idea de trabajo de
-        grado.
+        la propuesta de trabajo de grado y remitirlo en el <strong>Formato PP-A</strong> al profesor responsable de la
+        idea de trabajo de grado.
       </List>
       <List>
         En cumplimiento del Decreto 55 de 2015 y de la normativa interna de la Universidad del Cauca, es requisito
@@ -224,8 +244,8 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
         informe de evaluación será remitido al Jefe de Departamento <strong>(Formato PP-B)</strong>.
       </List>
       <List>
-        El Jefe de Departamento remitirá el informe de evaluación <strong>(Formato PP-B)</strong> junto con las observaciones del
-        anteproyecto al Director para las correcciones y ajustes respectivos.
+        El Jefe de Departamento remitirá el informe de evaluación <strong>(Formato PP-B)</strong> junto con las
+        observaciones del anteproyecto al Director para las correcciones y ajustes respectivos.
       </List>
       <List>
         Una vez realizadas y verificadas las correcciones y ajustes indicados por los evaluadores del anteproyecto, el
@@ -234,7 +254,7 @@ import Modalities from "../../component/curriculum-page/modalities.astro";
       </List>
       <List>
         Una vez evaluado el anteproyecto por el Departamento, el Jefe de Departamento lo remitirá al Consejo de Facultad
-        para su aprobación <strong> (Formato PP-C y  (Formato PP-B)</strong>.
+        para su aprobación <strong> (Formato PP-C y (Formato PP-B)</strong>.
       </List>
       <List>
         El Consejo de Facultad generará la resolución de aprobación del anteproyecto y a partir de su notificación al
