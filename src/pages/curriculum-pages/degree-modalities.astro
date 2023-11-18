@@ -6,6 +6,7 @@ import ModalitiesContent from "../../component/curriculum-page/modalities-conten
 import Img from "../../component/all-pages/img.astro";
 import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
+import Line from "../../component/all-pages/line.astro";
 ---
 
 <Layout pathname="/curriculum" title="Modalidades de Grado">
@@ -18,7 +19,7 @@ import Layout2 from "../../component/layouts/layout2.astro";
       y Telecomunicaciones, mediante Resolución 8.4.2– 90.14/249 del 9 de junio de 2017.
     </p>
   </Layout2>
-  <div class="w-full h-1 mx-auto bg-primary-400"></div>
+  <Line color="bg-primary-400"></Line>
   <section class="flex flex-col gap-8">
     <h3 class=" text-primary-500 text-center">TRABAJO DE INVESTIGACIÓN</h3>
     <LayoutTextImg>
@@ -164,4 +165,6 @@ import Layout2 from "../../component/layouts/layout2.astro";
       <List><strong>NO APROBADO:</strong> El estudiante deberá iniciar el trámite para un nuevo trabajo de grado.</List>
     </ModalitiesContent>
   </Layout2>
+  <Line color="bg-primary-400"></Line>
+  
 </Layout>
