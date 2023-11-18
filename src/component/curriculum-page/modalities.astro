@@ -1,0 +1,17 @@
+---
+import LayoutTextImg from "../layouts/layout-text-img.astro";
+import Img from "../all-pages/img.astro";
+const { title, src } = Astro.props;
+---
+
+<section class="flex flex-col gap-8">
+  <h3 class="text-primary-500 text-center">{title}</h3>
+  <LayoutTextImg>
+    <Img src={src} />
+    <div class="flex items-center p-2">
+      <p>
+        <slot />
+      </p>
+    </div>
+  </LayoutTextImg>
+</section>
