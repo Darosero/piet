@@ -21,6 +21,7 @@ module.exports = {
         "banner-elective": "url(/banners/elective.webp)",
         "banner-electronic": "url(/banners/electronic.webp)",
         "banner-modalities":"url(/banners/modalidades.webp)",
+        "banner-students": "url(banners/students.webp)",
       },
       colors: {
         primary: {

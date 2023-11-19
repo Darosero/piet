@@ -15,7 +15,7 @@ const { title, pathname } = Astro.props;
       property="og:description"
       content="Pagina informativa del programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca"
     />
-    <meta property="og:image" content="/banners/footer.webp" />
+    <meta property="og:image" content="/images/history.webp" />
     <link rel="canonical" href="https://piet-unicauca.vercel.app/" />
     <title>{title}</title>
   </head>
@@ -45,7 +45,6 @@ const { title, pathname } = Astro.props;
   font-weight: bold; 
  }
   
-
  h4 {
     font-weight: bold;  
     font-size: 1 rem;    /*  text-base  */
@@ -56,7 +55,6 @@ const { title, pathname } = Astro.props;
       font-size: 1.2rem;  /* md:text-xl  */
     }
   }
-
   h5 {
     font-weight: 600;  /* Equivalente a font-bold en Tailwind CSS */
     font-size: 1 rem;    /* Equivalente a text-base en Tailwind CSS */
@@ -73,22 +71,18 @@ const { title, pathname } = Astro.props;
     font-weight: bold;          /* Equivalente a font-bold en Tailwind CSS */
     color: #183b6b;             /* Equivalente a text-primary-500 en Tailwind CSS */
   }
-
   @media (min-width: 640px) {
     h6 {
-      font-size: 1.125rem;       /* Equivalente a sm:text-lg en Tailwind CSS */
+      font-size: 1.125rem; 
+      color: #183b6b;        /* Equivalente a sm:text-lg en Tailwind CSS */
     }
   }
 
-  @media (min-width: 768px) {
-    h6 {
-      font-size: 1.25rem;        /* Equivalente a md:text-xl en Tailwind CSS */
-    }
-  }
 
   @media (min-width: 1024px) {
     h6 {
-      font-size: 1.5rem;         /* Equivalente a lg:text-2xl en Tailwind CSS */
+      font-size: 1.5rem; 
+      color: #183b6b;          /* Equivalente a lg:text-2xl en Tailwind CSS */
     }
   }
 
