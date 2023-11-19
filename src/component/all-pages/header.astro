@@ -8,18 +8,18 @@ const { pathname } = Astro.props;
 <header class="flex flex-col bg-primary-500">
   <div class="container mx-auto flex flex-wrap justify-center items-center gap-4 p-4">
     <LogoUnicauca />
-    <div class=" flex flex-col">
-      <h1 class=" max-w-xs">PROGRAMA DE INGENIERÍA ELECTRÓNICA Y TELECOMUNICACIONES</h1>
+    <div class="flex flex-col">
+      <h1 class="max-w-xs">PROGRAMA DE INGENIERÍA ELECTRÓNICA Y TELECOMUNICACIONES</h1>
       <h2>FIET UNICAUCA</h2>
     </div>
   </div>
   <nav class="lg:container lg:mx-auto lg:flex lg:justify-center">
     <div class="flex flex-col lg:flex-row flex-wrap lg:rounded-tl-md lg:rounded-tr-md overflow-hidden">
-      <NavLink pathname={pathname} href="/" name="Inicio" />
-      <NavLink pathname={pathname} href="/about" name="Acerca del Programa" />
-      <NavLink pathname={pathname} href="/curriculum" name="Plan de Estudios" />
-      <NavLink pathname={pathname} href="/professional" name="Perfil Profesional" />
-      <NavLink pathname={pathname} href="/questions" name="Preguntas Frecuentes" />
+      <NavLink pathname={pathname} label="Página de inicio" href="/" name="Inicio" />
+      <NavLink pathname={pathname} label="Página Acerca del Programa" href="/about" name="Acerca del Programa" />
+      <NavLink pathname={pathname} label="Página Plan de Estudios" href="/curriculum" name="Plan de Estudios" />
+      <NavLink pathname={pathname} label="Página Perfil Profesional"  href="/professional" name="Perfil Profesional" />
+      <NavLink pathname={pathname} label="Página Preguntas Frecuentes" href="/questions" name="Preguntas Frecuentes" />
     </div>
   </nav>
 </header>

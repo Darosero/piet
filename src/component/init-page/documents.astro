@@ -1,11 +1,12 @@
 ---
 import DocumentIcon from "../icons/document-icon.astro";
-const { path, title, description } = Astro.props;
+const { path, title, description,label } = Astro.props;
 ---
 
 <div class="p-4 shadow-lg rounded-lg hover:rounded-lg bg-primary-100/20 hover:bg-primary-500 relative group">
   <a
     href={path}
+    aria-label={label}
     target="_blank"
     class="target-blank target-blank-ios flex flex-col items-center gap-4 text-primary-500 group-hover:text-white group-hover:stroke-white stroke-primary-500"
   >

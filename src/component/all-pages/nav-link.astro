@@ -1,12 +1,12 @@
 ---
 import clsx from "clsx";
 
-const { href, pathname, name } = Astro.props;
+const { href, pathname, name, label } = Astro.props;
 
 const isActive = href === pathname;
 ---
 
-<a class="group relative hover:bg-gray-300 bg-gray-200 px-5 py-2" href={href}>
+<a class="group relative hover:bg-gray-300 bg-gray-200 px-5 py-2" href={href} aria-label={label}>
   <div
     class={clsx(
       "absolute h-1 bottom-0 left-0 right-0",

@@ -1,13 +1,13 @@
 ---
-const { name, image, type, departament, email } = Astro.props;
+const { name, image, type, departament, email,} = Astro.props;
 ---
 
 <section
   class="flex-none lg:w-1/3 md:w-1/2 w-full border-4 border-primary-50 rounded-lg p-4 bg-primary-50 shadow-lg text-center font-semibold"
 >
   <div class="flex flex-col items-center">
-    <div class="pb-4">
-      <img class="h-48 w-48 rounded-full shadow-lg" src={image} />
+    <div  class="pb-4">
+      <img width="192px" height="192px" class="h-48 w-48 rounded-full shadow-lg" src={image} alt={"fotografía de"+ name}/>
     </div>
     <h4 class="text-primary-500">{name}</h4>
     <p>Departemento de {departament}</p>
