@@ -1,5 +1,5 @@
 ---
-const { title, textancle, link, isActive } = Astro.props;
+const { title, textancle, link, isActive, label } = Astro.props;
 ---
 
 <section class="flex flex-col md:pb-8 pb-4 md:mx-40">
@@ -10,7 +10,7 @@ const { title, textancle, link, isActive } = Astro.props;
     <article class="flex justify-items-start flex-col p-4 md:p-8 ">
       <slot />
       <div class="flex my-2 md:my-4">
-        <a href={link} target={isActive ? "_blank" : null} class="text-primary-500 border-b-2 border-primary-500 font-bold lg:text-xl text-lg">{textancle}</a>
+        <a href={link} aria-label={label} target={isActive ? "_blank" : null} class="text-primary-500 border-b-2 border-primary-500 font-bold lg:text-xl text-lg">{textancle}</a>
       </div>
     </article>
   </details>

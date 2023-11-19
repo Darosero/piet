@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Button from "../all-pages/button.astro";
 import Img from "../all-pages/img.astro";
 import TextAncle from "../all-pages/text-anchor.astro";
-const { title, reverse, image, path, text, isActive } = Astro.props;
+const { title, reverse, image, path, text, isActive, alt,label } = Astro.props;
 ---
 
 <div
@@ -19,7 +19,7 @@ const { title, reverse, image, path, text, isActive } = Astro.props;
     <p class="max-w-lg mx-auto">
       <slot />
     </p>
-    <Button link={path} text={text}></Button>
+    <Button link={path} text={text} label={label}></Button>
   </div>
-  <Img src={image}></Img>
+  <Img src={image} alt{alt}></Img>
 </div>
