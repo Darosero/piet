@@ -1,7 +1,9 @@
 ---
 import AnchorNav from "../component/all-pages/anchor-nav.astro";
 import Banner from "../component/all-pages/banner.astro";
+import List from "../component/all-pages/list.astro";
 import Dropdown from "../component/curriculum-page/dropdown.astro";
+import LayoutCarrousel from "../component/layouts/layout-carrousel.astro";
 import Layout from "../component/layouts/layout.astro";
 import Layout2 from "../component/layouts/layout2.astro";
 const anchors = [
@@ -32,36 +34,64 @@ const anchors = [
       </p>
     </Dropdown>
     <Dropdown
-      title="¿El programa de Ingeniería Electrónica y Telecomunicaciones tiene un límite de cupo?"
-      link="https://www.unicauca.edu.co/versionP/pregrado"
-      textbutton="Más Información"
+      title="¿Cuáles son los requisitos de inscripción para el programa?"
+      link="https://www.unicauca.edu.co/versionP/documentos/acuerdos/acuerdo-acad%C3%A9mico-013-de-2018-por-medio-del-cual-se-reglamenta-el-proceso-de-inscripci%C3%B3n-admisi%C3%B3n--0"
+      textbutton="Reglamentación del proceso de Inscripción"
       isActive
     >
-      <p></p>
-    </Dropdown>
-    <Dropdown
-      title="¿Cuáles son las oportunidades de becas y ayuda financiera disponibles para estudiantes de esta carrera?"
-      link="https://www.unicauca.edu.co/versionP/pregrado"
-      textbutton="Más Información"
-      isActive
-    >
-      <p></p>
-    </Dropdown>
-    <Dropdown
-      title="¿Es necesario tener una formación previa en matemáticas o física para ser aceptado en el programa?"
-      link="https://www.unicauca.edu.co/versionP/pregrado"
-      textbutton="Más Información"
-      isActive
-    >
-      <p></p>
+      <p>
+        Para ingresar al programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca debe tener
+        en cuenta los requisitos de inscripción generales a la Universidad los cuales son:
+      </p>
+      <List>
+        Haber presentado el Examen ICFES SABER 11° a partir del segundo periodo del año 2012 y tener un puntaje total,
+        igual o superior a 160 puntos para los programas de Pregrado-Popayán y de 150 puntos para los programas
+        ofrecidos por el Centro de Regionalización.
+      </List>
+      <List>Acreditar la condición de bachiller en el momento que la Universidad lo requiera</List>
+      <List>
+        Realizar el registro en el aplicativo de inscripción previsto en la página web de la Universidad, consignando en
+        forma veraz y auténtica, la información allí requerida, previa aceptación de términos y condiciones
+      </List>
+      <List>
+        Realizar el pago de los derechos pecuniarios establecidos por la Universidad como derechos de inscripción.
+      </List>
+      <List>
+        Cumplir con los requisitos establecidos en la norma universitaria que regula el proceso de inscripción
+      </List>
     </Dropdown>
     <Dropdown
       title="¿En caso de ser admitido qué documentos o certificados académicos se deben proporcionar como parte de la solicitud de admisión?"
-      link="https://www.unicauca.edu.co/versionP/pregrado"
-      textbutton="Más Información"
+      link="https://www.unicauca.edu.co/versionP/sites/default/files/files/DocumentosMatr%C3%ADculaPregradV7.docx"
+      textbutton="Formato para Admisiones"
       isActive
     >
-      <p></p>
+      <p>Los documentos o certificados académicos que debe proporcionar son:</p>
+      <List>Una (1) fotografía reciente, tamaño 3x4 cm.</List>
+      <List>
+        Fotocopia legible del documento de identidad (Cédula, tarjeta de identidad, contraseña, cédula de extranjería),
+        tamaño normal
+      </List>
+      <List>
+        Recibo original de energía del mes inmediatamente anterior, del lugar de residencia de los padres o tutores, con
+        indicación del estrato. Para sitios no estratificados se tendrá en cuenta el reporte del SISBEN
+      </List>
+      <List>Fotocopia del diploma de bachiller que incluya fecha de grado legible ☐</List>
+      <List>
+        Constancia original del valor pagado por pensión en el grado once, expedida por el Rector o Tesorero del
+        colegio. (Nota importante: Los aspirantes que no pagaron ningún valor por concepto de pensión deben presentar la
+        constancia original que así lo certifique)
+      </List>
+      <List>Copia de la tarjeta de resultados del examen ICFES (SABER 11).</List>
+      <List>Si votó en las últimas elecciones, anexar fotocopia de certificado electoral</List>
+      <List>Fotocopia del carné o certificación de salud.</List>
+      <List>Reporte de resultados de clasificación SISBEN IV</List>
+      <p>
+        Si a la fecha establecida en el calendario de admisiones para recepción de documentos – requisitos de matrícula:
+        admitidos primera lista y aspirantes en lista de espera, no ha obtenido su diploma de bachiller, debe tramitar
+        ante el colegio, certificado donde se manifieste que ya aprobó el grado once y sólo tiene pendiente la ceremonia
+        de grado.
+      </p>
     </Dropdown>
   </Layout2>
   <Banner title="ESTUDIANTES" image="bg-banner-students" />
