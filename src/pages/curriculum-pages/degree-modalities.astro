@@ -7,6 +7,8 @@ import Layout2 from "../../component/layouts/layout2.astro";
 import Line from "../../component/all-pages/line.astro";
 import Modalities from "../../component/curriculum-page/modalities.astro";
 import AnchorNav from "../../component/all-pages/anchor-nav.astro";
+import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
+import Img from "../../component/all-pages/img.astro";
 
 const anchors = [
   { href: "#investigation", title: "TRABAJO DE INVESTIGACIÓN" },
@@ -28,9 +30,10 @@ const anchors = [
   <AnchorNav list={anchors} />
 
   <Line color="bg-secondary-400" />
-  <Layout2>
-    <section id="investigation">
-      <Modalities title="TRABAJO DE INVESTIGACIÓN" src="/images/investigation.webp">
+  <LayoutTextImg src="/images/investigation.webp">
+    <div class="flex flex-col justify-center gap-y-4">
+      <h3>TRABAJO DE INVESTIGACIÓN"</h3>
+      <p>
         Se denomina trabajo de investigación al diseño y ejecución de un plan de trabajo orientado al desarrollo de
         habilidades investigativas del estudiante, el cual lo realiza en busca de aportar a la descripción, explicación,
         comprensión o solución de problemas teóricos o prácticos, propios de su campo de formación. En el caso de las
@@ -38,14 +41,14 @@ const anchors = [
           >El Trabajo de Investigación podrá ejecutarse de forma individual o en grupo de hasta dos (2) estudiantes
         </strong>, dependiendo del alcance del trabajo a realizar. Para esta modalidad de grado se debe realizar el
         siguiente proceso:
-      </Modalities>
-    </section>
-  </Layout2>
+      </p>
+    </div>
+  </LayoutTextImg>
   <Layout2>
     <Dropdown
       title="PROPUESTA DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
-      textbutton="Formatos"
+      textancle="Formatos"
       isActive
     >
       <p>
@@ -68,7 +71,7 @@ const anchors = [
     <Dropdown
       title="ANTEPROYECTO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
-      textbutton="Formatos"
+      textancle="Formatos"
       isActive
     >
       Se entiende por Anteproyecto el documento que elabora(n) el(los) estudiante(s), con la orientación del profesor y
@@ -99,7 +102,7 @@ const anchors = [
     <Dropdown
       title="TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
-      textbutton="Formatos"
+      textancle="Formatos"
       isActive
     >
       El desarrollo del trabajo de grado consiste en la ejecución de las actividades definidas en el anteproyecto y
@@ -121,7 +124,7 @@ const anchors = [
     <Dropdown
       title="SUSTENTACIÓN DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
-      textbutton="Formatos"
+      textancle="Formatos"
       isActive
     >
       <p>
@@ -172,22 +175,25 @@ const anchors = [
     </Dropdown>
   </Layout2>
   <Line color="bg-secondary-400" />
-  <Layout2>
-    <section id="practice">
-      <Modalities title="PRÁCTICA PROFESIONAL" src="/images/professional-practice.webp">
+
+  <LayoutTextImg src="/images/investigation.webp">
+    <div class="flex flex-col justify-center gap-y-4">
+      <h3 id="practice">PRÁCTICA PROFESIONAL"</h3>
+      <p>
         Consiste en un trabajo de grado enmarcado en el sector productivo de bienes y servicios, el sector gubernamental
         y la sociedad en general, donde el estudiante enfoca su proyecto a un rol propositivo. La práctica profesional
         se gestionará y desarrollará como un proyecto de innovación tecnológica en el contexto de una organización, la
         cual deberá hacer uso de habilidades de ingeniería propia del perfil de la carrera. 29. El Trabajo de Grado en
         la modalidad de Práctica Profesional es individual.
-      </Modalities>
-    </section>
-  </Layout2>
+      </p>
+    </div>
+  </LayoutTextImg>
+
   <Layout2>
     <Dropdown
       title="PROPUESTA DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
-      textbutton="Formatos"
+      textancle="Formatos"
       isActive
     >
       <p>
@@ -220,7 +226,7 @@ const anchors = [
     <Dropdown
       title="ANTEPROYECTO "
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
-      textbutton="Formatos"
+      textancle="Formatos"
       isActive
     >
       <p>
@@ -272,7 +278,7 @@ const anchors = [
     <Dropdown
       title="DESARROLLO DE LA PRÁCTICA"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
-      textbutton="Formatos"
+      textancle="Formatos"
       isActive
     >
       <p>
@@ -290,7 +296,7 @@ const anchors = [
     <Dropdown
       title="SUSTENTACIÓN DE TRABAJO DE GRADO"
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
-      textbutton="Formatos"
+      textancle="Formatos"
       isActive
     >
       <List>
