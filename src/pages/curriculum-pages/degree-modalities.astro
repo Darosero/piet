@@ -5,11 +5,8 @@ import List from "../../component/all-pages/list.astro";
 import Dropdown from "../../component/curriculum-page/dropdown.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
 import Line from "../../component/all-pages/line.astro";
-import Modalities from "../../component/curriculum-page/modalities.astro";
 import AnchorNav from "../../component/all-pages/anchor-nav.astro";
 import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
-import Img from "../../component/all-pages/img.astro";
-
 const anchors = [
   { href: "#investigation", title: "TRABAJO DE INVESTIGACIÓN" },
   { href: "#practice", title: " PRÁCTICA PROFESIONAL" },
@@ -50,6 +47,7 @@ const anchors = [
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textancle="Formatos"
       isActive
+      label="ir a formatos para la propuesta de trabajo de grado"
     >
       <p>
         Corresponde al documento que describe el título y los objetivos que permitan establecer la viabilidad de abordar
@@ -73,6 +71,7 @@ const anchors = [
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textancle="Formatos"
       isActive
+      label="ir a Formatos para el anteproyecto"
     >
       Se entiende por Anteproyecto el documento que elabora(n) el(los) estudiante(s), con la orientación del profesor y
       en el que se identifica y precisa entre otras, la idea que constituye las características esenciales del Trabajo
@@ -104,6 +103,7 @@ const anchors = [
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textancle="Formatos"
       isActive
+      label="ir a formatos para trabajo de grado"
     >
       El desarrollo del trabajo de grado consiste en la ejecución de las actividades definidas en el anteproyecto y
       culmina con la redacción de un documento final en el cual se describen el proceso de desarrollo del trabajo de
@@ -126,6 +126,7 @@ const anchors = [
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textancle="Formatos"
       isActive
+      label="ir a formatos para la sustentación de trabajo de grado"
     >
       <p>
         Para el inicio del proceso de sustentación, el documento de trabajo de grado y sus anexos serán remitidos por el
@@ -176,7 +177,7 @@ const anchors = [
   </Layout2>
   <Line color="bg-secondary-400" />
 
-  <LayoutTextImg src="/images/investigation.webp"alt="Fotografía que ilustra la modalidad práctica profesional">
+  <LayoutTextImg src="/images/investigation.webp" alt="Fotografía que ilustra la modalidad práctica profesional">
     <div class="flex flex-col justify-center gap-y-4">
       <h3 id="practice">PRÁCTICA PROFESIONAL"</h3>
       <p>
@@ -195,6 +196,7 @@ const anchors = [
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textancle="Formatos"
       isActive
+      label="ir a formatos para propuesta de trabajo de grado"
     >
       <p>
         corresponde al documento que describe el título y los objetivos que permitan establecer la viabilidad de abordar
@@ -228,6 +230,7 @@ const anchors = [
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textancle="Formatos"
       isActive
+      label="ir a formatos para anteproyecto"
     >
       <p>
         Se entiende por Anteproyecto al documento que elabora el estudiante, con la orientación del Director por parte
@@ -280,6 +283,7 @@ const anchors = [
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textancle="Formatos"
       isActive
+      label="ir a formatos para el desarrollo de la práctica profesional"
     >
       <p>
         El desarrollo del trabajo de grado en esta modalidad consiste en la ejecución de las actividades definidas en el
@@ -298,6 +302,7 @@ const anchors = [
       link="https://docs.google.com/document/d/1sglPh5u23BZbLGc3E98kDWNvVbN67qx6/edit"
       textancle="Formatos"
       isActive
+      label="ir a formatos para la sustentación de trabajo de grado"
     >
       <List>
         Para el inicio del proceso de sustentación, el documento final será remitido por el Director y el Asesor al
