@@ -1,8 +1,12 @@
 ---
 import PagePensum from "../component/curriculum-page/page-pensum.astro";
 import TableSemestre from "../component/curriculum-page/table-semester.jsx";
+import Layout2 from "../component/layouts/layout2.astro";
 ---
 
 <PagePensum>
-  <TableSemestre client:only />
+  <Layout2>
+    <TableSemestre client:only />
+  </Layout2>
+  
 </PagePensum>

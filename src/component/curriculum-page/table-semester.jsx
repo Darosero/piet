@@ -1,53 +1,62 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { PENSUM } from "../lib/pensum";
+import Layout2 from "../layouts/layout2.astro";
 
-export default function TableSemester() {
-  const title = "";
-  const subjets = "";
-  const credits = ""
-  console.log(route);
+function Table() {
+  const [hash, setHash] = useState(window.location.hash);
+  const pensum = PENSUM[hash] ?? PENSUM["#I"];
 
   useEffect(() => {
-    const hash = window.location.hash;
-    console.log(hash);
-  }, [window.location.hash]);
+    const hashchange = () => {
+      setHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", hashchange);
+  }, []);
 
   return (
-    <section>
-      <div class="py-4 justify-center">
-        <a href="/semestre#I">I</a>
-        <a href="/semestre#II">II</a>
-        <a href="/semestre#III">III</a>
-        <a href="/semestre#IV">IV</a>
-        <a href="/semestre#V">V</a>
-        <a href="/semestre#VI">VI</a>
-        <a href="/semestre#VII">VII</a>
-        <a href="/semestre#VIII">VIII</a>
-        <a href="/semestre#IX">IX</a>
-        <a href="/semestre#X">X</a>
-      </div>
-      <div class="p-4 border-4 rounded-md border-primary-500">
-        <div>
-          <h3 class="text-2xl font-semibold">{"Semestre " + title}</h3>
+    <div style={{ height: "350px" }} className=" border-4 rounded-lg border-primary-300 ">
+      <nav className=" flex bg-primary-100   text-primary-500 md:font-bold font-semibold rounded-t">
+      <a href="#I" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">I</a>
+      <a href="#II"className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2 ">II</a>
+      <a href="#III" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">III</a>
+      <a href="#IV" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">IV</a>
+      <a href="#V" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">V</a>
+      <a href="#VI" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">VI</a>
+      <a href="#VII" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">VII</a>
+      <a href="#VII" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">VIII</a>
+      <a href="#IX" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">IX</a>
+      <a href="#X" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">X</a>
+      </nav>
+      <section className="grid grid-rows-[auto,auto,auto]lg:p-4 p-2 gap-2">
+        <h1 className="text-2xl text-primary-500">{pensum?.name}</h1>
+        <div className="grid grid-cols-2">
+          <h3 className="text-lg">{"Materias: "+ pensum.subject}</h3>
+          <h3 className="text-lg">{"Créditos: "+ pensum.credit}</h3>
         </div>
-        <div class="grid grid-flow-col-dense font-medium py-4">
-          <h4>Materias: {subjets}</h4>
-          <h4>Creditos: {credits}</h4>
-        </div>
-        <div class="grid grid-flow-col-dense border-4 border-secondary-600/80 p-4 font-semibold">
-          <div class="grid grid-rows">
-            <h6>MATERIA</h6>
+        <section className="grid lg:grid-cols-[1fr,1fr,1fr] grid-cols-[auto,auto]">
+          <div className="flex flex-col">
+            <h4 className="border-b-4 border-secondary-500 ">Materias</h4>
+            {pensum?.subjects.map((subject, index) => (
+              <p key={index}>{subject.name}</p>
+            ))}
           </div>
-          <div class="grid grid-rows">
-            <h6>CREDITOS</h6>
+          <div className="flex flex-col">
+          <h4 className="border-b-4 border-secondary-500 ">Créditos</h4>
+            {pensum?.credits.map((credits, index) => (
+              <p key={index}>{credits.name}</p>
+            ))}
           </div>
-          <div class="hidden md:block">
-            <h6>PRE-REQUISITOS</h6>
+          <div className="hidden lg:block ">
+          <h4 className="border-b-4 border-secondary-500 ">Prerequisitos</h4>
+          {pensum?.prerequisites.map((prerequisites, index) => (
+              <p key={index}>{prerequisites.name}</p>
+            ))}
           </div>
-          <div class="hidden md:block">
-            <h6>MICROCURRICULUM</h6>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      </section>
+    </div>
   );
 }
+
+export default Table;
