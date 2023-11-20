@@ -24,7 +24,7 @@ function Table() {
       <a href="#V" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">V</a>
       <a href="#VI" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">VI</a>
       <a href="#VII" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">VII</a>
-      <a href="#VII" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">VIII</a>
+      <a href="#VIII" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">VIII</a>
       <a href="#IX" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">IX</a>
       <a href="#X" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">X</a>
       </nav>
