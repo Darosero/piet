@@ -1,0 +1,30 @@
+---
+import Banner from "../../component/all-pages/banner.astro";
+import TableSemestre from "../../component/curriculum-page/table-semester.jsx";
+import Right from "../../component/icons/right.astro";
+import Layout from "../../component/layouts/layout.astro";
+import Layout2 from "../../component/layouts/layout2.astro";
+const state= true;
+---
+
+<Layout pathname="/curriculum" title="Antiguo Pensum">
+  <div>
+    <Banner title="PENSUM" image="bg-banner-old-pensum" />
+  </div>
+  <Layout2>
+    <div class="flex gap-4border-4 border-primary-500 rounded-lg">
+      <a href="/curriculum" class="p-2 text-primary-500 text-xl font-bold hover:rounded-lg hover:bg-primary-100"
+        >Plan de Estudios</a
+      >
+      <div class="p-2">
+        <Right />
+      </div>
+      <a href="/page-pensum" class="p-2 text-primary-500 text-xl font-bold hover:rounded-lg hover:bg-primary-100"
+        >Antiguo Pensum</a
+      >
+    </div>
+
+    <h1 class="flex justify-center text-primary-500 font-bold text-2xl pb-4">ANTIGUO PENSUM</h1>
+    <TableSemestre client:only state={state} />
+  </Layout2>
+</Layout>

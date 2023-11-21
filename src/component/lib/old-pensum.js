@@ -1,4 +1,4 @@
-export const PENSUM = {
+export const OLDPENSUM = {
   "#I": {
     name: "Semestre I",
     subject: "6",
