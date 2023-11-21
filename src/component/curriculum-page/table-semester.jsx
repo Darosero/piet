@@ -16,7 +16,7 @@ function Table() {
   }, []);
 
   return (
-    <div  className=" lg:h-[360px] sm:h-96 border-4 rounded-lg border-primary-300">
+    <div  className=" lg:h-[320px] sm:h-96 border-4 rounded-lg border-primary-300">
       <nav className=" flex bg-primary-100   text-primary-500 md:font-bold font-semibold rounded-t">
         <a href="#I" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">
           I
