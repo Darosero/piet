@@ -55,7 +55,7 @@ function Table() {
           <h3 className="text-lg px-2">{"Materias: " + pensum.subject}</h3>
           <h3 className="text-lg px-2">{"Créditos: " + pensum.credit}</h3>
         </div>
-        <section className="grid lg:grid-cols-3 grid-cols-2">
+        <section className="grid lg:grid-cols-3 grid-cols-[auto,auto]">
           <div className="flex flex-col border-y-4 lg:border-4 sm:border-y-4">
             <h4 className="border-b-4 md:px-2">Asignatura</h4>
             {pensum?.subjects.map((subject, index) => (
@@ -66,7 +66,7 @@ function Table() {
           </div>
           <div className="flex flex-col border-y-4 ">
             <div>
-              <h4 className="border-b-4 md:px-2">Creditos</h4>
+              <h4 className="border-b-4 md:px-2">Créditos</h4>
               {pensum?.credits.map((credits, index) => (
                 <p className=" md:px-2" key={index}>
                   {credits.name}
