@@ -49,7 +49,7 @@ function Table() {
           X
         </a>
       </nav>
-      <section className="grid grid-rows-[auto,auto,auto] gap-2 lg:px-4 px-0">
+      <section className="grid grid-rows-[1fr,auto,auto] gap-2 lg:px-4 px-0">
         <h1 className="text-2xl text-primary-500 px-2">{pensum?.name}</h1>
         <div className="grid grid-cols-2">
           <h3 className="text-lg px-2">{"Materias: " + pensum.subject}</h3>
@@ -57,27 +57,27 @@ function Table() {
         </div>
         <section className="grid lg:grid-cols-3 grid-cols-2">
           <div className="flex flex-col border-y-4 lg:border-4 sm:border-y-4">
-            <h4 className="border-b-4 px-2">Asignatura</h4>
+            <h4 className="border-b-4 md:px-2">Asignatura</h4>
             {pensum?.subjects.map((subject, index) => (
-              <p className="px-2 " key={index}>
+              <p className="md:px-2 " key={index}>
                 {subject.name}
               </p>
             ))}
           </div>
-          <div className="flex flex-col border-y-4  ">
+          <div className="flex flex-col border-y-4 ">
             <div>
-              <h4 className="border-b-4 px-2">Creditos</h4>
+              <h4 className="border-b-4 md:px-2">Creditos</h4>
               {pensum?.credits.map((credits, index) => (
-                <p className=" px-2" key={index}>
+                <p className=" md:px-2" key={index}>
                   {credits.name}
                 </p>
               ))}
             </div>
           </div>
           <div className="hidden lg:block border-x-4 border-y-4">
-            <h4 className="border-b-4 px-2">Prerequisitos</h4>
+            <h4 className="border-b-4 md:px-2">Prerequisitos</h4>
             {pensum?.prerequisites.map((prerequisites, index) => (
-              <p className=" px-2" key={index}>
+              <p className=" md:px-2" key={index}>
                 {prerequisites.name}
               </p>
             ))}
