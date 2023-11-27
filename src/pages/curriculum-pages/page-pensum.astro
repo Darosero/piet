@@ -4,7 +4,7 @@ import TableSemestre from "../../component/curriculum-page/table-semester.jsx";
 import Right from "../../component/icons/right.astro";
 import Layout from "../../component/layouts/layout.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
-const state= true;
+const state = true;
 ---
 
 <Layout pathname="/curriculum" title="Antiguo Pensum">
@@ -12,19 +12,20 @@ const state= true;
     <Banner title="PENSUM" image="bg-banner-old-pensum" />
   </div>
   <Layout2>
-    <div class="flex gap-4 ">
+    <div class="flex gap-4">
       <a href="/curriculum" class="p-2 text-primary-500 lg:text-xl font-bold hover:rounded-lg hover:bg-primary-100"
         >Plan de Estudios</a
       >
       <div class="p-2">
         <Right />
       </div>
-      <a href="/page-pensum" class="p-2 text-primary-500 lg:text-xl font-bold hover:rounded-lg hover:bg-primary-100"
-        >Antiguo Pensum</a
+      <a
+        href="/curriculum-pages/page-pensum"
+        class="p-2 text-primary-500 lg:text-xl font-bold hover:rounded-lg hover:bg-primary-100">Antiguo Pensum</a
       >
     </div>
 
     <h1 class="flex justify-center text-primary-500 font-bold lg:text-2xl pb-4">ANTIGUO PENSUM</h1>
-    <TableSemestre client:only  />
+    <TableSemestre client:only />
   </Layout2>
 </Layout>
