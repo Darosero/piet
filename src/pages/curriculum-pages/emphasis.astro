@@ -3,7 +3,6 @@ import Layout from "../../component/layouts/layout.astro";
 import Banner from "../../component/all-pages/banner.astro";
 import List from "../../component/all-pages/list.astro";
 import VideoCard from "../../component/all-pages/video-card.astro";
-import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
 import LayoutCol2 from "../../component/layouts/layout-col-2.astro";
 ---
@@ -44,11 +43,11 @@ import LayoutCol2 from "../../component/layouts/layout-col-2.astro";
   </Layout2>
   <section>
     <Layout2>
-      <Banner title="ÉNFASIS POR DEPARTAMENTO" image="bg-banner-about" />
+      <Banner title="ÉNFASIS DEPARTAMENTO DE TELECOMUNICACIONES" image="bg-banner-about" />
+    </Layout2>
+    <Layout2>
       <div class="flex justify-center">
-        <h3 class="text-primary-500 text-center p-8">
-          REDES Y SERVICIOS DE TELECOMUNICACIONES
-        </h3>
+        <h3 class="text-primary-500 text-center p-8">REDES Y SERVICIOS DE TELECOMUNICACIONES</h3>
       </div>
     </Layout2>
     <LayoutCol2>
@@ -67,6 +66,34 @@ import LayoutCol2 from "../../component/layouts/layout-col-2.astro";
       <VideoCard
         title="Énfasis IV: Análisis de Tecnologías Emergentes en el Diseño de Redes Inalámbricas. "
         path="https://www.youtube.com/embed/j7QtUeO6CtA?si=rwIEwXrq_KdMXgSk"
+      />
+    </LayoutCol2>
+  </section>
+  <section>
+    <Layout2>
+      <Banner title="ÉNFASIS DEPARTAMENTO DE TELEMÁTICA" image="bg-banner-about" />
+    </Layout2>
+    <Layout2>
+      <div class="flex justify-center">
+        <h3 class="text-primary-500 text-center p-8">INGENIERÍA DE SISTEMAS TELEMÁTICOS</h3>
+      </div>
+    </Layout2>
+    <LayoutCol2>
+      <VideoCard
+        title="Énfasis I: Introducción a los Sistemas Telemáticos"
+        path="https://www.youtube.com/embed/LQUHrdwSZKU?si=Y92KIWpIuCBujYR_"
+      />
+      <VideoCard
+        title="Énfasis II: Ingeniería de Proyectos (Ambientes de Desarrollo)"
+        path="https://www.youtube.com/embed/hsymiloGtaE?si=4AkVWnyE8s-d_3Bn"
+      />
+      <VideoCard
+        title="Énfasis III: Aplicaciones y Servicios Telemáticos"
+        path="https://www.youtube.com/embed/JO1lTt1rtJI?si=6iJzRLe1R1e1TthS"
+      />
+      <VideoCard
+        title="Énfasis IV: Aplicaciones y Servicios Telemáticos "
+        path="https://www.youtube.com/embed/AY2XnRmHDro?si=UegMdjiLx_YI8u61"
       />
     </LayoutCol2>
   </section>
