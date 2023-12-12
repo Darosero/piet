@@ -1,16 +1,16 @@
 ---
-import Button from "../all-pages/button.astro";
 import VideoCard from "../all-pages/video-card.astro";
-const { title, path, pdf } = Astro.props;
+import VideoElectives from "./video-electives.astro";
+const { title, path } = Astro.props;
 ---
 
-<section class="grid lg:grid-cols-2 sm:grid-cols-1 border-4 border-primary-500 rounded-lg p-8 lg:gap-8 mb-8">
-  <div class=" flex flex-col justify-center gap-4">
+<section class="grid border-4 border-primary-500 rounded-lg lg:p-8 p-2 lg:gap-8 m-3">
+  <div class=" flex flex-col justify-center gap-2">
     <h6 >{title}</h6>
     <p>
       <slot />
     </p>
     <!----<Button link={pdf} isActive></Button> -->
   </div>
-  <VideoCard title={"Presentación Electiva: " + title} path={path} />
+  <VideoElectives path={path} />
 </section>

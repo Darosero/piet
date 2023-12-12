@@ -1,0 +1,16 @@
+---
+const { path } = Astro.props;
+---
+
+<section class="border-4 border-primary-50 rounded-lg lg:p-2 bg-primary-50 shadow-xl text-center">
+  <div class="box-content">
+    <iframe
+      class="w-full md:h-60 rounded-lg"
+      src={path}
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+</section>
