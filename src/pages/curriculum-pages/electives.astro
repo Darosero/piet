@@ -15,12 +15,13 @@ const anchors = [
 
 <Layout pathname="/curriculum" title="Electivas">
   <Banner title="ELECTIVAS" image="bg-banner-elective" />
-  <section>
-    <p class="px-12">
-      Para completar con éxito el proceso de matrícula para una electiva en el programa de Ingeniería Electrónica y
-      Telecomunicaciones, es fundamental que tengas en cuenta los siguientes aspectos:
-    </p>
-    <LayoutCol2>
+  <Layout2>
+    <section class="lg:mx-40">
+      <p>
+        Para completar con éxito el proceso de matrícula para una electiva en el programa de Ingeniería Electrónica y
+        Telecomunicaciones, es fundamental que tengas en cuenta los siguientes aspectos:
+      </p>
+
       <List>
         Antes de matricularte en la electiva de tu elección, debes realizar una preinscripción. El enlace para esta
         preinscripción se habilita al final de cada semestre académico. Para obtener este enlace, te recomendamos seguir
@@ -41,13 +42,15 @@ const anchors = [
         a los estudiantes que han sido admitidos y quedaron en lista de espera, por lo que debes estar seguro de la
         elección de tu electiva antes de inscribirte.
       </List>
-    </LayoutCol2>
-    <p class="px-12 pb-8">
-      Las electivas a las cuales se puede inscribir cualquier estudiante del programa de Ingeniería Electrónica y
-      Telecomunicaciones corresponden a los siguientes departamentos:
-    </p>
-    <AnchorNav list={anchors} />
-  </section>
+      <p>
+        Las electivas a las cuales se puede inscribir cualquier estudiante del programa de Ingeniería Electrónica y
+        Telecomunicaciones corresponden a los siguientes departamentos:
+      </p>
+    </section>
+    <section class="pt-4">
+      <AnchorNav list={anchors} />
+    </section>
+  </Layout2>
   <div id="telecomunicaciones">
     <Banner title="ELECTIVAS DEPARTAMENTO DE TELECOMUNICACIONES" image="bg-banner-about" />
   </div>
