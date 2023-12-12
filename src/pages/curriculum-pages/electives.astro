@@ -16,7 +16,7 @@ const anchors = [
 <Layout pathname="/curriculum" title="Electivas">
   <Banner title="ELECTIVAS" image="bg-banner-elective" />
   <section>
-    <p>
+    <p class="px-12">
       Para completar con éxito el proceso de matrícula para una electiva en el programa de Ingeniería Electrónica y
       Telecomunicaciones, es fundamental que tengas en cuenta los siguientes aspectos:
     </p>
@@ -42,16 +42,17 @@ const anchors = [
         elección de tu electiva antes de inscribirte.
       </List>
     </LayoutCol2>
+    <p class="px-12 pb-8">
+      Las electivas a las cuales se puede inscribir cualquier estudiante del programa de Ingeniería Electrónica y
+      Telecomunicaciones corresponden a los siguientes departamentos:
+    </p>
+    <AnchorNav list={anchors} />
   </section>
-  <Banner title="ELECTIVAS POR DEPARTAMENTO" image="bg-banner-about" />
-  <AnchorNav list={anchors} />
+  <div id="telecomunicaciones">
+    <Banner title="ELECTIVAS DEPARTAMENTO DE TELECOMUNICACIONES" image="bg-banner-about" />
+  </div>
   <Layout2>
     <article>
-      <div class="flex justify-center">
-        <h3 id="telecomunicaciones" class="lg:text-2xl md:text-xl text-lg font-bold text-primary-500 text-center p-4">
-          DEPARTAMENTO DE TELECOMUNICACIONES
-        </h3>
-      </div>
       <ElectivesCard
         title="Sistemas Inalámbricos en la Comunicación de Datos"
         path="https://www.youtube.com/embed/UEHXi2nWerc?si=rocM0Hb7KXfC-ej0"
@@ -92,12 +93,12 @@ const anchors = [
         procesamiento en LTE, y los avances de 4G a 5G en los sistemas de comunicaciones móviles.
       </ElectivesCard>
     </article>
+  </Layout2>
+  <div id="telematica">
+    <Banner title="ELECTIVAS DEPARTAMENTO DE TELEMÁTICA" image="bg-banner-about" />
+  </div>
+  <Layout2>
     <article>
-      <div class="flex justify-center p-2">
-        <h3 id="telematica" class="lg:text-2xl md:text-xl text-lg font-bold text-primary-500 text-center p-4">
-          DEPARTAMENTO DE TELEMÁTICA
-        </h3>
-      </div>
       <ElectivesCard
         title="Desarrollo de Aplicaciones Web"
         path="https://www.youtube.com/embed/Z_JUzKffjzE?si=Dm8DlaArwo6i9nvB"
