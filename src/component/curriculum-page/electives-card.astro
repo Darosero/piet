@@ -1,16 +1,16 @@
 ---
-import VideoCard from "../all-pages/video-card.astro";
+import Documents from "../init-page/documents.astro";
 import VideoElectives from "./video-electives.astro";
-const { title, path } = Astro.props;
+const { title, path, isVideo} = Astro.props;
 ---
 
 <section class="grid border-4 border-primary-500 rounded-lg lg:p-8 p-2 lg:gap-8 m-3">
-  <div class=" flex flex-col justify-center gap-2">
-    <h6 >{title}</h6>
+  <div class="flex flex-col justify-center gap-2">
+    <h6>{title}</h6>
     <p>
       <slot />
     </p>
     <!----<Button link={pdf} isActive></Button> -->
   </div>
-  <VideoElectives path={path} />
+  {isVideo ? <VideoElectives path={path} /> : <Documents path={path} title={"Electiva " + title} label="Descargar Contenido " description={"Descargar Contenido Electiva "+ title}/>}
 </section>
