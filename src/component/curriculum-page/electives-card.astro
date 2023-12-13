@@ -1,7 +1,7 @@
 ---
 import Documents from "../init-page/documents.astro";
 import VideoElectives from "./video-electives.astro";
-const { title, path, isVideo} = Astro.props;
+const { title, path, isVideo } = Astro.props;
 ---
 
 <section class="grid border-4 border-primary-500 rounded-lg lg:p-8 p-2 lg:gap-8 m-3">
@@ -12,5 +12,16 @@ const { title, path, isVideo} = Astro.props;
     </p>
     <!----<Button link={pdf} isActive></Button> -->
   </div>
-  {isVideo ? <VideoElectives path={path} /> : <Documents path={path} title={"Electiva " + title} label="Descargar Contenido " description={"Descargar Contenido Electiva "+ title}/>}
+  {
+    isVideo ? (
+      <VideoElectives path={path} />
+    ) : (
+      <Documents
+        path={path}
+        title={"Electiva " + title}
+        label="Descargar Contenido "
+        description="Descargar Contenido Electiva "
+      />
+    )
+  }
 </section>
