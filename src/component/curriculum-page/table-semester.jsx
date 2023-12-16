@@ -69,16 +69,16 @@ function Table({ isNew }) {
           </div>
           <div className="flex flex-col border-y-4 ">
             <div>
-              <h4 className="border-b-4 md:px-2">Créditos</h4>
+              <h4 className="border-b-4 md:px-2 ">Créditos</h4>
               {pensum?.credits.map((credits, index) => (
-                <p className=" md:px-2 text-sm" key={index}>
+                <p className="md:px-2 text-sm text-center sm:text-left" key={index}>
                   {credits.name}
                 </p>
               ))}
             </div>
           </div>
           <div className="hidden lg:block border-x-4 border-y-4">
-            <h4 className="border-b-4 md:px-2">Prerequisitos</h4>
+            <h4 className="border-b-4 md:px-2 ">Prerequisitos</h4>
             {pensum?.prerequisites.map((prerequisites, index) => (
               <p className=" md:px-2 text-sm" key={index}>
                 {prerequisites.name}
