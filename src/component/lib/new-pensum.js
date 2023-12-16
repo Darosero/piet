@@ -1,32 +1,26 @@
 export const NEWPENSUM = {
   "#I": {
     name: "Semestre I",
-    subject: "6",
-    credit: "16",
+    subject: "5",
+    credit: "11",
     subjects: [
       {
-        name: "Cálculo I",
+        name: "Cálculo Diferencial",
       },
       {
-        name: "Circuitos Eléctricos I",
-      },
-      {
-        name: "Informática I",
-      },
-      {
-        name: "Lectoescritura",
-      },
-      {
-        name: "Mecánica",
+        name: "Álgebra Lineal",
       },
       {
         name: "Introducción a la Ingeniería",
       },
+      {
+        name: "Lectura y Escritura",
+      },
+      {
+        name: "Introducción a los Circuitos Eléctricos",
+      },
     ],
     credits: [
-      {
-        name: "4",
-      },
       {
         name: "3",
       },
@@ -37,7 +31,7 @@ export const NEWPENSUM = {
         name: "2",
       },
       {
-        name: "3",
+        name: "2",
       },
       {
         name: "1",
@@ -55,6 +49,59 @@ export const NEWPENSUM = {
       },
       {
         name: "___",
+      },
+      {
+        name: "___",
+      },
+    ],
+  },
+  "#II": {
+    name: "Semestre II",
+    subject: "5",
+    credit: "14",
+    subjects: [
+      {
+        name: "Cálculo Integral",
+      },
+      {
+        name: "Mecánica",
+      },
+      {
+        name: "Circuitos de Corriente Directa",
+      },
+      {
+        name: "Programación Orientada a Objetos",
+      },
+      {
+        name: "Ética",
+      },
+    ],
+    credits: [
+      {
+        name: "3",
+      },
+      {
+        name: "3",
+      },
+      {
+        name: "2",
+      },
+      {
+        name: "3",
+      },
+      {
+        name: "2",
+      },
+    ],
+    prerequisites: [
+      {
+        name: "Cálculo Diferencial",
+      },
+      {
+        name: "Cálculo Diferencial",
+      },
+      {
+        name: "Álgebra Lineal e Intro a los Circuitos Eléctricos",
       },
       {
         name: "___",

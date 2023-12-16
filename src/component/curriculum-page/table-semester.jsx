@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import { OLDPENSUM } from "../lib/old-pensum";
 import { NEWPENSUM } from "../lib/new-pensum";
 
-function Table() {
+function Table({ isNew }) {
   const [hash, setHash] = useState(window.location.hash);
-  const pensum = OLDPENSUM[hash] ?? OLDPENSUM["#I"];
-  const newPensum = NEWPENSUM[hash] ?? NEWPENSUM["#I"];
+  const [pensum, setPensum] = useState(null);
+
+  useEffect(() => {
+    isNew ? setPensum(NEWPENSUM[hash] ?? NEWPENSUM["#I"]) : setPensum(OLDPENSUM[hash] ?? OLDPENSUM["#I"]);
+  }, [hash]);
 
   useEffect(() => {
     const hashchange = () => {
@@ -16,7 +19,7 @@ function Table() {
   }, []);
 
   return (
-    <div  className=" lg:h-[320px] sm:h-96 border-4 rounded-lg border-primary-300">
+    <div className=" lg:h-[320px] sm:h-96 border-4 rounded-lg border-primary-300">
       <nav className=" flex bg-primary-100   text-primary-500 md:font-bold font-semibold rounded-t">
         <a href="#I" className="hover:bg-primary-200 lg:px-4 lg:py-2 p-2">
           I
@@ -52,8 +55,8 @@ function Table() {
       <section className="grid grid-rows-[1fr,auto,auto] gap-2 lg:px-4 px-0">
         <h1 className="text-2xl text-primary-500 px-2">{pensum?.name}</h1>
         <div className="grid grid-cols-2">
-          <h3 className="text-lg px-2">{"Materias: " + pensum.subject}</h3>
-          <h3 className="text-lg px-2">{"Créditos: " + pensum.credit}</h3>
+          <h3 className="text-lg px-2">{"Materias: " + pensum?.subject}</h3>
+          <h3 className="text-lg px-2">{"Créditos: " + pensum?.credit}</h3>
         </div>
         <section className="grid lg:grid-cols-3 grid-cols-[auto,auto] ">
           <div className="flex flex-col border-y-4 lg:border-4 sm:border-y-4">

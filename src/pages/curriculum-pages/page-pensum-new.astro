@@ -1,0 +1,13 @@
+---
+import TableSemestre from "../../component/curriculum-page/table-semester.jsx";
+import LayoutPagePensum from "../../component/layouts/layout-page-pensum.astro";
+---
+
+<LayoutPagePensum
+  title="Nuevo Pensum"
+  pathname="/curriculum"
+  path="/curriculum-pages/page-pensum-new"
+  image="bg-banner-old-pensum"
+>
+  <TableSemestre isNew client:only />
+</LayoutPagePensum>
