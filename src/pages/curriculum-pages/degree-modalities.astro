@@ -7,6 +7,7 @@ import Layout2 from "../../component/layouts/layout2.astro";
 import Line from "../../component/all-pages/line.astro";
 import AnchorNav from "../../component/all-pages/anchor-nav.astro";
 import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
+import BreadCrumbs from "../../component/curriculum-page/bread-crumbs.astro";
 const anchors = [
   { href: "#investigation", title: "TRABAJO DE INVESTIGACIÓN" },
   { href: "#practice", title: " PRÁCTICA PROFESIONAL" },
@@ -14,15 +15,18 @@ const anchors = [
 ---
 
 <Layout pathname="/curriculum" title="Modalidades de Grado">
-  <Banner title="Modalidades de Grado" image="bg-banner-modalities" />
-  <Layout2>
-    <p class="lg:mx-40">
-      El Consejo de la Facultad de Ingeniería Electrónica y Telecomunicaciones establece el Reglamento para las
-      modalidades de <strong>Trabajo de Investigación</strong> y <strong>Práctica Profesional</strong> aprobadas para
-      los programas de Pregrado de Ingeniería de Sistemas, Ingeniería en Automática Industrial e Ingeniería Electrónica
-      y Telecomunicaciones, mediante Resolución 8.4.2– 90.14/249 del 9 de junio de 2017.
-    </p>
-  </Layout2>
+  <section>
+    <Banner title="Modalidades de Grado" image="bg-banner-modalities" />
+    <Layout2>
+      <p class="lg:mx-40">
+        <BreadCrumbs pathname="/curriculum" title="Modalidades de Grado" path="/curriculum-pages/degree-modalities" />
+         El Consejo de la Facultad de Ingeniería Electrónica y Telecomunicaciones establece el Reglamento para las
+        modalidades de <strong>Trabajo de Investigación</strong> y <strong>Práctica Profesional</strong> aprobadas para
+        los programas de Pregrado de Ingeniería de Sistemas, Ingeniería en Automática Industrial e Ingeniería
+        Electrónica y Telecomunicaciones, mediante Resolución 8.4.2– 90.14/249 del 9 de junio de 2017.
+      </p>
+    </Layout2>
+  </section>
 
   <AnchorNav list={anchors} />
 
@@ -177,7 +181,10 @@ const anchors = [
   </Layout2>
   <Line color="bg-secondary-400" />
 
-  <LayoutTextImg src="/images/professional-practice.webp" alt="Fotografía que ilustra la modalidad práctica profesional">
+  <LayoutTextImg
+    src="/images/professional-practice.webp"
+    alt="Fotografía que ilustra la modalidad práctica profesional"
+  >
     <div class="flex flex-col justify-center gap-y-4">
       <h3 id="practice">PRÁCTICA PROFESIONAL</h3>
       <p>

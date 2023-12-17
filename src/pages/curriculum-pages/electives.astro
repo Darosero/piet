@@ -6,6 +6,7 @@ import ElectivesCard from "../../component/curriculum-page/electives-card.astro"
 import Layout2 from "../../component/layouts/layout2.astro";
 import LayoutCol2 from "../../component/layouts/layout-col-2.astro";
 import AnchorNav from "../../component/all-pages/anchor-nav.astro";
+import BreadCrumbs from "../../component/curriculum-page/bread-crumbs.astro";
 const anchors = [
   { href: "#telecomunicaciones", title: " DTO DE TELECOMUNICACIONES" },
   { href: "#telematica", title: "DTO DE TELEMÁTICA" },
@@ -14,43 +15,46 @@ const anchors = [
 ---
 
 <Layout pathname="/curriculum" title="Electivas">
-  <Banner title="ELECTIVAS" image="bg-banner-elective" />
-  <Layout2>
-    <section class="lg:mx-40">
-      <p>
-        Para completar con éxito el proceso de matrícula para una electiva en el programa de Ingeniería Electrónica y
-        Telecomunicaciones, es fundamental que tengas en cuenta los siguientes aspectos:
-      </p>
+  <section>
+    <Banner title="ELECTIVAS" image="bg-banner-elective" />
+    <Layout2>
+      <section class="lg:mx-40">
+        <BreadCrumbs pathname="/curriculum" title="Electivas" path="/curriculum-pages/electives" />
+        <p>
+          Para completar con éxito el proceso de matrícula para una electiva en el programa de Ingeniería Electrónica y
+          Telecomunicaciones, es fundamental que tengas en cuenta los siguientes aspectos:
+        </p>
 
-      <List>
-        Antes de matricularte en la electiva de tu elección, debes realizar una preinscripción. El enlace para esta
-        preinscripción se habilita al final de cada semestre académico. Para obtener este enlace, te recomendamos seguir
-        las redes sociales de la Facultad de Ingeniería Electrónica y Telecomunicaciones (FIET), donde también
-        encontrarás videos explicativos de los docentes que detallan las temáticas que abordarán en cada electiva.
-      </List>
-      <List>
-        Es importante destacar que no se asignarán cupos de electivas a estudiantes que tengan pendientes asignaturas
-        previas a aquellas definidas en la malla curricular hasta el sexto semestre. Asegúrate de haber cumplido con los
-        prerrequisitos académicos antes de intentar matricularte en una electiva.
-      </List>
-      <List>
-        No se asignarán cupos a estudiantes que no hayan completado el proceso de inscripción en la electiva. Por lo
-        tanto, es esencial que sigas todos los pasos indicados para inscribirte en la electiva que desees cursar.
-      </List>
-      <List>
-        Ten en cuenta que no se permiten cambios de electivas una vez realizada la matrícula. Los cupos solo se asignan
-        a los estudiantes que han sido admitidos y quedaron en lista de espera, por lo que debes estar seguro de la
-        elección de tu electiva antes de inscribirte.
-      </List>
-      <p>
-        Las electivas a las cuales se puede inscribir cualquier estudiante del programa de Ingeniería Electrónica y
-        Telecomunicaciones corresponden a los siguientes departamentos:
-      </p>
-    </section>
-    <section class="pt-4">
-      <AnchorNav list={anchors} />
-    </section>
-  </Layout2>
+        <List>
+          Antes de matricularte en la electiva de tu elección, debes realizar una preinscripción. El enlace para esta
+          preinscripción se habilita al final de cada semestre académico. Para obtener este enlace, te recomendamos
+          seguir las redes sociales de la Facultad de Ingeniería Electrónica y Telecomunicaciones (FIET), donde también
+          encontrarás videos explicativos de los docentes que detallan las temáticas que abordarán en cada electiva.
+        </List>
+        <List>
+          Es importante destacar que no se asignarán cupos de electivas a estudiantes que tengan pendientes asignaturas
+          previas a aquellas definidas en la malla curricular hasta el sexto semestre. Asegúrate de haber cumplido con
+          los prerrequisitos académicos antes de intentar matricularte en una electiva.
+        </List>
+        <List>
+          No se asignarán cupos a estudiantes que no hayan completado el proceso de inscripción en la electiva. Por lo
+          tanto, es esencial que sigas todos los pasos indicados para inscribirte en la electiva que desees cursar.
+        </List>
+        <List>
+          Ten en cuenta que no se permiten cambios de electivas una vez realizada la matrícula. Los cupos solo se
+          asignan a los estudiantes que han sido admitidos y quedaron en lista de espera, por lo que debes estar seguro
+          de la elección de tu electiva antes de inscribirte.
+        </List>
+        <p>
+          Las electivas a las cuales se puede inscribir cualquier estudiante del programa de Ingeniería Electrónica y
+          Telecomunicaciones corresponden a los siguientes departamentos:
+        </p>
+      </section>
+      <section class="pt-4">
+        <AnchorNav list={anchors} />
+      </section>
+    </Layout2>
+  </section>
   <div id="telecomunicaciones">
     <Banner title="ELECTIVAS DEPARTAMENTO DE TELECOMUNICACIONES" image="bg-banner-about" />
   </div>

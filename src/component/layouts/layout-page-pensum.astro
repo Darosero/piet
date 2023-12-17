@@ -1,25 +1,17 @@
 ---
 import Banner from "../../component/all-pages/banner.astro";
-import Right from "../../component/icons/right.astro";
 import Layout from "../../component/layouts/layout.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
+import BreadCrumbs from "../curriculum-page/bread-crumbs.astro";
 const { title, pathname, path, image } = Astro.props;
 ---
 
 <Layout pathname={pathname} title={title}>
-  <div>
+  <div class="gap-8">
     <Banner title={title} image={image} />
+    <Layout2>
+      <BreadCrumbs pathname={pathname} title={title} path={path} />
+      <slot />
+    </Layout2>
   </div>
-  <Layout2>
-    <div class="flex gap-4 pb-2">
-      <a href={pathname} class="p-2 text-primary-500 lg:text-xl font-bold hover:rounded-lg hover:bg-primary-100"
-        >Plan de Estudios</a
-      >
-      <div class="p-2">
-        <Right />
-      </div>
-      <a href={path} class="p-2 text-primary-500 lg:text-xl font-bold hover:rounded-lg hover:bg-primary-100">{title}</a>
-    </div>
-    <slot />
-  </Layout2>
 </Layout>

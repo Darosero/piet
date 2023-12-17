@@ -1,0 +1,14 @@
+---
+import Right from "../../component/icons/right.astro";
+const { pathname, path, title } = Astro.props;
+---
+
+<div class="flex gap-4 pt-4 pr-4 pb-4">
+  <a href={pathname} class="p-2 text-primary-500 lg:text-xl font-bold hover:rounded-lg hover:bg-primary-50"
+    >Plan de Estudios</a
+  >
+  <div class="p-2">
+    <Right />
+  </div>
+  <a href={path} class="p-2 text-primary-500 lg:text-xl font-bold hover:rounded-lg hover:bg-primary-50">{title}</a>
+</div>
