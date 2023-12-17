@@ -58,7 +58,7 @@ export const NEWPENSUM = {
   "#II": {
     name: "Semestre II",
     subject: "5",
-    credit: "14",
+    credit: "13",
     subjects: [
       {
         name: "Cálculo Integral",
@@ -259,10 +259,10 @@ export const NEWPENSUM = {
         name: "Medios de Transmisión",
       },
       {
-        name: "Fundamentos de Redes de Telecomunicaciones",
+        name: "Modelado y Bases de Datos",
       },
       {
-        name: "Modelado y Bases de Datos",
+        name: "Fundamentos de Redes de Telecomunicaciones",
       },
     ],
     credits: [
@@ -279,10 +279,10 @@ export const NEWPENSUM = {
         name: "3",
       },
       {
-        name: "3",
+        name: "2",
       },
       {
-        name: "2",
+        name: "3",
       },
     ],
     prerequisites: [
@@ -299,10 +299,10 @@ export const NEWPENSUM = {
         name: "Campos",
       },
       {
-        name: "___",
+        name: "Algoritmos Computacionales",
       },
       {
-        name: "Algoritmos Computacionales",
+        name: "___",
       },
     ],
   },
@@ -373,7 +373,7 @@ export const NEWPENSUM = {
   },
   "#VII": {
     name: "Semestre VII",
-    subject: "6",
+    subject: "7",
     credit: "17",
     subjects: [
       {
@@ -392,10 +392,10 @@ export const NEWPENSUM = {
         name: "Servicios Convergentes",
       },
       {
-        name: "Emprendimiento e innovación en ingeniero",
+        name: "Anteproyecto de Grado",
       },
       {
-        name: "Anteproyecto de Grado",
+        name: "Emprendimiento e innovación en ingeniero",
       },
     ],
     credits: [
@@ -413,6 +413,9 @@ export const NEWPENSUM = {
       },
       {
         name: "3",
+      },
+      {
+        name: "*",
       },
       {
         name: "2",
@@ -451,9 +454,6 @@ export const NEWPENSUM = {
         name: "Proyecto Integrador",
       },
       {
-        name: "Laboratorio I de Sistemas de Telecomunicaciones",
-      },
-      {
         name: "Énfasis I (Área Tc, Tm)",
       },
       {
@@ -464,6 +464,9 @@ export const NEWPENSUM = {
       },
       {
         name: "Competencias ciudadanas",
+      },
+      {
+        name: "Laboratorio I de Sistemas de Telecomunicaciones",
       },
     ],
     credits: [
@@ -482,13 +485,13 @@ export const NEWPENSUM = {
       {
         name: "2",
       },
+      {
+        name: "3",
+      },
     ],
     prerequisites: [
       {
         name: "Sistemas Embebidos y Tiempo Real",
-      },
-      {
-        name: "Radiocom. y Sist de Com. ópticas",
       },
       {
         name: "___",
@@ -502,6 +505,9 @@ export const NEWPENSUM = {
       {
         name: "Ética",
       },
+      {
+        name: "Radiocom. y Sist de Com. ópticas",
+      },
     ],
   },
   "#IX": {
@@ -510,10 +516,7 @@ export const NEWPENSUM = {
     credit: "17",
     subjects: [
       {
-        name: "Formulación y Gestión de Proyectos en TIC",
-      },
-      {
-        name: "Laboratorio II de Sistemas de Telecomunicaciones",
+        name: "Formulación y Gestión de Proyectos ",
       },
       {
         name: "Laboratorio de Servicios Telemáticos",
@@ -527,10 +530,16 @@ export const NEWPENSUM = {
       {
         name: "Electiva III (Área Tc, Tm, Ex, Sx)",
       },
+      {
+        name: "Laboratorio II de Sistemas de Telecomunicaciones",
+      },
     ],
     credits: [
       {
         name: "2",
+      },
+      {
+        name: "3",
       },
       {
         name: "3",
@@ -550,9 +559,6 @@ export const NEWPENSUM = {
         name: "___",
       },
       {
-        name: "Lab. I de Sist. de Telecomunicaciones",
-      },
-      {
         name: "Servicios Convergentes",
       },
       {
@@ -564,6 +570,9 @@ export const NEWPENSUM = {
       {
         name: "___",
       },
+      {
+        name: "Lab. I de Sist. de Telecomunicaciones",
+      },
     ],
   },
   "#X": {
@@ -572,27 +581,30 @@ export const NEWPENSUM = {
     credit: "16",
     subjects: [
       {
-        name: "Análisis económico de inversiones en TIC",
-      },
-      {
         name: "Énfasis IV (Área Tc, Tm, Ex, Sx) ",
       },
       {
         name: "Trabajo de Grado",
       },
       {
-        name: "Formación académico-tecnológica (*)",
+        name: "Formación académico-tecnológica",
+      },
+      {
+        name: "Análisis económico de inversiones en TIC",
       },
     ],
     credits: [
-      {
-        name: "2",
-      },
       {
         name: "3",
       },
       {
         name: "11",
+      },
+      {
+        name: "*",
+      },
+      {
+        name: "2",
       },
     ],
     prerequisites: [

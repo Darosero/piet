@@ -80,7 +80,7 @@ function Table({ isNew }) {
           <div className="hidden lg:block border-x-4 border-y-4">
             <h4 className="border-b-4 md:px-2 ">Prerequisitos</h4>
             {pensum?.prerequisites.map((prerequisites, index) => (
-              <p className=" md:px-2 text-sm" key={index}>
+              <p className=" md:px-2 text-sm " key={index}>
                 {prerequisites.name}
               </p>
             ))}
