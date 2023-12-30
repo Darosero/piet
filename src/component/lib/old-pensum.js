@@ -522,7 +522,7 @@ export const OLDPENSUM = {
     ],
   },
   "#IX": {
-    name: "Semestre VIII",
+    name: "Semestre IX",
     subject: "6",
     credit: "14",
     subjects: [
@@ -587,7 +587,7 @@ export const OLDPENSUM = {
     ],
   },
   "#X": {
-    name: "Semestre VIII",
+    name: "Semestre X",
     subject: "4",
     credit: "18",
     subjects: [
