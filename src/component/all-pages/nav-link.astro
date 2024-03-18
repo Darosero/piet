@@ -11,11 +11,11 @@ const isActive = href === pathname;
     class={clsx(
       "absolute h-1 bottom-0 left-0 right-0",
       isActive ? "bg-secondary-500" : "bg-gray-200",
-      isActive ? "group-hover:bg-secondary-500" : "group-hover:bg-gray-300",
+      isActive ? "group-hover:bg-secondary-500" : "group-hover:bg-gray-300"
     )}
   >
   </div>
-  <span class={clsx("text-lg font-medium", isActive ? "text-black" : "text-gray-600")}>
+  <span class={clsx("text-lg font-medium", isActive ? "text-primary-900" : "text-primary-500")}>
     {name}
   </span>
 </a>

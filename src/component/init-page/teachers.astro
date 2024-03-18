@@ -16,9 +16,9 @@ const { name, image, type, departament, email, width } = Astro.props;
       />
     </div>
     <h4 class="text-primary-500">{name}</h4>
-    <p>Departemento de {departament}</p>
-    <p>Docente de {type}</p>
+    <p class="text-primary-900 font-bold">Departemento de {departament}</p>
+    <p class="text-primary-900 font-bold">Docente de {type}</p>
     <div class="text-start font-normal"><slot /></div>
-    <p>correo: {email}</p>
+    <p class="text-primary-900 font-bold">correo: {email}</p>
   </div>
 </section>
