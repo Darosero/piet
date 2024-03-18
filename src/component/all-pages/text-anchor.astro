@@ -1,12 +1,12 @@
 ---
-const{path, title, isActive, label}=Astro.props
+const { path, title, isActive, label } = Astro.props;
 ---
 
 <a
-href={path}
-aria-label={label}
-target={isActive ? "_blank" : null}
-class="text-center text-2xl font-bold border-b-4 border-secondary-500"
+  href={path}
+  aria-label={label}
+  target={isActive ? "_blank" : null}
+  class="text-center text-2xl font-bold border-b-4 border-secondary-500 text-primary-900"
 >
-{title}
+  {title}
 </a>

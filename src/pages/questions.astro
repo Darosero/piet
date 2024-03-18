@@ -5,6 +5,7 @@ import List from "../component/all-pages/list.astro";
 import Dropdown from "../component/curriculum-page/dropdown.astro";
 import Layout from "../component/layouts/layout.astro";
 import Layout2 from "../component/layouts/layout2.astro";
+import Line from "../component/all-pages/line.astro";
 const anchors = [
   { href: "#homologaciones", title: "HOMOLOGACIONES" },
   { href: "#pasantias", title: "PASANTIAS" },
@@ -99,7 +100,7 @@ const anchors = [
   <Banner title="ESTUDIANTES" image="bg-banner-students" />
   <AnchorNav list={anchors} />
   <Layout2>
-    <h3 id="homologaciones" class="pb-4 flex justify-center">HOMOLOGACIONES</h3>
+    <h3 id="homologaciones" class="pb-4 flex justify-center text-primary-900">HOMOLOGACIONES</h3>
     <Dropdown
       title="¿Cómo puedo solicitar una homologación?"
       link="https://www.unicauca.edu.co/versionP/pregrado"
@@ -128,8 +129,9 @@ const anchors = [
       <p></p>
     </Dropdown>
   </Layout2>
+  <Line color="bg-secondary-400" />
   <Layout2>
-    <h3 id="pasantias" class="pb-4 flex justify-center">PASANTIAS</h3>
+    <h3 id="pasantias" class="pb-4 flex justify-center text-primary-900">PASANTIAS</h3>
     <Dropdown
       title="¿Cuáles son los requisitos para realizar una pasantía?"
       link="https://www.unicauca.edu.co/versionP/pregrado"
@@ -158,8 +160,9 @@ const anchors = [
       <p></p>
     </Dropdown>
   </Layout2>
+  <Line color="bg-secondary-400" />
   <Layout2>
-    <h3 id="cancelaciones" class="pb-4 flex justify-center">CANCELACIONES</h3>
+    <h3 id="cancelaciones" class="pb-4 flex justify-center text-primary-900">CANCELACIONES</h3>
     <Dropdown
       title="¿Qué debo hacer si quiero cancelar una materia?"
       link="https://www.unicauca.edu.co/versionP/pregrado"
@@ -197,8 +200,9 @@ const anchors = [
       <p></p>
     </Dropdown>
   </Layout2>
+  <Line color="bg-secondary-400" />
   <Layout2>
-    <h3 id="matricula" class="pb-4 flex justify-center">MATRICULA</h3>
+    <h3 id="matricula" class="pb-4 flex justify-center text-primary-900">MATRICULA</h3>
     <Dropdown
       title="¿Cuándo debo realizar la matrícula académica ?"
       link="https://www.unicauca.edu.co/versionP/pregrado"
@@ -245,8 +249,9 @@ const anchors = [
       <p></p>
     </Dropdown>
   </Layout2>
+  <Line color="bg-secondary-400" />
   <Layout2>
-    <h3 id="reingreso" class="pb-4 flex justify-center">REINGRESO</h3>
+    <h3 id="reingreso" class="pb-4 flex justify-center text-primary-900">REINGRESO</h3>
     <Dropdown
       title="¿Qué debo hacer si quiero volver a la universidad después de haberme retirado?"
       link="https://www.unicauca.edu.co/versionP/pregrado"
@@ -284,8 +289,9 @@ const anchors = [
       <p></p>
     </Dropdown>
   </Layout2>
+  <Line color="bg-secondary-400" />
   <Layout2>
-    <h3 id="modalidades" class="pb-4 flex justify-center">MODALIDADES DE GRADO</h3>
+    <h3 id="modalidades" class="pb-4 flex justify-center text-primary-900">MODALIDADES DE GRADO</h3>
     <Dropdown
       title="¿Cuáles son las modalidades de grado que ofrece el programa?"
       link="https://www.unicauca.edu.co/versionP/pregrado"
