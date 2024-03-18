@@ -1,11 +1,10 @@
 ---
 import Layout from "../component/layouts/layout.astro";
-import Information from "../component/about-page/information.astro";
+import CurriculimStructure from "../component/about-page/curriculum-structure.astro";
 import Banner from "../component/all-pages/banner.astro";
 import InformationMVO from "../component/react/information-mvo-about";
 import List from "../component/all-pages/list.astro";
 import Goalds from "../component/react/goalds.jsx";
-import Img from "../component/all-pages/img.astro";
 import LayoutTextImg from "../component/layouts/layout-text-img.astro";
 import LayoutCol2 from "../component/layouts/layout-col-2.astro";
 import Layout2 from "../component/layouts/layout2.astro";
@@ -13,7 +12,7 @@ import Line from "../component/all-pages/line.astro";
 ---
 
 <Layout pathname="/about" title="Acerca del Programa">
-  <LayoutTextImg src="/images/history.webp" alt="Fotografía FIET para ilustrar la reseña histórica" >
+  <LayoutTextImg src="/images/history.webp" alt="Fotografía FIET para ilustrar la reseña histórica">
     <div class="flex flex-col justify-center gap-y-4">
       <h3>RESEÑA HISTÓRICA</h3>
       <p>
@@ -24,34 +23,34 @@ import Line from "../component/all-pages/line.astro";
       </p>
     </div>
   </LayoutTextImg>
-  <Line color="bg-secondary-400"></Line>
-  <section class="flex flex-col gap-4" >
+  <Line color="bg-secondary-400" />
+  <section class="flex flex-col gap-4">
     <h3 class="px-0 lg:px-12">ESTRUCTURA CURRICULAR</h3>
     <LayoutCol2>
-      <Information title="Área Común: ">
+      <CurriculimStructure title="Área Común: ">
         Se fundamenta en la ciencia y la tecnología. Tiene como objetivo introducir al estudiante en la compatibilidad
         científica de las ciencias formales, las ciencias naturales y las ciencias humanas y sociales. Además, provee al
         estudiante bases requeridas en áreas como la Física y las Matemáticas y, a su vez, brindar la fundamentación
         necesaria en asignaturas como la Electrónica, Informática y Telecomunicaciones.
-      </Information>
-      <Information title="Área Transversal:">
+      </CurriculimStructure>
+      <CurriculimStructure title="Área Transversal:">
         Estimula al estudiante en el respeto, el aprecio y el reconocimiento por las diversas concepciones del mundo,
         sus interpretaciones y representaciones simbólicas para construir, fortalecer y rescatar procesos de identidad
         colectiva, especialmente en los ámbitos local, regional y nacional. Asimismo, busca desarrollar en los
         estudiantes la cultura del emprendimiento.
-      </Information>
-      <Information title="Área Específica: ">
+      </CurriculimStructure>
+      <CurriculimStructure title="Área Específica: ">
         Pretende introducir sistemáticamente al estudiante en la teoría y la práctica profesional de diversas
         disciplinas e, igualmente, iniciarlo en el contacto con los problemas del entorno, a partir de una práctica
         estructurante y en asocio con estudiantes de otras profesiones y disciplinas, y con entidades públicas y
         privadas de la región.
-      </Information>
-      <Information title="Área de Libre Elección:">
+      </CurriculimStructure>
+      <CurriculimStructure title="Área de Libre Elección:">
         Propende por introducir al estudiante en la práctica investigativa mediante la participación en grupos y
         actividades institucionales de investigación. Igualmente, busca sensibilizar en el análisis y tratamiento de los
         problemas críticos del desarrollo regional y nacional, preparándolo para entender su entorno social y actuar
         adecuadamente en este.
-      </Information>
+      </CurriculimStructure>
     </LayoutCol2>
   </section>
   <Banner title='"Dime y lo olvido, enséñame y lo recuerdo, involúcrame y lo aprendo"' image="bg-banner-about" />

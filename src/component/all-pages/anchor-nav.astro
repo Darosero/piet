@@ -7,7 +7,10 @@ const { list } = Astro.props;
   <nav class="flex gap-4 justify-center flex-wrap">
     {
       list.map((item) => (
-        <a href={item.href} class="border-b-2 border-secondary-500 font-bold text-primary-500 sm:text-base lg:text-xl">
+        <a
+          href={item.href}
+          class="border-b-2 border-secondary-500 font-semibold text-primary-500 sm:text-base lg:text-xl hover:font-bold hover:border-b-3"
+        >
           {item.title}
         </a>
       ))
