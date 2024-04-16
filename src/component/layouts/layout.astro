@@ -10,21 +10,36 @@ const { title, pathname } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/icons/unicauca.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href="https://piet-unicauca.vercel.app/" />
+    <title>{title}</title>
+
     <meta
       name="description"
       content="Pagina informativa del programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca"
     />
-    <meta property="og:title" content="PIET Unicauca" />
 
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://piet-unicauca.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PIET Unicauca" />
     <meta
       property="og:description"
       content="Pagina informativa del programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca"
     />
-    <meta property="og:image" content="/images/history.webp" />
-    <meta property="og:image:width" content="120" />
-    <meta property="og:image:height" content="60" />
-    <link rel="canonical" href="https://piet-unicauca.vercel.app/" />
-    <title>{title}</title>
+    <meta property="og:image" content="https://piet-unicauca.vercel.app/images/history.webp" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="piet-unicauca.vercel.app" />
+    <meta property="twitter:url" content="https://piet-unicauca.vercel.app/" />
+    <meta name="twitter:title" content="PIET Unicauca" />
+    <meta
+      name="twitter:description"
+      content="Pagina informativa del programa de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca"
+    />
+    <meta name="twitter:image" content="https://piet-unicauca.vercel.app/images/history.webp" />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
   </head>
   <body>
     <Header pathname={pathname} />
