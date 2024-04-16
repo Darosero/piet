@@ -1,13 +1,37 @@
 ---
+import Banner from "../../component/all-pages/banner.astro";
+import List from "../../component/all-pages/list.astro";
+import BreadCrumbs from "../../component/curriculum-page/bread-crumbs.astro";
 import TableSemestre from "../../component/curriculum-page/table-semester.jsx";
+import LayoutCol2 from "../../component/layouts/layout-col-2.astro";
 import LayoutPagePensum from "../../component/layouts/layout-page-pensum.astro";
+import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
+import Layout from "../../component/layouts/layout.astro";
+import Layout2 from "../../component/layouts/layout2.astro";
+import Goalds from "../../component/react/goalds";
 ---
 
-<LayoutPagePensum
-  title="Antiguo Pensum"
-  pathname="/curriculum"
-  path="/curriculum-pages/page-pensum-old"
-  image="bg-banner-old-pensum"
->
-  <TableSemestre isNew={false} client:only />
-</LayoutPagePensum>
+<Layout pathname="/curriculum" title="Antiguo Pensum">
+  <Banner title="Antiguo Pensum" image="bg-banner-old-pensum" />
+  <Layout2>
+    <BreadCrumbs pathname="/curriculum" title="Antiguo Pensum" path="/curriculum-pages/page-pensum-old" />
+    <TableSemestre isNew={false} client:only />
+  </Layout2>
+  <Banner title="Requisitos de grado" image="bg-banner-about" />
+  <LayoutTextImg src="../../../images/requisitosdegrado.webp" alt="imagen requisitos de grado">
+    <div>
+      <p>
+        Además del plan de estudios, el programa de Ingeniería Electrónica y Telecomunicaciones cuenta con los
+        siguientes requisitos de grado:
+      </p>
+      <li>Inglés I - Curso Piloto - I Semestre</li>
+      <li>Inglés II - Curso Piloto - II Semestre</li>
+      <li>Ingles III - Curso Piloto</li>
+      <li>Ingles IV - Curso Piloto</li>
+      <li>Actividad Física Formativa</li>
+      <li>Horas de seminario</li>
+      <li>Horas de tesis</li>
+      <li>ECAES</li>
+    </div>
+  </LayoutTextImg>
+</Layout>

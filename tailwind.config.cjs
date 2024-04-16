@@ -10,17 +10,17 @@ module.exports = {
       },
       gridTemplateColumns: {
         home: "auto auto auto",
-        card: "auto 1fr auto"
+        card: "auto 1fr auto",
       },
       backgroundImage: {
-        "footer": "url(/banners/footer.webp)",
+        footer: "url(/banners/footer.webp)",
         "banner-old-pensum": "url(/banners/oldpensum.webp)",
         "banner-about": "url(/banners/about-image.webp)",
         "banner-applicants": "url(/banners/aspirantes.webp)",
         "banner-teleco": "url(/banners/technology.webp)",
         "banner-elective": "url(/banners/elective.webp)",
         "banner-electronic": "url(/banners/electronic.webp)",
-        "banner-modalities":"url(/banners/modalidades.webp)",
+        "banner-modalities": "url(/banners/modalidades.webp)",
         "banner-students": "url(/banners/students.webp)",
       },
       colors: {
