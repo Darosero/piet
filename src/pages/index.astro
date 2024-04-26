@@ -12,10 +12,11 @@ import StarIcon from "../component/icons/star-icon.astro";
 import CalendarIcon from "../component/icons/calendar-icon.astro";
 import TimeIcon from "../component/icons/time-icon.astro";
 import Carrousel from "../component/init-page/carrousel.astro";
+import MedalIcon from "../component/icons/medal-icon.astro";
 ---
 
 <Layout pathname="/" title="PIET UNICAUCA">
-  <section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 place-items-center gap-4">
+  <section class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 place-items-center gap-4">
     <InitInformation>
       <GraduateIcon />
       <StartInformation title="Nivel Académico" description="Pregrado" />
@@ -23,6 +24,10 @@ import Carrousel from "../component/init-page/carrousel.astro";
     <InitInformation>
       <StarIcon />
       <StartInformation title="Código SINES" description="238" />
+    </InitInformation>
+    <InitInformation>
+      <MedalIcon />
+      <StartInformation title="Acreditación" description="Alta calidad" />
     </InitInformation>
     <InitInformation>
       <TimeIcon />
