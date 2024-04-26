@@ -22,6 +22,7 @@ module.exports = {
         "banner-electronic": "url(/banners/electronic.webp)",
         "banner-modalities": "url(/banners/modalidades.webp)",
         "banner-students": "url(/banners/students.webp)",
+        "banner-businessmen": "url(/banners/empresarios.webp)",
       },
       colors: {
         primary: {
