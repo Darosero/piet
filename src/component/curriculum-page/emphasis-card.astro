@@ -1,0 +1,16 @@
+---
+import Button from "../all-pages/button.astro";
+import Documents from "../init-page/documents.astro";
+const { title, path, isActive, text } = Astro.props;
+---
+
+<section class="border-4 border-primary-50 rounded-lg p-4 bg-primary-50 shadow-xl text-center m-4">
+  <div class="flex flex-col justify-center gap-4">
+    <h6>{title}</h6>
+    <p>
+      <slot />
+    </p>
+    <Button link={path} isActive={isActive} text={text} />
+    <!----<Button link={pdf} isActive></Button> -->
+  </div>
+</section>

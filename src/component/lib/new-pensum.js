@@ -395,7 +395,7 @@ export const NEWPENSUM = {
         name: "Anteproyecto de Grado",
       },
       {
-        name: "Emprendimiento e innovación en ingeniero",
+        name: "Emprendimiento e innovación en ingeniería",
       },
     ],
     credits: [

@@ -6,6 +6,7 @@ import VideoCard from "../../component/all-pages/video-card.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
 import LayoutCol2 from "../../component/layouts/layout-col-2.astro";
 import BreadCrumbs from "../../component/curriculum-page/bread-crumbs.astro";
+import EmphasisCard from "../../component/curriculum-page/emphasis-card.astro";
 ---
 
 <Layout pathname="/curriculum" title="Énfasis">
@@ -99,6 +100,104 @@ import BreadCrumbs from "../../component/curriculum-page/bread-crumbs.astro";
         title="Énfasis IV: Aplicaciones y Servicios Telemáticos "
         path="https://www.youtube.com/embed/AY2XnRmHDro?si=UegMdjiLx_YI8u61"
       />
+    </LayoutCol2>
+    <Layout2>
+      <div class="flex justify-center">
+        <h3 class="text-primary-500 text-center p-8">INGENIERÍA PARA ENTORNOS INTELIGENTES</h3>
+      </div>
+    </Layout2>
+    <LayoutCol2>
+      <EmphasisCard
+        title="Énfasis I: Entornos Inteligentes"
+        isActive
+        text="más información"
+        path="/enfasis-doc/enfasis1-EntornosInteligentes.pdf"
+        >¡Descubre los Entornos Inteligentes en nuestro énfasis "Entornos Inteligentes"! Aprenderás a explicar
+        fundamentos, analizar arquitecturas, describir técnicas de inteligencia ambiental, discutir aspectos sociales y
+        analizar entornos ya implementados. Clases teóricas, prácticas y un proyecto final te esperan. ¡Únete y adquiere
+        habilidades en tecnologías emergentes!
+      </EmphasisCard>
+      <EmphasisCard
+        title="Énfasis II: Diseño de Dispositivos para Entornos Inteligentes"
+        isActive
+        text="más información"
+        path="/enfasis-doc/enfasis2-EntornosInteligentes.pdf"
+        >¡Descubre el diseño de dispositivos para entornos inteligentes en nuestro énfasis "Diseño de Dispositivos para
+        Entornos Inteligentes"! Aprenderás a incorporar soluciones electrónicas a productos, diseñar con componentes
+        electrónicos y manufactura aditiva, utilizar herramientas de diseño electrónico y mecánico, y fabricar circuitos
+        impresos e impresión 3D.
+      </EmphasisCard>
+      <EmphasisCard
+        title="Énfasis III: Procesamiento de Información en Entornos Inteligentes"
+        isActive
+        text="más información"
+        path="/enfasis-doc/enfasis3-EntornosInteligentes.pdf"
+        >¡Explora el procesamiento de información en entornos inteligentes en nuestro énfasis "Procesamiento de
+        Información en Entornos Inteligentes"! Aprenderás a conocer técnicas de gestión y organización inteligente de la
+        información, aplicar técnicas computacionales para preprocesado y extracción de características, utilizar
+        algoritmos de clasificación y procesado, y aplicar diferentes técnicas de análisis y organización de la
+        información.
+      </EmphasisCard>
+      <EmphasisCard
+        title="Énfasis IV: Desarrollo de Productos y Soluciones en Entornos Inteligentes"
+        isActive
+        text="más información"
+        path="/enfasis-doc/enfasis4-EntornosInteligentes.pdf"
+      >
+        ¡Claro! Aquí tienes una versión más concisa: Descubre "Desarrollo de Productos y Soluciones en Entornos
+        Inteligentes", donde implementarás soluciones reales de TIC y/o electrónica. Aprenderás metodologías de
+        desarrollo y aplicación en entornos inteligentes, diseño de productos enfocado en el mercado, y conceptos de
+        estudio de mercado y negocio.
+      </EmphasisCard>
+    </LayoutCol2>
+  </section>
+  <section>
+    <Banner title="ÉNFASIS DEPARTAMENTO DE ELECTRÓNICA, INSTRUMENTACIÓN Y CONTROL" image="bg-banner-about" />
+    <Layout2>
+      <div class="flex justify-center">
+        <h3 class="text-primary-500 text-center p-8">DISEÑO ELECTRÓNICO PARA SISTEMAS DE TELECOMUNICACIONES</h3>
+      </div>
+    </Layout2>
+    <LayoutCol2>
+      <EmphasisCard
+        title="Énfasis I: Arquitecturas Hardware de Procesadores Digitales de Señales"
+        text="más información"
+        isActive
+        path="/enfasis-doc/enfasis1-DiseñoElectronico.pdf"
+        >Descubre el mundo del diseño de procesadores digitales de señales en "Arquitecturas Hardware de Procesadores
+        Digitales de Señales". Aprenderás a identificar arquitecturas, diseñar estructuras SoC y aplicar algoritmos de
+        procesamiento. ¡Únete y adquiere habilidades para el mundo real!
+      </EmphasisCard>
+      <EmphasisCard
+        title="Énfasis II: Diseño de Placas de Circuito Impreso para Sistemas de Telecomunicaciones"
+        isActive
+        text="más información"
+        path="/enfasis-doc/enfasis2-DiseñoElectronico.pdf"
+        >Descubre el mundo del diseño de PCBs para sistemas de telecomunicaciones! Aprenderás a utilizar herramientas
+        CAD para el diseño de PCBs, aplicar normas IPC y cumplir con requisitos de producción en masa. Clases
+        magistrales y prácticas demostrativas te esperan. ¡Únete y adquiere habilidades para destacar en el diseño
+        electrónico!
+      </EmphasisCard>
+      <EmphasisCard
+        title="Énfasis III: Diseño de Circuitos Electrónicos para Telecomunicaciones"
+        isActive
+        text="más información"
+        path="/enfasis-doc/enfasis3-DiseñoElectronico.pdf"
+        >¡Descubre el diseño de circuitos electrónicos para telecomunicaciones en nuestro énfasis "Diseño de Circuitos
+        Electrónicos para Telecomunicaciones"! Aprenderás a diseñar e implementar sistemas electrónicos para
+        telecomunicaciones, abordando aspectos clave como adquisición y acondicionamiento de señales, circuitos de
+        señales mixtas y radiofrecuencia, y elementos fundamentales de IoT.
+      </EmphasisCard>
+      <EmphasisCard
+        title="Énfasis IV: Proyecto de Diseño Electrónico para Telecomunicaciones"
+        isActive
+        text="más información"
+        path="/enfasis-doc/enfasis4-DiseñoElectronico.pdf"
+        >¡Explora el diseño electrónico para telecomunicaciones en nuestro énfasis "Proyecto de Diseño Electrónico para
+        Telecomunicaciones"! Aprenderás a diseñar y ejecutar proyectos electrónicos funcionales basados en sistemas de
+        telecomunicaciones inalámbricos. Clases teóricas y prácticas te esperan, junto con un proyecto de diseño
+        integrado. ¡Únete y adquiere habilidades para destacar en el diseño electrónico!
+      </EmphasisCard>
     </LayoutCol2>
   </section>
 </Layout>
