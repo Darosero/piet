@@ -19,6 +19,29 @@ export const NEWPENSUM = {
       {
         name: "Introducción a los Circuitos Eléctricos",
       },
+      {
+        name: "Electiva FISH-I",
+      },
+    ],
+    code: [
+      {
+        name: "MAT101",
+      },
+      {
+        name: "MAT102",
+      },
+      {
+        name: "IAT101",
+      },
+      {
+        name: "SOC101",
+      },
+      {
+        name: "BAI101",
+      },
+      {
+        name: "SOC102",
+      },
     ],
     credits: [
       {
@@ -36,8 +59,14 @@ export const NEWPENSUM = {
       {
         name: "1",
       },
+      {
+        name: "2",
+      },
     ],
     prerequisites: [
+      {
+        name: "___",
+      },
       {
         name: "___",
       },
@@ -75,6 +104,29 @@ export const NEWPENSUM = {
       {
         name: "Ética",
       },
+      {
+        name: "Electiva FISH-II",
+      },
+    ],
+    code: [
+      {
+        name: "MAT201",
+      },
+      {
+        name: "FIS201",
+      },
+      {
+        name: "BAI201",
+      },
+      {
+        name: "BAI202",
+      },
+      {
+        name: "SOC202",
+      },
+      {
+        name: "SOC201",
+      },
     ],
     credits: [
       {
@@ -92,6 +144,9 @@ export const NEWPENSUM = {
       {
         name: "2",
       },
+      {
+        name: "2",
+      },
     ],
     prerequisites: [
       {
@@ -102,6 +157,9 @@ export const NEWPENSUM = {
       },
       {
         name: "Álgebra Lineal e Intro a los Circuitos Eléctricos",
+      },
+      {
+        name: "___",
       },
       {
         name: "___",
@@ -133,6 +191,26 @@ export const NEWPENSUM = {
       },
       {
         name: "Circuitos Digitales",
+      },
+    ],
+    code: [
+      {
+        name: "MAT302",
+      },
+      {
+        name: "MAT301",
+      },
+      {
+        name: "FIS301",
+      },
+      {
+        name: "BAI301",
+      },
+      {
+        name: "BAI302",
+      },
+      {
+        name: "BAI303",
       },
     ],
     credits: [
@@ -200,6 +278,26 @@ export const NEWPENSUM = {
         name: "Vibraciones y Ondas",
       },
     ],
+    code: [
+      {
+        name: "BAI401",
+      },
+      {
+        name: "BAI402",
+      },
+      {
+        name: "BAI403",
+      },
+      {
+        name: "BAI404",
+      },
+      {
+        name: "IAT401",
+      },
+      {
+        name: "FIS402",
+      },
+    ],
     credits: [
       {
         name: "3",
@@ -265,6 +363,26 @@ export const NEWPENSUM = {
         name: "Fundamentos de Redes de Telecomunicaciones",
       },
     ],
+    code: [
+      {
+        name: "BAI501",
+      },
+      {
+        name: "BAI502",
+      },
+      {
+        name: "IAT501",
+      },
+      {
+        name: "IAT502",
+      },
+      {
+        name: "BAI503",
+      },
+      {
+        name: "IAT503",
+      },
+    ],
     credits: [
       {
         name: "3",
@@ -328,6 +446,26 @@ export const NEWPENSUM = {
       },
       {
         name: "Informática para Telecomunicaciones",
+      },
+    ],
+    code: [
+      {
+        name: "BAI601",
+      },
+      {
+        name: "IAT601",
+      },
+      {
+        name: "BAI603",
+      },
+      {
+        name: "IAT603",
+      },
+      {
+        name: "IAT602",
+      },
+      {
+        name: "BAI602",
       },
     ],
     credits: [
@@ -398,6 +536,29 @@ export const NEWPENSUM = {
         name: "Emprendimiento e innovación en ingeniería",
       },
     ],
+    code: [
+      {
+        name: "IAT701",
+      },
+      {
+        name: "IAT705",
+      },
+      {
+        name: "IAT702",
+      },
+      {
+        name: "IAT703",
+      },
+      {
+        name: "IAT704",
+      },
+      {
+        name: "IAI701",
+      },
+      {
+        name: "ADM701",
+      },
+    ],
     credits: [
       {
         name: "3",
@@ -415,7 +576,7 @@ export const NEWPENSUM = {
         name: "3",
       },
       {
-        name: "*",
+        name: "1",
       },
       {
         name: "2",
@@ -469,6 +630,26 @@ export const NEWPENSUM = {
         name: "Laboratorio I de Sistemas de Telecomunicaciones",
       },
     ],
+    code: [
+      {
+        name: "IAI802",
+      },
+      {
+        name: "IAI801",
+      },
+      {
+        name: "IAE801",
+      },
+      {
+        name: "IAE802",
+      },
+      {
+        name: "SOC801",
+      },
+      {
+        name: "IAT801",
+      },
+    ],
     credits: [
       {
         name: "3",
@@ -480,10 +661,10 @@ export const NEWPENSUM = {
         name: "3",
       },
       {
-        name: "3",
+        name: "2",
       },
       {
-        name: "2",
+        name: "3",
       },
       {
         name: "3",
@@ -532,6 +713,26 @@ export const NEWPENSUM = {
       },
       {
         name: "Laboratorio II de Sistemas de Telecomunicaciones",
+      },
+    ],
+    code: [
+      {
+        name: "ADM902",
+      },
+      {
+        name: "IAT902",
+      },
+      {
+        name: "IAI901",
+      },
+      {
+        name: "IAI902",
+      },
+      {
+        name: "IAE901",
+      },
+      {
+        name: "IAT901",
       },
     ],
     credits: [
@@ -593,6 +794,20 @@ export const NEWPENSUM = {
         name: "Análisis económico de inversiones en TIC",
       },
     ],
+    code: [
+      {
+        name: "IAI1001",
+      },
+      {
+        name: "IAI1002",
+      },
+      {
+        name: "*",
+      },
+      {
+        name: "ADM1001",
+      },
+    ],
     credits: [
       {
         name: "3",
@@ -601,7 +816,7 @@ export const NEWPENSUM = {
         name: "11",
       },
       {
-        name: "*",
+        name: "1",
       },
       {
         name: "2",
