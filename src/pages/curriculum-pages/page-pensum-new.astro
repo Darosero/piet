@@ -5,6 +5,7 @@ import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
 import Layout from "../../component/layouts/layout.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
 import BreadCrumbs from "../../component/curriculum-page/bread-crumbs.astro";
+import Line from "../../component/all-pages/line.astro";
 ---
 
 <Layout pathname="/curriculum" title="Nuevo Pensum">
@@ -25,6 +26,28 @@ import BreadCrumbs from "../../component/curriculum-page/bread-crumbs.astro";
       <li>Formación en Segundo Idioma</li>
       <li>Actividad Física Formativa</li>
       <li>Pruebas Saber Pro</li>
+    </div>
+  </LayoutTextImg>
+  <Line color="bg-secondary-400" />
+  <h3 class="pb-4 flex justify-center text-primary-900">FORMACIÓN EN SEGUNDO IDIOMA</h3>
+  <LayoutTextImg src="../../../images/ingles.webp" alt="imagen homologación idioma extranjero">
+    <div>
+      <p>Formas de aprobar idioma extranjero:</p>
+      <li>Homologación por Prueba de Suficiencia en Inglés</li>
+      <li>Homologación por Resultado B2 en Pruebas Saber Pro</li>
+      <li>Homologación por Prueba externa como IELTS, TOEFL</li>
+      <li>
+        Homologación por Certificados de cursos en idioma extranjero de otras universidades o instituciones de educación
+        superior
+      </li>
+      <br />
+      <a
+        href="../formatos-doc/homologacioningles.pdf"
+        aria-label=""
+        target="_blank"
+        class="text-primary-500 border-b-2 border-primary-500 font-bold text-lg"
+        >Mas información para homologación de inglés
+      </a>
     </div>
   </LayoutTextImg>
 </Layout>
