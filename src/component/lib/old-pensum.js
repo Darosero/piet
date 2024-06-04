@@ -23,6 +23,26 @@ export const OLDPENSUM = {
         name: "Introducción a la Ingeniería",
       },
     ],
+    code: [
+      {
+        name: "11271",
+      },
+      {
+        name: "11061",
+      },
+      {
+        name: "11238",
+      },
+      {
+        name: "11339",
+      },
+      {
+        name: "11339",
+      },
+      {
+        name: "11064",
+      },
+    ],
     credits: [
       {
         name: "4",
@@ -85,6 +105,26 @@ export const OLDPENSUM = {
         name: "Informática II Nueva",
       },
     ],
+    code: [
+      {
+        name: "ALGLIN",
+      },
+      {
+        name: "11273",
+      },
+      {
+        name: "CIRCUI2",
+      },
+      {
+        name: "ELECT",
+      },
+      {
+        name: "INFO2NVA",
+      },
+      {
+        name: "11064",
+      },
+    ],
     credits: [
       {
         name: "4",
@@ -142,6 +182,26 @@ export const OLDPENSUM = {
       },
       {
         name: "Ecuaciones Diferenciales Ordinarias",
+      },
+    ],
+    code: [
+      {
+        name: "CIRCU3",
+      },
+      {
+        name: "ELECBAS",
+      },
+      {
+        name: "VIBONDAS",
+      },
+      {
+        name: "11280",
+      },
+      {
+        name: "LABINSTB",
+      },
+      {
+        name: "ECDIF",
       },
     ],
     credits: [
@@ -210,6 +270,29 @@ export const OLDPENSUM = {
       },
       {
         name: "Lab de Vibraciones y Ondas",
+      },
+    ],
+    code: [
+      {
+        name: "11079",
+      },
+      {
+        name: "CANALG1",
+      },
+      {
+        name: "CDIGIT1",
+      },
+      {
+        name: "CAL-III",
+      },
+      {
+        name: "11279",
+      },
+      {
+        name: "LABELEC1",
+      },
+      {
+        name: "11289",
       },
     ],
     credits: [
@@ -282,7 +365,26 @@ export const OLDPENSUM = {
       {
         name: "Introducción a las Redes de Telecomunicaciones ",
       },
-      
+    ],
+    code: [
+      {
+        name: "CANALG2",
+      },
+      {
+        name: "CDIGIT2",
+      },
+      {
+        name: "MTRANS",
+      },
+      {
+        name: "PDS",
+      },
+      {
+        name: "PROBPEST",
+      },
+      {
+        name: "INRED",
+      },
     ],
     credits: [
       {
@@ -303,7 +405,6 @@ export const OLDPENSUM = {
       {
         name: "3",
       },
-     
     ],
     prerequisites: [
       {
@@ -348,6 +449,26 @@ export const OLDPENSUM = {
       },
       {
         name: "Teoría de Telecomunicaciones II ",
+      },
+    ],
+    code: [
+      {
+        name: "SCONTR",
+      },
+      {
+        name: "LABELEC2",
+      },
+      {
+        name: "SCONMU",
+      },
+      {
+        name: "INFOR3",
+      },
+      {
+        name: "TTELEC1",
+      },
+      {
+        name: "TTELECO2",
       },
     ],
     credits: [
@@ -409,10 +530,30 @@ export const OLDPENSUM = {
         name: "Radiocomunicaciones ",
       },
       {
-        name: "Metodología de la Investigación" ,
+        name: "Metodología de la Investigación",
       },
       {
         name: "Énfasis I",
+      },
+    ],
+    code: [
+      {
+        name: "11098",
+      },
+      {
+        name: "CANALG3",
+      },
+      {
+        name: "STELEC",
+      },
+      {
+        name: "RADIOC",
+      },
+      {
+        name: "MINV",
+      },
+      {
+        name: "21454",
       },
     ],
     credits: [
@@ -474,10 +615,30 @@ export const OLDPENSUM = {
         name: "Énfasis III",
       },
       {
-        name: "Electiva I" ,
+        name: "Electiva I",
       },
       {
         name: " Lab I de Sistemas de Telecomunicaciones",
+      },
+    ],
+    code: [
+      {
+        name: "FEMPRE",
+      },
+      {
+        name: "11102",
+      },
+      {
+        name: "21455",
+      },
+      {
+        name: "21456",
+      },
+      {
+        name: "ELE1",
+      },
+      {
+        name: "LABSIST1",
       },
     ],
     credits: [
@@ -539,10 +700,30 @@ export const OLDPENSUM = {
         name: "Lab II de Telecomunicaciones",
       },
       {
-        name: "Lab III de Telecomunicaciones" ,
+        name: "Lab III de Telecomunicaciones",
       },
       {
         name: "Contabilidad y Finanzas para Emprendedores ",
+      },
+    ],
+    code: [
+      {
+        name: "21457",
+      },
+      {
+        name: "ELE2",
+      },
+      {
+        name: "ANTEPR",
+      },
+      {
+        name: "LABSIST2",
+      },
+      {
+        name: "LABSIST3",
+      },
+      {
+        name: "M24616",
       },
     ],
     credits: [
@@ -603,7 +784,20 @@ export const OLDPENSUM = {
       {
         name: "Formulación y Evaluación de Proyectos Empresariales",
       },
-    
+    ],
+    code: [
+      {
+        name: "ETICFISH",
+      },
+      {
+        name: "ELE3",
+      },
+      {
+        name: "11292",
+      },
+      {
+        name: "M24618",
+      },
     ],
     credits: [
       {
@@ -618,7 +812,6 @@ export const OLDPENSUM = {
       {
         name: "2",
       },
-    
     ],
     prerequisites: [
       {
@@ -633,7 +826,6 @@ export const OLDPENSUM = {
       {
         name: "Contabilidad y Finanzas para Emprendedores",
       },
-     
     ],
   },
 };
