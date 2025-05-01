@@ -6,6 +6,7 @@ import Dropdown from "../component/curriculum-page/dropdown.astro";
 import Layout from "../component/layouts/layout.astro";
 import Layout2 from "../component/layouts/layout2.astro";
 import Line from "../component/all-pages/line.astro";
+import ListNum from "../component/all-pages/list_num.astro"
 const anchors = [
   { href: "#homologaciones", title: "HOMOLOGACIONES" },
   { href: "#pasantias", title: "PASANTIAS" },
@@ -182,21 +183,101 @@ const anchors = [
       </Dropdown>
       <Dropdown
         title="¿Cuáles son los requisitos para realizar una pasantía?"
-        link="https://www.unicauca.edu.co/versionP/pregrado"
-        textancle="Más Información"
+        link="../documents/Pasantias-r452_2017 FIET.docx.pdf"
+        textancle="RESOLUCIÓN 8.4.2–90.14/452 de 2017"
         isActive
         label="ir a más información"
       >
-        <p></p>
+        <p>Los requisitos para realizar una pasantía son los siguientes:</p>
+        <List>
+          Ser estudiante activo de uno de los programas de la Facultad de Ingeniería
+          Electrónica y Telecomunicaciones.
+        </List>
+        <List>
+          Haber aprobado todas las asignaturas correspondientes hasta sexto semestre 
+          del plan de estudios.
+        </List>
+        <List>
+          La pasantía empresarial debe realizarse en dependencias de la Universidad del Cauca,
+          y/o preferiblemente con entidades u organizaciones púbicas o privadas con las cuales
+          la Universidad tenga convenio de cooperación institucional vigente.
+        </List>
+        <List>
+          El estudiante deberá contar con un plan de trabajo definido en conjunto con la orientación
+          de dos asesores: el primero designado por alguno de los
+          Departamentos de la FIET y el segundo por parte de la Organización.
+        </List>
+        <List>
+          Presentar los siguientes documentos ante el Comité de Programa: Plan de trabajo <strong>Formato A1</strong> 
+          y Carta de aceptación de la organización <strong>Formato A2</strong> 
+        </List>
+        <List>
+          Obtener el aval del Comité del Programa <strong>Formato A3</strong> antes de iniciar la pasantía.
+        </List>
+        <List>
+          Las actividades concernientes a la pasantía podrán ser desarrolladas solamente dentro del
+          periodo académico oficial definido por la Universidad.
+        </List>
+        <List>
+          Estar afiliado al sistema de seguridad social en riesgos laborales, gestionado por la organización o por la Universidad.
+        </List>
+        <List>
+          Entregar un informe final de actividades <strong>Formato A4</strong> al finalizar
+          la pasantía, siguiendo las normas y estructura indicadas.
+        </List>
+        <List>
+          La pasantía debe ser evaluada por ambos asesores, con una nota final mínima de 3.0 
+          para aprobarla <strong>Formato A5</strong>.
+        </List>
+        <List>
+          La pasantía solo se puede realizar una vez. Si el estudiante se retira
+          o no cumple el plan, no podrá postularse nuevamente.
+        </List>
       </Dropdown>
+
       <Dropdown
         title="¿Cuáles son los pasos para realizar una pasantía empresarial?"
-        link="https://www.unicauca.edu.co/versionP/pregrado"
-        textancle="Más Información"
+        link="../documents/Pasantias-r452_2017 FIET.docx.pdf"
+        textancle="RESOLUCIÓN 8.4.2–90.14/452 de 2017"
         isActive
-        label="ir a más información"
+        label="Ir a más información"
       >
-        <p></p>
+      <p>
+        Los formatos necesarios para el desarrollo de una pasantía empresarial los puede encontrar en 
+        el reglamento de pasantías empresariales <strong>RESOLUCIÓN 8.4.2–90.14/452 de 2017</strong>, teniendo en cuenta 
+        lo anterior, se definen los pasos para realizar una pasantía empresarial:
+      </p>
+        <ListNum index= 1 >
+          Verificar que cumples los requisitos esenciales: Ser estudiante activo de un programa de la FIET 
+          y haber aprobado todas las asignaturas hasta sexto semestre del plan de estudios.
+        </ListNum>
+         
+        <ListNum index= 2 >
+          Busca una organización para realizar la pasantía: La organización puede ser pública, privada, ONG o una 
+          dependencia de la Universidad.
+        </ListNum>
+
+        <ListNum index="3">
+          Define un plan de trabajo <strong>Formato A1</strong> con un asesor por parte de la FIET y un asesor 
+          por parte de la organización.
+        </ListNum>
+        <ListNum index="4">
+          Solicitar la carta de aceptación de la empresa donde harás la pasantía <strong>Formato A2</strong>.
+        </ListNum>
+        <ListNum index="5">
+          Entregar el plan de trabajo firmado y la carta de aceptación de la empresa al comité del programa.
+        </ListNum>
+        <ListNum index="6">
+          Esperar la aprobación del comité del programa <strong>Formato A3</strong>, se notificará a la empresa para iniciar formalmente la pasantía y realizarla
+          durante el periodo académico establecido por la Universidad.
+        </ListNum>
+        <ListNum index="7">
+          Luego de concluir el desarrollo de las actividades del plan de trabajo, debe elaborar 
+          y entregar un informe final de actividades <strong>Formato A4</strong>, siguiendo las normas exigidas.
+        </ListNum>
+        <ListNum index="8">
+          Recibir la evaluación final de ambos asesores <strong>Formato A5</strong>.
+        </ListNum>
       </Dropdown>
     </Layout2>
     <Line color="bg-secondary-400" />
@@ -473,20 +554,16 @@ const anchors = [
           <strong>Trabajo de Investigación:</strong> En la cual el estudiante escoge el área de interés y realiza una investigación
           innovadora y rigurosa que aporte conocimiento original a la Ingeniería Electrónica y Telecomunicaciones.
         </List>
+        <List>
+          <strong>Plan Coterminal:</strong> En la cual el estudiante cursa asignaturas de maestría una vez ha aprobado el 80 % del
+          plan de estudios de pregrado. Para graduarse, debe aprobar los créditos definidos y cumplir los requisitos establecidos
+          por la Facultad.
+        </List>
         <p class="pt-2">
           Para más información consulta la sección <strong>Modalidades de grado </strong> en el plan de estudios
         </p>
       </Dropdown>
-      <Dropdown
-        title="¿Cómo se elabora un convenio específico para práctica profesional?"
-        link="https://www.unicauca.edu.co/versionP/pregrado"
-        textancle="Más Información"
-        isActive
-        label="ir a más información"
-      >
-        <p></p>
-      </Dropdown>
-
+  
       <Dropdown
         title="¿Puedo cambiar de modalidad de grado?"
         link="https://www.unicauca.edu.co/versionP/pregrado"
