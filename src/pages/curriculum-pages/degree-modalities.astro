@@ -2,6 +2,7 @@
 import Banner from "../../component/all-pages/banner.astro";
 import Layout from "../../component/layouts/layout.astro";
 import List from "../../component/all-pages/list.astro";
+import ListNum from "../../component/all-pages/list_num.astro";
 import Dropdown from "../../component/curriculum-page/dropdown.astro";
 import Layout2 from "../../component/layouts/layout2.astro";
 import Line from "../../component/all-pages/line.astro";
@@ -10,7 +11,8 @@ import LayoutTextImg from "../../component/layouts/layout-text-img.astro";
 import BreadCrumbs from "../../component/curriculum-page/bread-crumbs.astro";
 const anchors = [
   { href: "#investigation", title: "TRABAJO DE INVESTIGACIÓN" },
-  { href: "#practice", title: " PRÁCTICA PROFESIONAL" },
+  { href: "#practice", title: "PRÁCTICA PROFESIONAL" },
+  { href: "#coterminal", title: "PLAN COTERMINAL" },
 ];
 ---
 
@@ -21,9 +23,9 @@ const anchors = [
       <p class="lg:mx-40">
         <BreadCrumbs pathname="/curriculum" title="Modalidades de Grado" path="/curriculum-pages/degree-modalities" />
          El Consejo de la Facultad de Ingeniería Electrónica y Telecomunicaciones establece el Reglamento para las
-        modalidades de <strong>Trabajo de Investigación</strong> y <strong>Práctica Profesional</strong> aprobadas para
-        los programas de Pregrado de Ingeniería de Sistemas, Ingeniería en Automática Industrial e Ingeniería
-        Electrónica y Telecomunicaciones, mediante Resolución 8.4.2– 90.14/249 del 9 de junio de 2017.
+         modalidades de Trabajo de Grado aprobadas para los programas de Pregrado de Ingeniería de Sistemas, Ingeniería en Automática Industrial e Ingeniería
+         Electrónica y Telecomunicaciones. Las modalidades de <strong>Trabajo de Investigación</strong> y <strong>Práctica Profesional</strong> están definidas en la Resolución 8.4.2– 90.14/249 de 2017, 
+         mientras que la modalidad de <strong>Plan Coterminal</strong> se establece en la Resolución No. 8.4.3-4.4/176 de 2025.
       </p>
     </Layout2>
   </section>
@@ -191,7 +193,7 @@ const anchors = [
         Consiste en un trabajo de grado enmarcado en el sector productivo de bienes y servicios, el sector gubernamental
         y la sociedad en general, donde el estudiante enfoca su proyecto a un rol propositivo. La práctica profesional
         se gestionará y desarrollará como un proyecto de innovación tecnológica en el contexto de una organización, la
-        cual deberá hacer uso de habilidades de ingeniería propia del perfil de la carrera. 29. El Trabajo de Grado en
+        cual deberá hacer uso de habilidades de ingeniería propia del perfil de la carrera. El Trabajo de Grado en
         la modalidad de Práctica Profesional es individual.
       </p>
     </div>
@@ -332,6 +334,142 @@ const anchors = [
         trabajo de grado, siempre y cuando el estudiante se encuentre a Paz y Salvo financiera y académicamente <strong
           >(Formato PP-F)</strong
         >. Los Jurados dispondrán de un tiempo máximo de quince (15) días hábiles para su evaluación.
+      </List>
+    </Dropdown>
+  </Layout2>
+  <Line color="bg-secondary-400" />
+
+  <LayoutTextImg
+    src="/images/plan-coterminal.webp"
+    alt="Fotografía que ilustra la modalidad plan coterminal"
+  >
+    <div class="flex flex-col justify-center gap-y-4">
+      <h3 id="coterminal">PLAN COTERMINAL</h3>
+      <p>
+        Esta opción de modalidad de trabajo de grado permite a los
+        estudiantes de pregrado cursar asignaturas del primer semestre de
+        un programa de posgrado de la misma facultad (especialización, maestría
+        o doctorado, excluyendo especializaciones médico-quirúrgicas) como requisito
+        para obtener su título de ingeniero.
+      </p>
+    </div>
+  </LayoutTextImg>
+
+  <Layout2>
+    <Dropdown
+      title="CONDICIONES Y REQUISITOS"
+      link="../documents/Res_176 de 2025 - TG modalidad plan Coterminal.pdf"
+      textancle="Resolución 176 de 2025"
+      isActive
+      label="Ir a la resolución"
+    >
+      <p>
+        Las condiciones y requisitos para aplicar a la modalidad plan coterminal son los siguientes:
+      </p>
+      <List>
+        Mantener un promedio de carrera igual o superior a 4.0.
+      </List>
+      <List>
+        Haber aprobado todos los créditos de su plan de estudios, 
+        a excepción de los correspondientes al último semestre del programa de pregrado.
+      </List>
+      <List>
+        Haber cumplido con el requisito de idioma extranjero según los criterios del 
+        Programa de Formación en Idiomas (PFI).
+      </List>
+      <List>
+        Contar con el aval de un profesor de la FIET que posea, como mínimo, título de Maestría.
+      </List>
+      <List>
+        Existe un cupo máximo de cuatro (4) estudiantes por programa de posgrado de la FIET que implemente esta opción.
+      </List>
+      <List>
+        El estudiante solo podrá aplicar a programas de posgrado que ofrezcan inscripciones para su primer semestre académico.
+      </List>
+      <List>
+        Los estudiantes deben estar matriculados en la asignatura de Trabajo de Grado para obtener la aprobación final del Consejo de Facultad.
+      </List>
+      <List>
+        El estudiante aceptado no podrá cancelar asignaturas, solicitar prórrogas ni aplazar el semestre del posgrado en el que fue admitido.
+      </List>
+      <List>
+        El estudiante debe aprobar el 100% de las asignaturas establecidas por el comité del Programa de Posgrado (mínimo 12 créditos). 
+        La nota mínima aprobatoria para cada asignatura es de 3.5 sobre 5.0.  En caso de no alcanzar esta nota en una o más asignaturas, 
+        el trabajo de grado se considerará no aprobado y el estudiante deberá iniciar un nuevo trabajo de grado en otra modalidad.
+      </List>
+      <p>
+        Para más información visite la <strong>Resolución No. 8.4.3-4.4/176 de 2025</strong> por el cual se reglamenta la modalidad de Trabajo de Grado Plan Coterminal
+        para obtener el título de ingeniero en los Programas de Pregrado de la FIET. 
+      </p>
+    </Dropdown>
+
+    <Dropdown
+      title="PROCESO PARA APLICAR AL PLAN COTERMINAL"
+      link="https://docs.google.com/document/d/1R4xG--frCVVBkicYqr-p4Ab-YKclG91Y6WjWGXbbZZ0/edit?usp=sharing"
+      textancle="Formatos"
+      isActive
+      label="ir a formatos para desarrollar el plan coterminal"
+    >
+      <p>
+        Sigue estos pasos para postularte al plan coterminal:
+      </p>
+      <ListNum index= 1>
+        <strong>Presentación de la Solicitud:</strong> Un docente, quien actuará como tutor, 
+        debe presentar la solicitud de la opción de Trabajo de Grado en la modalidad de Plan 
+        Coterminal <strong>(Formato PCT-A)</strong> ante el Comité del Programa de Pregrado al 
+        que pertenece el estudiante. Esta solicitud busca evaluar la viabilidad y pertinencia 
+        de la modalidad con las áreas de formación y el perfil profesional del estudiante.
+      </ListNum>
+      <ListNum index= 2>
+        <strong>Publicación de Fechas Límite:</strong> El Consejo de la Facultad de Ingeniería 
+        Electrónica y Telecomunicaciones publicará la fecha límite para que el tutor y el estudiante 
+        presenten la solicitud ante los Comités de Programa de Pregrado.
+      </ListNum>
+      <ListNum index= 3>
+        <strong>Aval del Comité de Programa de Pregrado:</strong> El Comité de Programa de Pregrado 
+        evaluará la solicitud. Una vez avalada <strong>(Formato PCT-B)</strong>, esta será presentada a los Comités 
+        de Programa de Posgrado correspondientes.
+      </ListNum>
+      <ListNum index= 4>
+        <strong>Selección por el Comité de Programa de Posgrado:</strong>  Los Comités de Programa de Posgrado 
+        determinarán y notificarán al Consejo de la FIET los estudiantes seleccionados. Además, informarán las 
+        asignaturas que cada estudiante deberá cursar (mínimo 12 créditos, utilizando el <strong>Formato PCT-C</strong>).
+      </ListNum>
+      <ListNum index= 5>
+        <strong>Envío al Consejo de Facultad:</strong> Una vez obtenida la aprobación de los Comités de Programa de Pregrado 
+        y Posgrado <strong>(Formatos PCT-A, PCT-B y PCT-C)</strong>, el Coordinador del Programa de Posgrado enviará las 
+        solicitudes al Consejo de la FIET para su aprobación final.
+      </ListNum>
+      <ListNum index= 6>
+        <strong>Resolución del Consejo de Facultad:</strong> El Consejo de Facultad emitirá la resolución correspondiente, 
+        la cual será válida únicamente para el semestre indicado en la propuesta <strong>(Formato PCT-A)</strong>.
+      </ListNum>
+      <ListNum index= 7>
+        <strong>Certificación de Culminación:</strong> Una vez finalizado el Plan Coterminal, el Coordinador del Programa 
+        de Posgrado deberá presentar a la Decanatura un certificado que confirme que el estudiante ha cursado y aprobado 
+        todas las asignaturas registradas para el primer semestre <strong>(Formato PCT-D)</strong>.
+      </ListNum>
+    </Dropdown>
+
+    <Dropdown
+      title="PROGRAMAS DE POSGRADO AFINES"
+      link="../documents/Res_176 de 2025 - TG modalidad plan Coterminal.pdf"
+      textancle="Resolución 176 de 2025"
+      isActive
+      label="Ir a la resolución"
+    >
+      <p>
+        La resolución establece la correlación entre el Programa de Ingeniería Electrónica y Telecomunicaciones
+        y los programas de maestría en modalidad de investigación a los cuales se puede aplicar:
+      </p>
+      <List>
+        Maestría en Ingeniería Telemática
+      </List>
+      <List>
+        Maestría en Electrónica y Telecomunicaciones
+      </List>
+      <List>
+        Maestría en Automática
       </List>
     </Dropdown>
   </Layout2>
