@@ -159,9 +159,9 @@ import Teachers from "./teachers.astro";
       email="catalinamunoz@unicauca.edu.co"
     >
       <ul class="list-disc pl-4">
-        <li>Ingeniera en Electrónica y Telecomunicaciones de la Universidad del Cauca</li>
-        <li>Especialista en Redes y Servicios Telemáticos de la Universidad del Cauca</li>
-        <li>Magister en Telecomunicaciones de la Universidad del Cauca</li>
+        <li>Ingeniera en Electrónica y Telecomunicaciones de la Universidad del Cauca (2012)</li>
+        <li>Especialista en Redes y Servicios Telemáticos de la Universidad del Cauca (2014)</li>
+        <li>Magister en Telecomunicaciones de la Universidad del Cauca (2019)</li>
       </ul>
     </Teachers>
   </div>
@@ -173,8 +173,22 @@ import Teachers from "./teachers.astro";
       email="dgalvis@unicauca.edu.co"
     >
       <ul class="list-disc pl-4">
-        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca</li>
-        <li>Magister en Telecomunicaciones de la Universidad del Cauca</li>
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (2008)</li>
+        <li>Magister en Telecomunicaciones de la Universidad del Cauca (2022)</li>
+
+      </ul>
+    </Teachers>
+  </div>
+  <div class="keen-slider__slide number-slide13">
+    <Teachers
+      name="Francisco Javier Terán Cuarán"
+      image="/teachers/perfil_m.webp"
+      departament="Telecomunicaciones"
+      email="fteran@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Ingeniero en Electrónica de la Universidad del Cauca (1983)</li>
+        <li>Magister en Electrónica y Telecomunicaciones de la Universidad del Cauca (1993)</li>
 
       </ul>
     </Teachers>
@@ -184,7 +198,7 @@ import Teachers from "./teachers.astro";
 <script>
   import "keen-slider/keen-slider.min.css";
   import KeenSlider from "keen-slider";
-  var animation = { duration: 30000, easing: (t) => t };
+  var animation = { duration: 10000, easing: (t) => t };
   let slider = new KeenSlider("#my-keen-slider", {
     loop: true,
     renderMode: "performance",
@@ -236,10 +250,31 @@ import Teachers from "./teachers.astro";
         {
           size: 1,
         },
+        {
+          size: 1,
+        },
+        {
+          size: 1,
+        },
+        {
+          size: 1,
+        },
       ];
     } else {
       // Tamaño de diapositivas para pantallas de escritorio
       return [
+        {
+          size: 0.35,
+          spacing: 0.01,
+        },
+        {
+          size: 0.35,
+          spacing: 0.01,
+        },
+        {
+          size: 0.35,
+          spacing: 0.01,
+        },
         {
           size: 0.35,
           spacing: 0.01,
