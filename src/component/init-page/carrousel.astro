@@ -193,12 +193,28 @@ import Teachers from "./teachers.astro";
       </ul>
     </Teachers>
   </div>
+  <div class="keen-slider__slide number-slide14">
+    <Teachers
+      name="Harold Armando Romo Romero"
+      image="/teachers/perfil_m.webp"
+      departament="Telecomunicaciones"
+      email="hromo@unicauca.edu.co"
+    >
+      <ul class="list-disc pl-4">
+        <li>Licenciado en Matemáticas de la Universidad de Nariño (1987)</li>
+        <li>Ingeniero en Electrónica y Telecomunicaciones de la Universidad del Cauca (1996)<li>
+        <li>Especialista en Redes y Servicios Telemáticos de la Universidad del Cauca (1999)</li>
+        <li>Magister en Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca (2008)</li>
+      </ul>
+    </Teachers>
+  </div>
+  
 </div>
 <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
 <script>
   import "keen-slider/keen-slider.min.css";
   import KeenSlider from "keen-slider";
-  var animation = { duration: 10000, easing: (t) => t };
+  var animation = { duration: 30000, easing: (t) => t };
   let slider = new KeenSlider("#my-keen-slider", {
     loop: true,
     renderMode: "performance",
@@ -259,10 +275,17 @@ import Teachers from "./teachers.astro";
         {
           size: 1,
         },
+        {
+          size: 1,
+        },
       ];
     } else {
       // Tamaño de diapositivas para pantallas de escritorio
       return [
+        {
+          size: 0.35,
+          spacing: 0.01,
+        },
         {
           size: 0.35,
           spacing: 0.01,
