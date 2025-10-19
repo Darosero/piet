@@ -5,7 +5,16 @@ import { NEWPENSUM } from "../lib/new-pensum";
 function Table({ isNew }) {
   const [hash, setHash] = useState(window.location.hash);
   const [pensum, setPensum] = useState(null);
-
+  // helper: normaliza el nombre para usar como nombre de archivo en /pdfs/<safe>.pdf
+   function safeFilename(str) {
+    return String(str || "")
+      .normalize("NFD")                 // separar diacríticos
+      .replace(/[\u0300-\u036f]/g, "")  // quitar acentos
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "_")      // no alfanum -> underscore
+      .replace(/^_+|_+$/g, "")          // trim underscores
+      .replace(/_+/g, "_");             // colapsar múltiples underscores
+  }
   useEffect(() => {
     isNew ? setPensum(NEWPENSUM[hash] ?? NEWPENSUM["#I"]) : setPensum(OLDPENSUM[hash] ?? OLDPENSUM["#I"]);
   }, [hash]);
@@ -80,15 +89,30 @@ function Table({ isNew }) {
             </div>
           </section>
 
-          <div className="flex flex-col border-x-2  border-y-4">
-            <h4 className="border-b-4 md:px-2 text-primary-900">Asignatura</h4>
-            {pensum?.subjects.map((subject, index) => (
-              <p className="md:px-2 text-sm " key={index}>
-                {subject.name}
-              </p>
-            ))}
-          </div>
-          <div className="hidden lg:block border-4 ">
+            <div className="flex flex-col border-x-2  border-y-4">
+              <h4 className="border-b-4 md:px-2 text-primary-900">Asignatura</h4>
+            {pensum?.subjects.map((subject, index) => {
+              const codeFromPensum = pensum?.code?.[index]?.name;
+              const safeCode = codeFromPensum
+                ? safeFilename(subject.name)
+                : safeFilename(codeFromPensum);
+              const pdfUrl = `/pdfs/${safeCode}.pdf`;
+              return (
+                <p className="md:px-2 text-sm " key={index}>
+                  <a
+                    href={pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Abrir PDF de ${subject.name}`}
+                    className="text-primary-600 hover:underline"
+                  >
+                    {subject.name}
+                  </a>
+                </p>
+              );
+            })}
+          
+          </div>          <div className="hidden lg:block border-4 ">
             <h4 className="border-b-4 md:px-2 text-primary-900">Prerequisitos</h4>
             {pensum?.prerequisites.map((prerequisites, index) => (
               <p className=" md:px-2 text-sm " key={index}>
