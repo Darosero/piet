@@ -96,7 +96,7 @@ function Table({ isNew }) {
               const safeCode = codeFromPensum
                 ? safeFilename(subject.name)
                 : safeFilename(codeFromPensum);
-              const pdfUrl = `/pdfs/${safeCode}.pdf`;
+              const pdfUrl = `/subject_content/${safeCode}.pdf`;
               return (
                 <p className="md:px-2 text-sm " key={index}>
                   <a
