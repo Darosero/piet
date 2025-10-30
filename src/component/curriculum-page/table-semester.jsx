@@ -6,7 +6,7 @@ function Table({ isNew }) {
   const [hash, setHash] = useState(window.location.hash);
   const [pensum, setPensum] = useState(null);
   // helper: normaliza el nombre para usar como nombre de archivo en /pdfs/<safe>.pdf
-   function safeFilename(str) {
+  function safeFilename(str) {
     return String(str || "")
       .normalize("NFD")                 // separar diacríticos
       .replace(/[\u0300-\u036f]/g, "")  // quitar acentos
@@ -96,20 +96,42 @@ function Table({ isNew }) {
               const safeCode = codeFromPensum
                 ? safeFilename(subject.name)
                 : safeFilename(codeFromPensum);
-              const pdfUrl = `/subject_content/${safeCode}.pdf`;
-              return (
-                <p className="md:px-2 text-sm " key={index}>
-                  <a
-                    href={pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Abrir PDF de ${subject.name}`}
-                    className="text-primary-600 hover:underline"
-                  >
-                    {subject.name}
-                  </a>
-                </p>
-              );
+              var pdfUrl = `/subject_content/${safeCode}.pdf`;
+              // If click en anything elective, go to electives page
+              if (safeCode == "electiva_i_area_tc_tm_ex_sx" || safeCode == "electiva_ii_area_tc_tm_ex_sx" || safeCode == "electiva_iii_area_tc_tm_ex_sx")
+              {
+                pdfUrl = `/curriculum-pages/electives`
+              }
+              // if click in degree work go to degree modalities page
+              if (safeCode == "trabajo_de_grado")
+              {
+                pdfUrl = `/curriculum-pages/degree-modalities`
+              }
+              // Return only new pensum with link to pdf
+              if(isNew) {
+                return (
+                  <p className="md:px-2 text-sm " key={index}>
+                    <a
+                      href={pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Abrir PDF de ${subject.name}`}
+                      className="text-primary-600 hover:underline"
+                    >
+                      {subject.name}
+                    </a>
+                  </p>
+                );
+              } else {
+                return (
+                  <p className="md:px-2 text-sm " key={index}>
+                    <a>
+                      {subject.name}
+                    </a>
+                  </p>
+                )
+              }
+
             })}
           
           </div>          <div className="hidden lg:block border-4 ">
