@@ -403,53 +403,66 @@ const anchors = [
       </p>
     </Dropdown>
 
-    <Dropdown
-      title="PROCESO PARA APLICAR AL PLAN COTERMINAL"
-      link="https://docs.google.com/document/d/1R4xG--frCVVBkicYqr-p4Ab-YKclG91Y6WjWGXbbZZ0/edit?usp=sharing"
-      textancle="Formatos"
-      isActive
-      label="ir a formatos para desarrollar el plan coterminal"
-    >
-      <p>
-        Sigue estos pasos para postularte al plan coterminal:
-      </p>
-      <ListNum index= 1>
-        <strong>Presentación de la Solicitud:</strong> Un docente, quien actuará como tutor, 
-        debe presentar la solicitud de la opción de Trabajo de Grado en la modalidad de Plan 
-        Coterminal <strong>(Formato PCT-A)</strong> ante el Comité del Programa de Pregrado al 
-        que pertenece el estudiante. Esta solicitud busca evaluar la viabilidad y pertinencia 
-        de la modalidad con las áreas de formación y el perfil profesional del estudiante.
-      </ListNum>
-      <ListNum index= 2>
-        <strong>Publicación de Fechas Límite:</strong> El Consejo de la Facultad de Ingeniería 
-        Electrónica y Telecomunicaciones publicará la fecha límite para que el tutor y el estudiante 
-        presenten la solicitud ante los Comités de Programa de Pregrado.
-      </ListNum>
-      <ListNum index= 3>
-        <strong>Aval del Comité de Programa de Pregrado:</strong> El Comité de Programa de Pregrado 
-        evaluará la solicitud. Una vez avalada <strong>(Formato PCT-B)</strong>, esta será presentada a los Comités 
-        de Programa de Posgrado correspondientes.
-      </ListNum>
-      <ListNum index= 4>
-        <strong>Selección por el Comité de Programa de Posgrado:</strong>  Los Comités de Programa de Posgrado 
-        determinarán y notificarán al Consejo de la FIET los estudiantes seleccionados. Además, informarán las 
-        asignaturas que cada estudiante deberá cursar (mínimo 12 créditos, utilizando el <strong>Formato PCT-C</strong>).
-      </ListNum>
-      <ListNum index= 5>
-        <strong>Envío al Consejo de Facultad:</strong> Una vez obtenida la aprobación de los Comités de Programa de Pregrado 
-        y Posgrado <strong>(Formatos PCT-A, PCT-B y PCT-C)</strong>, el Coordinador del Programa de Posgrado enviará las 
-        solicitudes al Consejo de la FIET para su aprobación final.
-      </ListNum>
-      <ListNum index= 6>
-        <strong>Resolución del Consejo de Facultad:</strong> El Consejo de Facultad emitirá la resolución correspondiente, 
-        la cual será válida únicamente para el semestre indicado en la propuesta <strong>(Formato PCT-A)</strong>.
-      </ListNum>
-      <ListNum index= 7>
-        <strong>Certificación de Culminación:</strong> Una vez finalizado el Plan Coterminal, el Coordinador del Programa 
-        de Posgrado deberá presentar a la Decanatura un certificado que confirme que el estudiante ha cursado y aprobado 
-        todas las asignaturas registradas para el primer semestre <strong>(Formato PCT-D)</strong>.
-      </ListNum>
-    </Dropdown>
+  <Dropdown
+    title="PROCESO PARA APLICAR AL PLAN COTERMINAL"
+    link="../documents/PROCESO DE TRABAJO DE GRADO MODALIDAD PLAN COTERMINAL.docx"
+    textancle="Formatos PTC"
+    isActive
+    label="ir al proceso de trabajo de grado modalidad plan coterminal"
+  >
+    <p>
+      Sigue estos pasos para postularte al plan coterminal:
+    </p>
+    <ListNum index={1}>
+      <strong>Presentación de la Solicitud:</strong> El tutor — docente de la FIET con título mínimo
+      de Maestría — diligencia y presenta el <strong>(Formato PCT-A)</strong> ante el Comité de Programa de Pregrado.
+      Este formato incluye la identificación del estudiante, el programa de posgrado solicitado, los objetivos,
+      la justificación de pertinencia y la verificación de los requisitos de acceso conforme a la Resolución 176 de 2025.
+    </ListNum>
+    <ListNum index={2}>
+      <strong>Publicación de Fechas Límite:</strong> El Consejo de la Facultad de Ingeniería Electrónica y
+      Telecomunicaciones publicará la fecha límite para que el tutor y el estudiante presenten la solicitud
+      ante los Comités de Programa de Pregrado.
+    </ListNum>
+    <ListNum index={3}>
+      <strong>Aval y definición de asignaturas por el Comité de Posgrado:</strong> El Comité de Programa de
+      Posgrado avala el acceso del estudiante y define las asignaturas que deberá cursar (mínimo 12 créditos),
+      registrando las condiciones académicas aceptadas: aprobar el 100% con nota mínima de 3.5/5.0, sin
+      posibilidad de cancelar, aplazar ni solicitar prórrogas. Este aval queda registrado en el <strong>(Formato PCT-B)</strong>.
+    </ListNum>
+    <ListNum index={4}>
+      <strong>Evaluación final de la propuesta y aval del Consejo de Facultad:</strong> El Coordinador del
+      Programa de Pregrado verifica nuevamente los requisitos de acceso y evalúa la coherencia académica entre
+      la propuesta inicial y las asignaturas aprobadas por posgrado. Una vez consolidado, los formatos
+      <strong>PCT-A, PCT-B y PCT-C</strong> se remiten al Consejo de Facultad para su aprobación formal.
+    </ListNum>
+    <ListNum index={5}>
+      <strong>Resolución del Consejo de Facultad:</strong> El Consejo de Facultad emite la resolución de
+      aprobación, válida únicamente para el semestre indicado en la propuesta <strong>(Formato PCT-A)</strong>.
+      A partir de este aval, el estudiante queda habilitado para matricularse en las asignaturas definidas
+      por el Comité de Posgrado.
+    </ListNum>
+    <ListNum index={6}>
+      <strong>Evaluación del desempeño por asignatura:</strong> Al finalizar cada período académico, el profesor
+      de cada asignatura del posgrado diligencia el <strong>(Formato PCT-D)</strong>, que incluye la calificación
+      obtenida (escala 0.0–5.0) y la evaluación de competencias. Este formato se diligencia una vez por cada
+      asignatura cursada. Si el estudiante no obtiene mínimo 3.5/5.0 en alguna asignatura, el trabajo de grado
+      en esta modalidad se considera <strong>No Aprobado</strong>.
+    </ListNum>
+    <ListNum index={7}>
+      <strong>Revisión académica y paz y salvo:</strong> Una vez aprobadas todas las asignaturas, se verifica
+      el cumplimiento de los requisitos académicos y administrativos del estudiante: matrícula del semestre,
+      plan de estudios completo, prueba de suficiencia en idioma extranjero, y soportes Saber 11 y Saber Pro.
+      El Decano firma la constancia de cumplimiento <strong>(Formato PCT-E)</strong>.
+    </ListNum>
+    <ListNum index={8}>
+      <strong>Certificación final del Plan Coterminal:</strong> El Coordinador del Programa de Posgrado
+      consolida en el <strong>(Formato PCT-F)</strong> el cierre académico de la modalidad: asignaturas cursadas
+      con calificaciones, nivel de desempeño alcanzado en cada resultado de aprendizaje del programa de
+      pregrado, y el concepto final del Comité de Programa de Posgrado. Este documento constituye el
+      cierre formal de la modalidad.
+    </ListNum>
+  </Dropdown>
 
     <Dropdown
       title="PROGRAMAS DE POSGRADO AFINES"
